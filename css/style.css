@@ -1,0 +1,407 @@
+/* Reset : base commune */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* Texte et couleurs */
+body {
+  font-family: var(--police);
+  font-size: var(--taille-texte);
+  line-height: 1.5;
+  color: var(--couleur-texte);
+  background: var(--couleur-fond);
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: var(--taille-h1);
+}
+
+h2 {
+  font-size: var(--taille-h2);
+}
+
+h3 {
+  font-size: var(--taille-h3);
+}
+
+p {
+  max-width: 65ch;
+}
+
+a {
+  color: var(--couleur-primaire);
+  text-underline-offset: 0.2em;
+}
+
+/* Zones cliquables : au moins 44 px de hauteur */
+a {
+  display: inline-block;
+  min-height: var(--cible);
+  padding-block: var(--espace-petit);
+}
+
+button,
+input {
+  min-height: var(--cible);
+  max-width: 100%;
+}
+
+/* Accessibilité au clavier */
+:focus-visible {
+  outline: var(--epaisseur-focus) solid var(--couleur-primaire);
+  outline-offset: var(--decalage-focus);
+}
+
+.evitement {
+  position: absolute;
+  top: -1000px;
+  left: var(--espace);
+  z-index: 10;
+  padding: var(--espace);
+  color: var(--couleur-sur-primaire);
+  background: var(--couleur-primaire);
+}
+
+.evitement:focus {
+  top: var(--espace);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Listes et boutons communs */
+.liste-reset {
+  list-style: none;
+  padding: 0;
+}
+
+button,
+.btn {
+  padding: var(--espace-petit) var(--espace);
+  border: var(--epaisseur-bordure) solid var(--couleur-primaire);
+  border-radius: var(--rayon);
+  color: var(--couleur-sur-primaire);
+  background: var(--couleur-primaire);
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: var(--couleur-primaire-fonce);
+}
+
+button:disabled {
+  border: 2px dashed var(--couleur-texte-discret);
+  color: var(--couleur-texte-discret);
+  background: var(--couleur-fond);
+  cursor: not-allowed;
+}
+
+.stock {
+  font-size: var(--taille-petit);
+}
+
+.stock-rupture {
+  color: var(--couleur-alerte);
+  font-weight: 700;
+}
+
+/* En-tête */
+.entete {
+  padding: var(--espace);
+  background: var(--couleur-surface);
+  border-bottom: 2px solid var(--couleur-primaire);
+}
+
+.entete > * + * {
+  margin-top: var(--espace);
+}
+
+.logo {
+  display: block;
+  width: fit-content;
+}
+
+.logo img {
+  height: var(--hauteur-logo);
+  width: auto;
+}
+
+.panier {
+  position: relative;
+  margin-right: var(--espace-grand);
+}
+
+/* Point rouge : panier simulé avec deux articles */
+.panier::after {
+  content: "";
+  position: absolute;
+  top: var(--espace-petit);
+  right: calc(-1 * var(--espace));
+  width: var(--taille-point);
+  height: var(--taille-point);
+  border-radius: 50%;
+  background: var(--couleur-alerte);
+}
+
+.menu-bouton {
+  display: block;
+}
+
+/* Recherche */
+.recherche label {
+  display: block;
+  margin-bottom: var(--espace-petit);
+}
+
+.recherche input {
+  display: block;
+  width: 100%;
+  padding: var(--espace-petit);
+  border: var(--epaisseur-bordure) solid var(--couleur-texte-discret);
+  border-radius: var(--rayon);
+  color: var(--couleur-texte);
+  background: var(--couleur-surface);
+}
+
+.recherche button {
+  width: 100%;
+  margin-top: var(--espace-petit);
+}
+
+/* Navigation */
+.menu li + li {
+  margin-top: var(--espace-petit);
+}
+
+.menu a {
+  display: block;
+  padding-inline: var(--espace-petit);
+  border-radius: var(--rayon);
+}
+
+.menu a[aria-current="page"] {
+  font-weight: 700;
+  background: var(--couleur-fond);
+}
+
+/* Contenu principal */
+main {
+  padding: var(--espace);
+}
+
+main > * + * {
+  margin-top: var(--espace-grand);
+}
+
+/* Carrousel : slides empilées sans JavaScript */
+.slide {
+  padding: var(--espace);
+  border-radius: var(--rayon);
+  background: var(--couleur-surface);
+}
+
+.slide + .slide {
+  margin-top: var(--espace);
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--rayon);
+}
+
+.slide h2 {
+  margin-top: var(--espace);
+}
+
+.slide a {
+  margin-top: var(--espace-petit);
+}
+
+/* Catégories */
+.categories ul {
+  margin-top: var(--espace);
+}
+
+.categories li + li {
+  margin-top: var(--espace);
+}
+
+.categories a {
+  display: block;
+  padding: var(--espace);
+  border-radius: var(--rayon);
+  background: var(--couleur-surface);
+}
+
+.categories img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--rayon);
+}
+
+.categories span {
+  display: block;
+  margin-top: var(--espace-petit);
+  font-weight: 700;
+}
+
+/* Cartes produits communes aux deux pages */
+.top-produits > ul {
+  margin-top: var(--espace);
+}
+
+.top-produits > ul > li + li {
+  margin-top: var(--espace);
+}
+
+.produit {
+  padding: var(--espace);
+  border-radius: var(--rayon);
+  background: var(--couleur-surface);
+}
+
+.produit img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--rayon);
+}
+
+.produit h3 {
+  margin-top: var(--espace-petit);
+}
+
+.produit h3 a {
+  display: block;
+}
+
+.produit p + p {
+  margin-top: var(--espace-petit);
+}
+
+.prix {
+  font-weight: 700;
+}
+
+.produit:has(.stock-rupture) img {
+  filter: grayscale(1);
+}
+
+/* Fil d’Ariane */
+.ariane ol {
+  list-style: none;
+  padding: 0;
+}
+
+.ariane li {
+  display: inline;
+}
+
+.ariane li + li::before {
+  content: " › ";
+}
+
+/* Fiche produit */
+.fiche {
+  padding: var(--espace);
+  border-radius: var(--rayon);
+  background: var(--couleur-surface);
+}
+
+.fiche > * + * {
+  margin-top: var(--espace);
+}
+
+.illustrations ul {
+  margin-top: var(--espace);
+}
+
+.illustrations li + li {
+  margin-top: var(--espace);
+}
+
+.illustrations img {
+  width: 100%;
+  border-radius: var(--rayon);
+}
+
+.prix-fiche {
+  font-size: var(--taille-h2);
+  font-weight: 700;
+}
+
+/* Achat */
+.achat label,
+.achat input,
+.achat button {
+  display: block;
+}
+
+.achat input {
+  width: 100%;
+  margin-top: var(--espace-petit);
+  padding: var(--espace-petit);
+  border: var(--epaisseur-bordure) solid var(--couleur-texte-discret);
+  border-radius: var(--rayon);
+}
+
+.achat .btn {
+  width: 100%;
+  margin-top: var(--espace);
+}
+
+/* Caractéristiques */
+.caracteristiques dl {
+  margin-top: var(--espace);
+}
+
+.caracteristiques dt {
+  font-weight: 700;
+}
+
+.caracteristiques dd + dt {
+  margin-top: var(--espace);
+}
+
+/* Pied caché pour cette version téléphone :
+   ses liens sont aussi présents dans le menu */
+.pied {
+  display: none;
+}

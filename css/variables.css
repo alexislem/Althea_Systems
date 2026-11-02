@@ -1,0 +1,34 @@
+/* Charte proposée pour la maquette Althea Systems */
+:root {
+  /* Couleurs */
+  --couleur-primaire: #005a70;
+  --couleur-primaire-fonce: #003d4d;
+  --couleur-sur-primaire: #ffffff;
+  --couleur-texte: #172b36;
+  --couleur-texte-discret: #4b606c;
+  --couleur-fond: #f3f7f9;
+  --couleur-surface: #ffffff;
+  --couleur-alerte: #b42318;
+
+  /* Police et tailles de texte */
+  --police: system-ui, sans-serif;
+  --taille-texte: 1rem;
+  --taille-petit: 0.875rem;
+  --taille-h1: 1.75rem;
+  --taille-h2: 1.375rem;
+  --taille-h3: 1.125rem;
+
+  /* Espacements */
+  --espace-petit: 0.5rem;
+  --espace: 1rem;
+  --espace-grand: 2rem;
+
+  /* Formes et dimensions */
+  --rayon: 0.5rem;
+  --cible: 44px;
+  --epaisseur-bordure: 1px;
+  --epaisseur-focus: 3px;
+  --decalage-focus: 3px;
+  --hauteur-logo: 40px;
+  --taille-point: 10px;
+}
