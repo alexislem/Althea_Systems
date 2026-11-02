@@ -377,3 +377,10 @@ Cela permet de leur donner la même apparence avec le CSS.
 
 Un même composant garde le même nom de classe
 sur toutes les pages.
+
+
+
+## Commandes utilisées
+
+- `git status` : affiche la branche actuelle et les fichiers modifiés.
+- `git diff` : affiche les modifications qui ne sont pas encore préparées pour un commit.

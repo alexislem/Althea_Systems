@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <!-- Dégradé bleu/vert pour la boucle -->
+    <linearGradient id="blueGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e5a77" />
+      <stop offset="50%" stop-color="#15728a" />
+      <stop offset="100%" stop-color="#2a9d8f" />
+    </linearGradient>
+
+    <!-- Dégradé vert pour la feuille -->
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#52b788" />
+      <stop offset="100%" stop-color="#74c69d" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .brand-text {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      fill: #0e5a77;
+      letter-spacing: 3px;
+    }
+    .sub-text {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 500;
+      fill: #555555;
+      letter-spacing: 2px;
+    }
+  </style>
+
+  <g transform="translate(50, 20)">
+    <!-- Boucle d'infini / Symbole principal -->
+    <path d="M 130,100 
+             C 90,40 30,50 30,95 
+             C 30,140 90,150 130,100 
+             C 170,50 230,40 250,75 
+             C 220,50 160,60 130,100 Z" fill="url(#blueGreenGrad)" />
+
+    <!-- Silhouette humaine (bras levés) -->
+    <path d="M 180,110 
+             C 200,80 230,60 260,65 
+             C 240,85 220,120 200,135 
+             C 185,125 180,115 180,110 Z" fill="#0e5a77" />
+    
+    <!-- Tête de la silhouette -->
+    <circle cx="235" cy="45" r="12" fill="#0e5a77" />
+
+    <!-- Feuille / Élément naturel -->
+    <path d="M 155,85 
+             C 150,55 175,40 180,40 
+             C 180,45 185,70 165,88 
+             Z" fill="url(#leafGrad)" />
+
+    <!-- Croix médicale -->
+    <g transform="translate(182, 82) scale(0.7)">
+      <path d="M 8,0 L 14,0 L 14,8 L 22,8 L 22,14 L 14,14 L 14,22 L 8,22 L 8,14 L 0,14 L 0,8 L 8,8 Z" fill="#52b788" />
+    </g>
+
+    <!-- Texte du Logo -->
+    <text x="200" y="195" text-anchor="middle" font-size="28" class="brand-text">ALTHEA SYSTEM</text>
+    <text x="200" y="218" text-anchor="middle" font-size="11" class="sub-text">INTEGRATED HEALTHCARE SOLUTIONS</text>
+  </g>
+</svg>
