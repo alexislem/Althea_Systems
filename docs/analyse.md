@@ -316,3 +316,5 @@ Sur téléphone, les informations apparaissent les unes sous les autres.
 - Désactiver le bouton avec disabled.
 - Remplacer son texte par « En rupture de stock ».
 - Garder les informations du produit consultables.
+
+
