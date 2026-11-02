@@ -21,24 +21,24 @@
   </head>
 
   <body>
-    <!-- Lien d'évitement -->
+    <!-- Étape 4 : Lien d'évitement -->
     <a class="evitement" href="#contenu">Aller au contenu</a>
 
     <!-- En-tête -->
     <header class="entete">
 
-      <!-- Logo -->
+      <!-- Étape 5 : Logo -->
       <a class="logo" href="index.html">
         <img src="img/logo.png" alt="Althea Systems, accueil">
       </a>
 
-      <!-- Panier -->
+      <!-- Étape 5 : Panier -->
       <a class="panier" href="panier.html">
         Panier
         <span class="visually-hidden">(4 articles)</span>
       </a>
 
-      <!-- Bouton du menu -->
+      <!-- Étape 6 : Bouton du menu -->
       <button class="menu-bouton"
               type="button"
               aria-expanded="true"
@@ -46,37 +46,48 @@
         Menu
       </button>
 
-      <!-- Barre de recherche -->
+      <!-- Étape 6 : Barre de recherche -->
       <form class="recherche" role="search" action="recherche.html">
+
         <label for="q">Rechercher un produit</label>
+
         <input id="q" name="q" type="search">
+
         <button type="submit">Rechercher</button>
+
       </form>
 
-      <!-- Menu de navigation -->
+      <!-- Étape 7 : Menu de navigation -->
       <nav id="menu-principal"
            class="menu"
            aria-label="Menu principal">
 
         <ul class="liste-reset">
+
           <li>
             <a href="index.html" aria-current="page">Accueil</a>
           </li>
+
           <li>
             <a href="catalogue.html">Catalogue</a>
           </li>
+
           <li>
             <a href="compte.html">Mon compte</a>
           </li>
+
           <li>
             <a href="cgu.html">CGU</a>
           </li>
+
           <li>
             <a href="mentions-legales.html">Mentions légales</a>
           </li>
+
           <li>
             <a href="contact.html">Contact</a>
           </li>
+
         </ul>
 
       </nav>
@@ -85,28 +96,277 @@
 
     <!-- Contenu principal -->
     <main id="contenu">
+
+      <!-- Étape 9 : Titre principal -->
+      <h1>Althea Systems : votre partenaire de confiance pour des équipements médicaux de qualité, au service de votre santé.</h1>
+
+      <!-- Étape 10 : Carrousel -->
+      <section class="carrousel" aria-label="À la une">
+
+        <ul class="liste-reset">
+
+          <!-- Slide 1 : Gants médicaux -->
+          <li class="slide">
+
+            <img src="img/gants.jpg"
+                 alt="Gants de protection médicale"
+                 width="720"
+                 height="405">
+
+            <p>Découvrez notre gamme de gants médicaux pour une protection optimale au quotidien.</p>
+
+            <a href="catalogue.html">Découvrir nos gants médicaux</a>
+
+          </li>
+
+          <!-- Slide 2 : Pansements -->
+          <li class="slide">
+
+            <img src="img/pansements.jpg"
+                 alt="Pansements médicaux"
+                 width="720"
+                 height="405"
+                 loading="lazy">
+
+            <p>Protégez et soignez efficacement les blessures avec notre sélection de pansements.</p>
+
+            <a href="catalogue.html">Découvrir nos pansements</a>
+
+          </li>
+
+          <!-- Slide 3 : Tensiomètre -->
+          <li class="slide">
+
+            <img src="img/tensiometre_bras.jpg"
+                 alt="Tensiomètre de bras"
+                 width="720"
+                 height="405"
+                 loading="lazy">
+
+            <p>Surveillez votre tension artérielle facilement grâce à nos tensiomètres.</p>
+
+            <a href="produit.html">Découvrir notre tensiomètre</a>
+
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- Étape 11 : Texte de présentation -->
+      <p class="texte-fixe">
+        Althea Systems propose depuis sa création une sélection
+        d'équipements médicaux destinés aux professionnels de santé.
+        Nous nous engageons à privilégier des produits fiables
+        et de qualité pour répondre à leurs besoins.
+      </p>
+
+      <!-- Étape 12 : Les catégories -->
+      <section class="categories"
+               aria-labelledby="titre-categories">
+
+        <h2 id="titre-categories">Nos catégories</h2>
+
+        <ul class="liste-reset">
+
+          <!-- Catégorie 1 : Diagnostic -->
+          <li>
+            <a href="catalogue.html">
+
+              <img src="img/tensiometre_bras.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              Diagnostic
+
+            </a>
+          </li>
+
+          <!-- Catégorie 2 : Soins -->
+          <li>
+            <a href="catalogue.html">
+
+              <img src="img/pansements.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              Soins
+
+            </a>
+          </li>
+
+          <!-- Catégorie 3 : Mobilier -->
+          <li>
+            <a href="catalogue.html">
+
+              <img src="img/logo.png"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              Mobilier
+
+            </a>
+          </li>
+
+          <!-- Catégorie 4 : Consommables -->
+          <li>
+            <a href="catalogue.html">
+
+              <img src="img/gants.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              Consommables
+
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- Étape 13 : Les Top Produits -->
+      <section class="top-produits"
+               aria-labelledby="titre-top-produits">
+
+        <h2 id="titre-top-produits">Les Top Produits du moment</h2>
+
+        <ul class="liste-reset">
+
+          <!-- Produit 1 : Gants médicaux -->
+          <li>
+            <article class="produit">
+
+              <img src="img/gants.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              <h3>
+                <a href="produit.html">Gants médicaux</a>
+              </h3>
+
+              <p class="prix">
+                <data value="9.90">9,90 €</data>
+              </p>
+
+              <p class="stock">En stock</p>
+
+            </article>
+          </li>
+
+          <!-- Produit 2 : Pansements stériles -->
+          <li>
+            <article class="produit">
+
+              <img src="img/pansements.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              <h3>
+                <a href="produit.html">Pansements stériles</a>
+              </h3>
+
+              <p class="prix">
+                <data value="5.90">5,90 €</data>
+              </p>
+
+              <p class="stock">En stock</p>
+
+            </article>
+          </li>
+
+          <!-- Produit 3 : Tensiomètre en rupture de stock -->
+          <li>
+            <article class="produit">
+
+              <img src="img/tensiometre_bras.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              <h3>
+                <a href="produit.html">Tensiomètre de bras</a>
+              </h3>
+
+              <p class="prix">
+                <data value="49.90">49,90 €</data>
+              </p>
+
+              <p class="stock stock-rupture">
+                En rupture de stock
+              </p>
+
+            </article>
+          </li>
+
+          <!-- Produit 4 : Gants d'examen en nitrile -->
+          <li>
+            <article class="produit">
+
+              <img src="img/gants.jpg"
+                   alt=""
+                   width="400"
+                   height="300"
+                   loading="lazy">
+
+              <h3>
+                <a href="produit.html">Gants d'examen en nitrile</a>
+              </h3>
+
+              <p class="prix">
+                <data value="12.90">12,90 €</data>
+              </p>
+
+              <p class="stock">En stock</p>
+
+            </article>
+          </li>
+
+        </ul>
+
+      </section>
+
     </main>
 
-    <!-- Pied de page -->
+    <!-- Étape 8 : Pied de page -->
     <footer class="pied">
 
       <!-- Liens du pied de page -->
       <ul class="liste-reset">
+
         <li>
           <a href="cgu.html">CGU</a>
         </li>
+
         <li>
           <a href="mentions-legales.html">Mentions légales</a>
         </li>
+
         <li>
           <a href="contact.html">Contact</a>
         </li>
+
         <li>
           <a href="https://www.linkedin.com/">LinkedIn</a>
         </li>
+
         <li>
           <a href="https://www.instagram.com/">Instagram</a>
         </li>
+
       </ul>
 
       <!-- Copyright -->
