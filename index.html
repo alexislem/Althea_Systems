@@ -1,85 +1,250 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <!-- Encodage et affichage sur téléphone -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Informations de la page -->
-<head>
-  <!-- Encodage et adaptation aux téléphones -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Althea Systems · Matériel médical</title>
+    <meta name="description"
+      content="Découvrez le matériel médical Althea Systems pour équiper votre cabinet.">
+    <meta name="theme-color" content="#005A70">
 
-  <!-- Titre et présentation de la page -->
-  <title>Althea Systems · Matériel médical</title>
-  <meta name="description"
-    content="Découvrez les équipements médicaux Althea Systems pour les cabinets médicaux.">
-
-  <!-- Couleur du navigateur et icône de l’onglet -->
-  <meta name="theme-color" content="#005A70">
-  <link rel="icon" href="img/favicon.svg">
-
-  <!-- Feuilles de style : les variables avant les styles -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
+    <!-- Icône et feuilles de style -->
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
   <body>
-  <!-- Accès direct au contenu au clavier -->
-  <a class="evitement" href="#contenu">Aller au contenu</a>
+    <!-- Accès direct au contenu -->
+    <a class="evitement" href="#contenu">Aller au contenu</a>
 
-  <!-- En-tête commun -->
-  <header class="entete">
-    <!-- Logo et panier -->
-    <a class="logo" href="index.html">
-      <img src="img/logo.svg" alt="Althea Systems, accueil"
-        width="160" height="40">
-    </a>
+    <!-- En-tête commun -->
+    <header class="entete">
+      <!-- Logo -->
+      <a class="logo" href="index.html">
+        <img src="img/Logo.svg"
+          alt="Althea Systems, accueil"
+          width="160" height="40">
+      </a>
 
-    <a class="panier" href="panier.html">
-      Panier <span class="visually-hidden">(2 articles)</span>
-    </a>
+      <!-- Panier : nombre d’articles simulé -->
+      <a class="panier" href="panier.html">
+        Panier
+        <span class="visually-hidden">(2 articles)</span>
+      </a>
 
-    <!-- Menu visible pour cette première version -->
-    <button class="menu-bouton" type="button"
-      aria-expanded="true" aria-controls="menu-principal">
-      Menu
-    </button>
+      <!-- Bouton du menu, ouvert pour cette version HTML -->
+      <button class="menu-bouton" type="button"
+        aria-expanded="true" aria-controls="menu-principal">
+        Menu
+      </button>
 
-    <!-- Recherche de produits -->
-    <form class="recherche" role="search" action="recherche.html">
-      <label for="q">Rechercher un produit</label>
-      <input id="q" name="q" type="search">
-      <button type="submit">Rechercher</button>
-    </form>
+      <!-- Recherche -->
+      <form class="recherche" role="search" action="recherche.html">
+        <label for="q">Rechercher un produit</label>
+        <input id="q" name="q" type="search">
+        <button type="submit">Rechercher</button>
+      </form>
 
-    <!-- Navigation principale -->
-    <nav id="menu-principal" class="menu" aria-label="Menu principal">
+      <!-- Navigation principale -->
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul class="liste-reset">
+          <li>
+            <a href="index.html" aria-current="page">Accueil</a>
+          </li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="compte.html">Mon compte</a></li>
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu de l’accueil -->
+    <main id="contenu">
+      <!-- Étape 9 : titre principal -->
+      <h1>Des équipements médicaux pour votre cabinet</h1>
+
+      <!-- Étape 10 : carrousel de trois slides -->
+      <section class="carrousel" aria-label="À la une">
+        <ul class="liste-reset">
+          <li class="slide">
+            <img src="img/diagnostic.jpg"
+              alt="Équipements de diagnostic médical">
+            <h2>Équipez votre cabinet</h2>
+            <a href="catalogue.html">Découvrir le catalogue</a>
+          </li>
+
+          <li class="slide">
+            <img src="img/tensiometre.jpg"
+              alt="Tensiomètre de bras OMRON M2 Basic">
+            <h2>Découvrez notre tensiomètre</h2>
+            <a href="produit.html">Voir le tensiomètre</a>
+          </li>
+
+          <li class="slide">
+            <img src="img/materiel-medical.jpg"
+              alt="Sélection de matériel médical">
+            <h2>Découvrez notre sélection</h2>
+            <a href="#top-produits">Voir les Top Produits</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Étape 11 : présentation -->
+      <p>
+        Althea Systems propose du matériel médical pour équiper
+        les cabinets et accompagner les professionnels de santé.
+        Découvrez nos catégories et notre sélection de produits.
+      </p>
+
+      <!-- Étape 12 : catégories -->
+      <section class="categories" aria-labelledby="titre-categories">
+        <h2 id="titre-categories">Nos catégories</h2>
+
+        <ul class="liste-reset">
+          <li>
+            <a href="catalogue.html?categorie=diagnostic">
+              <img src="img/categorie-diagnostic.jpg" alt="">
+              <span>Diagnostic</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="catalogue.html?categorie=soins">
+              <img src="img/categorie-soins.jpg" alt="">
+              <span>Soins</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="catalogue.html?categorie=hygiene">
+              <img src="img/categorie-hygiene.jpg" alt="">
+              <span>Hygiène</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Étape 13 : cartes produits de démonstration -->
+      <section id="top-produits" class="top-produits"
+        aria-labelledby="titre-top-produits">
+        <h2 id="titre-top-produits">Les Top Produits du moment</h2>
+
+        <ul class="liste-reset">
+          <li>
+            <article class="produit">
+              <img src="img/tensiometre.jpg"
+                alt="Tensiomètre OMRON M2 Basic avec son brassard">
+              <h3>
+                <a href="produit.html">Tensiomètre OMRON M2 Basic</a>
+              </h3>
+              <p class="prix">
+                <data value="45.70">45,70 € TTC</data>
+              </p>
+              <p class="stock stock-rupture">En rupture de stock</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="produit">
+              <img src="img/stethoscope.jpg"
+                alt="Stéthoscope médical à double pavillon">
+              <h3>
+                <a href="produit.html?ref=stethoscope">
+                  Stéthoscope double pavillon
+                </a>
+              </h3>
+              <p class="prix">
+                <data value="29.90">29,90 € TTC</data>
+              </p>
+              <p class="stock">En stock</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="produit">
+              <img src="img/thermometre.jpg"
+                alt="Thermomètre numérique">
+              <h3>
+                <a href="produit.html?ref=thermometre">
+                  Thermomètre numérique
+                </a>
+              </h3>
+              <p class="prix">
+                <data value="14.90">14,90 € TTC</data>
+              </p>
+              <p class="stock">En stock</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="produit">
+              <img src="img/oxymetre.jpg"
+                alt="Oxymètre de pouls à placer au doigt">
+              <h3>
+                <a href="produit.html?ref=oxymetre">
+                  Oxymètre de pouls
+                </a>
+              </h3>
+              <p class="prix">
+                <data value="34.90">34,90 € TTC</data>
+              </p>
+              <p class="stock">En stock</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="produit">
+              <img src="img/otoscope.jpg"
+                alt="Otoscope médical portatif">
+              <h3>
+                <a href="produit.html?ref=otoscope">
+                  Otoscope portatif
+                </a>
+              </h3>
+              <p class="prix">
+                <data value="79.90">79,90 € TTC</data>
+              </p>
+              <p class="stock">En stock</p>
+            </article>
+          </li>
+
+          <li>
+            <article class="produit">
+              <img src="img/balance.jpg"
+                alt="Balance numérique médicale">
+              <h3>
+                <a href="produit.html?ref=balance">
+                  Balance numérique
+                </a>
+              </h3>
+              <p class="prix">
+                <data value="49.90">49,90 € TTC</data>
+              </p>
+              <p class="stock">En stock</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Pied de page commun -->
+    <footer class="pied">
       <ul class="liste-reset">
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
-        <li><a href="compte.html">Mon compte</a></li>
         <li><a href="cgu.html">CGU</a></li>
         <li><a href="mentions-legales.html">Mentions légales</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         <li><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <!-- Contenu propre à la page d’accueil -->
-  <main id="contenu">
-    <!-- À compléter dans la partie B -->
-  </main>
-
-  <!-- Pied de page commun -->
-  <footer class="pied">
-    <ul class="liste-reset">
-      <li><a href="cgu.html">CGU</a></li>
-      <li><a href="mentions-legales.html">Mentions légales</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/">Instagram</a></li>
-    </ul>
-    <p>© 2026 Althea Systems</p>
-  </footer>
-</body>
+      <p>© 2026 Althea Systems</p>
+    </footer>
+  </body>
 </html>
