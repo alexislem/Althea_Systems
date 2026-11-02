@@ -333,3 +333,47 @@ Il s’agit d’une situation simulée pour l’exercice.
 - Garder les informations du produit consultables.
 
 
+## 4. Les morceaux qui reviennent
+
+### Les éléments communs aux deux pages
+
+- En-tête : classe entete.
+- Logo : classe logo.
+- Panier : classe panier.
+- Bouton Menu : classe menu-bouton.
+- Formulaire de recherche : classe recherche.
+- Navigation : classe menu.
+- Pied de page : classe pied.
+
+### Les cartes produits
+
+Les cartes des « Top Produits » sur l’accueil et des
+« Produits similaires » sur la page produit utilisent
+la même structure et les mêmes classes :
+
+- Zone regroupant les cartes : top-produits.
+- Carte d’un produit : produit.
+- Prix dans une carte : prix.
+- Disponibilité : stock.
+- Produit épuisé : stock-rupture, en complément de stock.
+
+Cela permet de leur donner la même apparence avec le CSS.
+
+### Les éléments propres à l’accueil
+
+- Zone du carrousel : carrousel.
+- Une partie du carrousel : slide.
+- Liste des catégories : categories.
+
+### Les éléments propres à la page produit
+
+- Fil d’Ariane : ariane.
+- Fiche détaillée du produit : fiche.
+- Formulaire d’achat : achat.
+- Bouton d’achat : btn.
+- Caractéristiques techniques : caracteristiques.
+
+### Règle à respecter
+
+Un même composant garde le même nom de classe
+sur toutes les pages.
