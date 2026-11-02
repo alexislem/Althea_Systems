@@ -11,6 +11,15 @@
 - Accueil : 96/100 en accessibilité.
 - Page produit : 96/100 en accessibilité.
 
+## Scores Lighthouse après CSS
+
+- Accueil : 100/100 en accessibilité.
+- Page produit : 100/100 en accessibilité.
+
+## Affichage après CSS
+
+- Accueil et produit vérifiés à 360 px : aucun débordement horizontal constaté.
+
 ## Problèmes et corrections
 
 | Page | Test | Problème | Correction prévue | Re-testé |
@@ -24,3 +33,4 @@
 - Ajouter les images manquantes sur les deux pages.
 - Refaire les tests après application du CSS.
 - Vérifier les deux pages au validateur HTML W3C.
+
