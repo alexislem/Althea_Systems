@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Le header est l'en-tête de la page,
+       le main est le contenu principal,
+       et le footer est le pied de page. -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Althea</title>
+
+    <meta name="description" content="Althea est un site web qui propose de la vente de produits médicaux pour professionnels.">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+  </head>
+
+  <body>
+    <!-- Lien d'évitement -->
+    <a class="evitement" href="#contenu">Aller au contenu</a>
+
+    <!-- En-tête -->
+    <header class="entete">
+
+      <!-- Logo -->
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="Althea Systems, accueil">
+      </a>
+
+      <!-- Panier -->
+      <a class="panier" href="panier.html">
+        Panier
+        <span class="visually-hidden">(4 articles)</span>
+      </a>
+
+      <!-- Bouton du menu -->
+      <button class="menu-bouton"
+              type="button"
+              aria-expanded="true"
+              aria-controls="menu-principal">
+        Menu
+      </button>
+
+      <!-- Barre de recherche -->
+      <form class="recherche" role="search" action="recherche.html">
+        <label for="q">Rechercher un produit</label>
+        <input id="q" name="q" type="search">
+        <button type="submit">Rechercher</button>
+      </form>
+
+      <!-- Menu de navigation -->
+      <nav id="menu-principal"
+           class="menu"
+           aria-label="Menu principal">
+
+        <ul class="liste-reset">
+          <li>
+            <a href="index.html" aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="catalogue.html">Catalogue</a>
+          </li>
+          <li>
+            <a href="compte.html">Mon compte</a>
+          </li>
+          <li>
+            <a href="cgu.html">CGU</a>
+          </li>
+          <li>
+            <a href="mentions-legales.html">Mentions légales</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="contenu">
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="pied">
+
+      <!-- Liens du pied de page -->
+      <ul class="liste-reset">
+        <li>
+          <a href="cgu.html">CGU</a>
+        </li>
+        <li>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </li>
+      </ul>
+
+      <!-- Copyright -->
+      <p>© 2026 Althea Systems</p>
+
+    </footer>
+
+  </body>
+</html>
