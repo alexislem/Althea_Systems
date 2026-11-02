@@ -308,6 +308,21 @@ Sur téléphone, les informations apparaissent les unes sous les autres.
    HTML : section, h2, ul, li et article.
    Classes : top-produits et produit.
 
+### Produit choisi pour le TP
+
+- Nom : Tensiomètre de bras OMRON M2 Basic.
+- Prix de référence pour l’exercice : 45,70 € TTC.
+
+Caractéristiques techniques :
+- Tour de bras : de 22 à 32 cm.
+- Mémoire : dernière mesure enregistrée.
+- Alimentation : 4 piles AA de 1,5 V.
+- Poids de l’appareil : environ 250 g sans piles.
+
+Pour travailler le cas demandé dans le TP,
+nous présenterons ce produit comme étant en rupture de stock.
+Il s’agit d’une situation simulée pour l’exercice.
+
 ### Si le produit est épuisé
 
 - Écrire clairement « En rupture de stock ».
