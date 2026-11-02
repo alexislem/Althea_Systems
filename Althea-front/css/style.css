@@ -1,0 +1,519 @@
+
+/* ==========================================
+   Étape 27 : Reset CSS - Althea Systems
+   ========================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, dl, dd {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button {
+  font: inherit;
+}
+
+
+/* ==========================================
+   Étape 28 : La base CSS
+   ========================================== */
+
+body {
+  font-family: var(--police);
+  font-size: var(--taille-texte);
+  line-height: 1.5;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+}
+
+h1 {
+  font-size: var(--taille-h1);
+}
+
+h2 {
+  font-size: var(--taille-h2);
+}
+
+h3 {
+  font-size: var(--taille-moyenne);
+}
+
+p {
+  max-width: 65ch;
+}
+
+a {
+  color: var(--couleur-primaire);
+}
+
+main {
+  padding: var(--espace);
+}
+
+
+/* ==========================================
+   Étape 29 : Accessibilité CSS
+   ========================================== */
+
+:focus-visible {
+  outline: 3px solid var(--couleur-primaire);
+  outline-offset: 3px;
+}
+
+/* Lien d'évitement */
+.evitement {
+  position: absolute;
+  top: -100px;
+  left: var(--espace);
+  background: var(--couleur-surface);
+  padding: var(--espace);
+  z-index: 10;
+}
+
+.evitement:focus {
+  top: var(--espace);
+}
+
+/* Texte caché mais accessible aux lecteurs d'écran */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   Étape 30 : Les composants communs
+   ========================================== */
+
+/* Listes sans puces */
+.liste-reset {
+  list-style: none;
+  padding: 0;
+}
+
+/* Boutons */
+.btn {
+  min-height: var(--cible);
+  background-color: var(--couleur-primaire);
+  color: var(--couleur-surface);
+  border: 2px solid transparent;
+  border-radius: var(--arrondi);
+  padding: 0 var(--espace);
+  cursor: pointer;
+}
+
+/* Survol des boutons actifs */
+.btn:hover:not(:disabled) {
+  background-color: var(--couleur-primaire-fonce);
+}
+
+/* Boutons désactivés */
+.btn:disabled {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte-discret);
+  border: 2px dashed var(--couleur-texte-discret);
+  cursor: not-allowed;
+}
+
+/* Rupture de stock */
+.stock-rupture {
+  color: var(--couleur-alerte);
+  font-weight: bold;
+}
+
+
+/* ==========================================
+   Étape 31 : L'en-tête et le pied de page
+   ========================================== */
+
+/* En-tête */
+.entete {
+  background-color: var(--couleur-surface);
+  border-bottom: 2px solid var(--couleur-primaire);
+  padding: var(--espace);
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Panier */
+.panier {
+  position: relative;
+  display: inline-block;
+  margin-right: var(--espace);
+}
+
+/* Petit point rouge du panier */
+.panier::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--couleur-alerte);
+}
+
+/* Bouton Menu */
+.menu-bouton {
+  min-height: var(--cible);
+  padding: 0 var(--espace);
+  background-color: var(--couleur-surface);
+  color: var(--couleur-primaire);
+  border: 2px solid var(--couleur-primaire);
+  border-radius: var(--arrondi);
+  cursor: pointer;
+}
+
+/* Champ de recherche */
+.recherche input {
+  min-height: var(--cible);
+  max-width: 100%;
+  padding: 0 var(--espace);
+  border: 1px solid var(--couleur-texte-discret);
+  border-radius: var(--arrondi);
+}
+
+/* Bouton de recherche */
+.recherche button {
+  min-height: var(--cible);
+  padding: 0 var(--espace);
+  background-color: var(--couleur-primaire);
+  color: var(--couleur-surface);
+  border: none;
+  border-radius: var(--arrondi);
+  cursor: pointer;
+}
+
+.recherche button:hover {
+  background-color: var(--couleur-primaire-fonce);
+}
+
+/* Menu de navigation */
+.menu a {
+  display: block;
+  min-height: var(--cible);
+  padding: 0.5rem;
+}
+
+/* Pied de page masqué sur téléphone */
+.pied {
+  display: none;
+}
+
+
+/* ==========================================
+   Étape 32 : Les pages
+   ========================================== */
+
+/* ------------------------------------------
+   A. Styles communs aux sections
+   ------------------------------------------ */
+
+/* Espacement entre les sections */
+main section {
+  margin-bottom: var(--espace-grand);
+}
+
+/* Espacement sous les titres de section */
+main h2 {
+  margin-bottom: var(--espace);
+}
+
+/* ------------------------------------------
+   B. Page d'accueil - Carrousel
+   ------------------------------------------ */
+
+/* Images du carrousel au format 16/9 */
+.carrousel img,
+.carousel img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--arrondi);
+}
+
+/* ------------------------------------------
+   C. Cartes produits
+   ------------------------------------------ */
+
+/* Liste des produits sous forme de grille */
+.top-produits > ul {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 220px), 1fr)
+  );
+  gap: var(--espace);
+}
+
+/* Apparence d'une carte produit */
+.produit {
+  padding: var(--espace);
+  background-color: var(--couleur-surface);
+  border-radius: var(--arrondi);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Images des cartes au format 4/3 */
+.produit img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--arrondi);
+}
+
+/* Prix des produits en gras */
+.produit .prix {
+  font-weight: bold;
+  font-size: var(--taille-moyenne);
+}
+
+/* Image grisée si le produit est en rupture */
+.produit:has(.stock-rupture) img {
+  filter: grayscale(1);
+}
+
+/* ------------------------------------------
+   D. Page produit - Fil d'Ariane
+   ------------------------------------------ */
+
+/* Espacement sous le fil d'Ariane */
+.ariane {
+  margin-bottom: var(--espace-grand);
+}
+
+/* Éléments du fil d'Ariane sur une ligne */
+.ariane li {
+  display: inline;
+}
+
+/* Séparateur entre les éléments */
+.ariane li + li::before {
+  content: " › ";
+  color: var(--couleur-texte-discret);
+}
+
+/* Mise en évidence de la page actuelle */
+.ariane [aria-current="page"] {
+  font-weight: bold;
+  color: var(--couleur-texte);
+}
+
+/* ------------------------------------------
+   E. Page produit - Fiche
+   ------------------------------------------ */
+
+/* Fiche produit principale */
+.fiche {
+  padding: var(--espace);
+  background-color: var(--couleur-surface);
+  border-radius: var(--arrondi);
+  margin-bottom: var(--espace-grand);
+}
+
+/* Titre du produit */
+.fiche h1 {
+  margin-bottom: var(--espace);
+}
+
+/* Organisation des photos du produit */
+.illustrations ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--espace);
+}
+
+/* Première photo plus grande */
+.illustrations li:first-child {
+  grid-column: 1 / -1;
+}
+
+/* Photos sans déformation */
+.illustrations img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--arrondi);
+}
+
+/* Description du produit */
+.description {
+  margin-bottom: var(--espace);
+}
+
+/* Grand prix de la fiche produit */
+.prix-fiche {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--couleur-primaire-fonce);
+  margin-bottom: var(--espace);
+}
+
+/* Disponibilité du produit */
+.fiche .stock {
+  margin-bottom: var(--espace);
+}
+
+/* ------------------------------------------
+   F. Page produit - Formulaire d'achat
+   ------------------------------------------ */
+
+/* Organisation du formulaire */
+.achat {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: var(--espace-grand);
+}
+
+/* Champ de quantité */
+.achat input {
+  min-height: var(--cible);
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--couleur-texte-discret);
+  border-radius: var(--arrondi);
+}
+
+/* Bouton d'achat sur toute la largeur */
+.achat .btn {
+  width: 100%;
+}
+
+/* ------------------------------------------
+   G. Page produit - Caractéristiques
+   ------------------------------------------ */
+
+/* Organisation des caractéristiques */
+.caracteristiques dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* Noms des caractéristiques en gras */
+.caracteristiques dt {
+  font-weight: bold;
+}
+
+/* Valeurs des caractéristiques */
+.caracteristiques dd {
+  color: var(--couleur-texte-discret);
+}
+
+/* ------------------------------------------
+   H. Adaptation aux écrans plus larges
+   ------------------------------------------ */
+
+@media (min-width: 768px) {
+
+  /* Contenu centré sur ordinateur */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espace-grand);
+  }
+
+  /* Espacement plus confortable dans les fiches */
+  .fiche {
+    padding: var(--espace-grand);
+  }
+
+  /* Pied de page réaffiché sur ordinateur */
+  .pied {
+    display: block;
+    background-color: var(--couleur-surface);
+    border-top: 2px solid var(--couleur-primaire);
+    padding: var(--espace-grand);
+  }
+
+  /* Liens du pied de page */
+  .pied ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espace);
+    margin-bottom: var(--espace);
+  }
+}
+
+
+/* Amélioration de l'affichage des catégories */
+
+.categories > ul {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 180px), 1fr)
+  );
+  gap: var(--espace);
+}
+
+.categories li {
+  background-color: var(--couleur-surface);
+  padding: var(--espace);
+  border-radius: var(--arrondi);
+}
+
+.categories img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Amélioration de l'en-tête sur ordinateur */
+
+@media (min-width: 768px) {
+
+  .entete {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .menu-bouton {
+    display: none;
+  }
+
+  .recherche {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+}

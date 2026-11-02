@@ -1,0 +1,40 @@
+
+
+:root {
+
+  /* Couleurs principales */
+  --couleur-primaire: #075985;        /* Bleu Althea : contraste 7,56:1 sur blanc */
+  --couleur-primaire-fonce: #0B3B60;  /* Bleu foncé : contraste 11,61:1 sur blanc */
+
+  /* Couleurs des textes */
+  --couleur-texte: #1F2937;          /* Texte principal : contraste 14,68:1 */
+  --couleur-texte-discret: #475569;   /* Texte secondaire : contraste 7,58:1 */
+
+  /* Couleurs des fonds */
+  --couleur-fond: #F8FAFC;           /* Fond général du site */
+  --couleur-surface: #FFFFFF;        /* Fond des cartes et sections */
+
+  /* Couleur d'alerte */
+  --couleur-alerte: #B91C1C;         /* Rouge rupture de stock : contraste 6,47:1 */
+
+  /* Police d'écriture */
+  --police: system-ui, sans-serif;
+
+  /* Tailles de texte */
+  --taille-petite: 0.875rem;
+  --taille-texte: 1rem;
+  --taille-moyenne: 1.125rem;
+  --taille-h2: 1.5rem;
+  --taille-h1: 1.75rem;
+
+  /* Espacements */
+  --espace: 1rem;
+  --espace-grand: 2rem;
+
+  /* Arrondi des bordures */
+  --arrondi: 8px;
+
+  /* Taille minimale des éléments cliquables */
+  --cible: 44px;
+
+}
