@@ -249,3 +249,70 @@ avec data pour la valeur du prix.
 Classes prévues : top-produits, produit, prix et stock.
 Pour un produit épuisé : ajouter stock-rupture
 et écrire clairement « En rupture de stock ».
+
+## 3. Page Produit (produit.html)
+
+Cette page permet de découvrir un produit et de l’ajouter au panier.
+Sur téléphone, les informations apparaissent les unes sous les autres.
+
+### Les éléments de la page, dans l’ordre
+
+1. Le fil d’Ariane
+   Il indique où se trouve le produit dans le catalogue.
+   Exemple : Accueil > Catégorie > Nom du produit.
+   HTML : nav, ol, li et a.
+   Classe : ariane.
+
+2. Le nom du produit
+   C’est le titre principal de la page.
+   HTML : h1, un seul sur la page.
+
+3. Les photos du produit
+   Trois photos montrent le produit sous différents angles.
+   Chaque image possède un texte alternatif qui décrit la vue.
+   HTML : section, ul, li et img.
+   Classe : illustrations.
+
+4. La description
+   Un paragraphe explique à quoi sert le produit
+   et présente ses principales fonctionnalités.
+   HTML : p.
+   Classe : description.
+
+5. Le prix
+   Le prix est affiché clairement en euros.
+   HTML : p contenant data.
+   Classe : prix-fiche.
+
+6. La disponibilité
+   Un texte indique « En stock » ou « En rupture de stock ».
+   HTML : p.
+   Classe : stock.
+   En cas de rupture, ajouter la classe stock-rupture.
+
+7. L’achat
+   Un champ permet de choisir une quantité de 1 à 10.
+   Un bouton « Ajouter au panier » permet de commander.
+   HTML : form, label, input et button.
+   Classes : achat et btn.
+
+8. Les caractéristiques techniques
+   Au moins quatre informations décrivent le produit.
+   Chaque information comprend un nom et une valeur.
+   HTML : section, h2, dl, dt et dd.
+   Classe : caracteristiques.
+
+9. Les produits similaires
+   Six cartes présentent des produits de la même catégorie.
+   Les produits disponibles sont proposés en priorité.
+   HTML : section, h2, ul, li et article.
+   Classes : top-produits et produit.
+
+### Si le produit est épuisé
+
+- Écrire clairement « En rupture de stock ».
+- Ne pas utiliser uniquement une couleur pour signaler la rupture.
+- Désactiver le champ de quantité avec disabled.
+- Désactiver le bouton avec disabled.
+- Remplacer son texte par « En rupture de stock ».
+- Garder les informations du produit consultables.
