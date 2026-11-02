@@ -180,3 +180,72 @@ directement le contenu principal sans parcourir tout le menu.
 - Le panier indique son nombre d’articles en texte.
 - Les liens du pied restent accessibles sur téléphone.
 - « Aller au contenu » est le premier lien de la page.
+
+
+
+## 2. Page Accueil (index.html)
+
+La page d’accueil présente Althea Systems et ses produits.
+Son contenu principal se trouve dans la balise main,
+entre l’en-tête et le pied de page.
+
+### 2.1. Le titre principal
+
+Une phrase présente le site :
+« Des équipements pour prendre soin de votre santé au quotidien ».
+
+HTML : h1.
+Il n’y aura qu’un seul h1 sur la page.
+
+### 2.2. Le carrousel
+
+Une zone présente plusieurs mises en avant.
+Chaque slide contient :
+- une image ;
+- un texte court ;
+- un lien vers la page concernée.
+
+HTML : section pour la zone, ul pour la liste
+et li pour chaque slide.
+Classes prévues : carrousel et slide.
+
+Le carrousel contient 3 slides.
+Chaque slide présente une image, un texte
+et un lien promotionnel.
+
+### 2.3. La présentation d’Althea Systems
+
+Un court texte explique l’activité de l’entreprise
+et ce qu’elle propose à ses clients.
+
+HTML : p pour chaque paragraphe.
+
+### 2.4. Les catégories de produits
+
+Une liste permet de découvrir les différentes
+catégories du catalogue.
+
+Chaque catégorie contient une image et un nom,
+avec un lien vers la catégorie.
+
+HTML : ul, li, a et img.
+Classe prévue : categories.
+
+### 2.5. Les Top Produits
+
+Cette zone présente une sélection de produits.
+
+Chaque carte contient :
+- une image du produit ;
+- son nom avec un lien vers sa fiche ;
+- son prix ;
+- sa disponibilité.
+
+HTML : section pour la zone, h2 pour son titre,
+ul et li pour la liste, article pour chaque carte.
+Dans une carte : img, h3, a et p,
+avec data pour la valeur du prix.
+
+Classes prévues : top-produits, produit, prix et stock.
+Pour un produit épuisé : ajouter stock-rupture
+et écrire clairement « En rupture de stock ».
