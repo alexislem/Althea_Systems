@@ -9,17 +9,18 @@
 ## Scores Lighthouse avant CSS
 
 - Accueil : 96/100 en accessibilité.
-- Page produit : test à effectuer.
+- Page produit : 96/100 en accessibilité.
 
 ## Problèmes et corrections
 
 | Page | Test | Problème | Correction prévue | Re-testé |
 |---|---|---|---|---|
 | Accueil | Lighthouse | Zones cliquables trop petites ou rapprochées | Agrandir les zones cliquables et ajouter des espacements en CSS | Non |
+| Produit | Lighthouse | Zones cliquables trop petites ou rapprochées | Agrandir les zones cliquables et ajouter des espacements en CSS | Non |
+| Produit | Lighthouse — Best Practices | Images introuvables : erreurs 404 | Ajouter les images et vérifier leurs chemins | Non |
 
 ## Éléments restant à vérifier
 
-- Mesurer le score Lighthouse de la page produit.
-- Ajouter les images manquantes.
+- Ajouter les images manquantes sur les deux pages.
 - Refaire les tests après application du CSS.
 - Vérifier les deux pages au validateur HTML W3C.
