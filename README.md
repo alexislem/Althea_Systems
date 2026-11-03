@@ -112,9 +112,9 @@ Les principaux formats étudiés sont :
 
 | Page | 360 px | 768 px | 1 280 px |
 |---|---|---|---|
-| Accueil | ![Accueil 360](Althea-front/captures/accueil_360.png) | ![Accueil 768](Althea-front/captures/accueil_768.png) | ![Accueil 1280](Althea-front/captures/accueil_1280.png) |
-| Catégorie | ![Catégorie 360](Althea-front/captures/categorie_360.png) | ![Catégorie 768](Althea-front/captures/categorie_768.png) | ![Catégorie 1280](Althea-front/captures/categorie_1280.png) |
-| Produit | ![Produit 360](Althea-front/captures/produit_360.png) | ![Produit 768](Althea-front/captures/produit_768.png) | ![Produit 1280](Althea-front/captures/produit_1280.png) |
+| Accueil | ![Accueil 360](Althea-front/captures/Accueil_360.png) | ![Accueil 768](Althea-front/captures/Accueil_768.png) | ![Accueil 1280](Althea-front/captures/Accueil_1280.png) |
+| Catégorie | ![Catégorie 360](Althea-front/captures/Categorie_360.png) | ![Catégorie 768](Althea-front/captures/Categorie_768.png) | ![Catégorie 1280](Althea-front/captures/Categorie_1280.png) |
+| Produit | ![Produit 360](Althea-front/captures/Produit_360.png) | ![Produit 768](Althea-front/captures/Produit_768.png) | ![Produit 1280](Althea-front/captures/Produit_1280.png) |
 
 ### Mode sombre
 
