@@ -3,6 +3,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+   <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+
+  <meta name="referrer"
+        content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Tensiomètre électronique de bras - Althea Systems</title>
@@ -50,7 +55,7 @@
       Menu
     </button>
 
-    <form class="recherche" role="search" action="recherche.html">
+    <form class="recherche" role="search" action="recherche.html" method="get">
 
       <label for="q">Rechercher un produit</label>
 
@@ -280,8 +285,9 @@
     le coude, sans trop serrer le mètre ruban.
   </p>
 
-  <section class="defile-tableau"
+  <div class="defile-tableau"
            tabindex="0"
+           role="region"
            aria-labelledby="titre-tailles">
 
     <table class="formats">
@@ -330,7 +336,7 @@
 
     </table>
 
-  </section>
+  </div>
 
 </section>
 
@@ -509,12 +515,25 @@
 
   <nav aria-label="Réseaux sociaux">
     <ul class="liste-reset">
-      <li>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/">Instagram</a>
-      </li>
+      
+<li>
+  <a href="https://www.linkedin.com/"
+     target="_blank"
+     rel="noopener noreferrer">
+    LinkedIn
+    <span class="visually-hidden">(nouvel onglet)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://www.instagram.com/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Instagram
+    <span class="visually-hidden">(nouvel onglet)</span>
+  </a>
+</li>
+
     </ul>
   </nav>
 

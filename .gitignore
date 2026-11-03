@@ -1,0 +1,13 @@
+# Variables d'environnement et secrets
+.env
+*.key
+
+# Fichiers propres aux systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# Configuration locale de VS Code
+.vscode/
+
+# Dépendances installées localement
+node_modules/

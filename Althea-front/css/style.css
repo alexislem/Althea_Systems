@@ -1423,3 +1423,57 @@ main > h1 {
 .formulaire button:hover {
   background-color: var(--couleur-primaire-fonce);
 }
+
+
+/* Texte blanc conservé sur les photographies */
+.bandeau h1,
+.slide-texte,
+.slide-texte a {
+  color: var(--couleur-sur-image);
+}
+
+/* Texte adapté à la couleur des boutons */
+.btn,
+.recherche button,
+.facettes button,
+.formulaire button,
+.pagination a[aria-current="page"],
+.pagination a:hover:not([aria-current="page"]),
+.formats thead {
+  color: var(--couleur-bouton-texte);
+}
+
+/* Champs de recherche et de quantité adaptés au thème */
+.recherche input,
+.achat input {
+  background-color: var(--couleur-surface);
+  color: var(--couleur-texte);
+}
+
+/* Fond blanc pour conserver la lisibilité du logo */
+@media (prefers-color-scheme: dark) {
+  .entete .logo {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem;
+    background-color: #FFFFFF;
+    border-radius: var(--arrondi);
+  }
+}
+
+/* Impression toujours en mode clair */
+@media print {
+  :root {
+    color-scheme: light;
+
+    --couleur-primaire: #075985;
+    --couleur-primaire-fonce: #0B3B60;
+    --couleur-texte: #1F2937;
+    --couleur-texte-discret: #475569;
+    --couleur-fond: #F8FAFC;
+    --couleur-surface: #FFFFFF;
+    --couleur-alerte: #B91C1C;
+    --couleur-bouton-texte: #FFFFFF;
+    --couleur-sur-image: #FFFFFF;
+  }
+}
