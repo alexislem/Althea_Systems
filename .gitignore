@@ -1,0 +1,9 @@
+# Fichiers exclus des prochains ajouts Git
+.env
+.env.*
+!.env.example
+*.key
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/

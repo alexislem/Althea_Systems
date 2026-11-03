@@ -1,0 +1,159 @@
+{
+  "version": "26.11.3",
+  "messages": [
+    {
+      "type": "info",
+      "lastLine": 170,
+      "firstLine": 168,
+      "lastColumn": 46,
+      "firstColumn": 13,
+      "subType": "warning",
+      "message": "Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections, or else use a “div” element instead for any cases where no heading is needed.",
+      "extract": "          <section class=\"defile-tableau\" tabindex=\"0\"\n              aria-labelledby=\"legende-tailles\"\n              aria-describedby=\"aide-tailles\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 139
+    },
+    {
+      "type": "info",
+      "lastLine": 23,
+      "lastColumn": 52,
+      "firstColumn": 5,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): external stylesheet “css/variables.css” blocked by “style-src” directive.",
+      "extract": "svg\">\n    <link rel=\"stylesheet\" href=\"css/variables.css\">\n    <",
+      "hiliteStart": 10,
+      "hiliteLength": 48
+    },
+    {
+      "type": "info",
+      "lastLine": 24,
+      "lastColumn": 48,
+      "firstColumn": 5,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): external stylesheet “css/style.css” blocked by “style-src” directive.",
+      "extract": "css\">\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n  </h",
+      "hiliteStart": 10,
+      "hiliteLength": 44
+    },
+    {
+      "type": "info",
+      "lastLine": 33,
+      "firstLine": 32,
+      "lastColumn": 34,
+      "firstColumn": 9,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/Logo.svg” blocked by “img-src” directive.",
+      "extract": ">\n        <img src=\"img/Logo.svg\" alt=\"Althea Systems, accueil\"\n          width=\"160\" height=\"40\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 88
+    },
+    {
+      "type": "info",
+      "lastLine": 90,
+      "firstLine": 85,
+      "lastColumn": 41,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/tensiometre-face-400.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/tensiometre-face-400.jpg\"\n                srcset=\"img/tensiometre-face-400.jpg 400w,\n                        img/tensiometre-face-800.jpg 800w\"\n                sizes=\"(min-width: 64rem) 50vw, 100vw\"\n                alt=\"Détail du tensiomètre OMRON M2 Basic\"\n                width=\"400\" height=\"300\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 313
+    },
+    {
+      "type": "info",
+      "lastLine": 98,
+      "firstLine": 93,
+      "lastColumn": 41,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/tensiometre-brassard-400.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/tensiometre-brassard-400.jpg\"\n                srcset=\"img/tensiometre-brassard-400.jpg 400w,\n                        img/tensiometre-brassard-800.jpg 800w\"\n                sizes=\"(min-width: 64rem) 50vw, 100vw\"\n                alt=\"Brassard du tensiomètre OMRON M2 Basic\"\n                width=\"400\" height=\"300\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 327
+    },
+    {
+      "type": "info",
+      "lastLine": 106,
+      "firstLine": 101,
+      "lastColumn": 41,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/tensiometre-contenu-400.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/tensiometre-contenu-400.jpg\"\n                srcset=\"img/tensiometre-contenu-400.jpg 400w,\n                        img/tensiometre-contenu-800.jpg 800w\"\n                sizes=\"(min-width: 64rem) 50vw, 100vw\"\n                alt=\"OMRON M2 Basic avec ses accessoires\"\n                width=\"400\" height=\"300\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 321
+    },
+    {
+      "type": "info",
+      "lastLine": 222,
+      "firstLine": 221,
+      "lastColumn": 60,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/tensiometre-poignet.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/tensiometre-poignet.jpg\"\n                alt=\"Tensiomètre de poignet\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 99
+    },
+    {
+      "type": "info",
+      "lastLine": 231,
+      "firstLine": 230,
+      "lastColumn": 67,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/stethoscope.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/stethoscope.jpg\"\n                alt=\"Stéthoscope à double pavillon\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 98
+    },
+    {
+      "type": "info",
+      "lastLine": 240,
+      "firstLine": 239,
+      "lastColumn": 59,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/thermometre.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/thermometre.jpg\"\n                alt=\"Thermomètre numérique\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 90
+    },
+    {
+      "type": "info",
+      "lastLine": 249,
+      "firstLine": 248,
+      "lastColumn": 55,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/oxymetre.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/oxymetre.jpg\"\n                alt=\"Oxymètre de pouls\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 83
+    },
+    {
+      "type": "info",
+      "lastLine": 258,
+      "firstLine": 257,
+      "lastColumn": 55,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/otoscope.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/otoscope.jpg\"\n                alt=\"Otoscope portatif\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 83
+    },
+    {
+      "type": "info",
+      "lastLine": 267,
+      "firstLine": 266,
+      "lastColumn": 55,
+      "firstColumn": 15,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/balance.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/balance.jpg\"\n                alt=\"Balance numérique\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 82
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "date": "2026-11-03T14:25:17.087Z",
+  "sizes": [
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    }
+  ],
+  "zoom": [
+    {
+      "page": "index",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    },
+    {
+      "page": "categorie",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    },
+    {
+      "page": "produit",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    },
+    {
+      "page": "recherche",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    },
+    {
+      "page": "connexion",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    },
+    {
+      "page": "inscription",
+      "method": "Viewport CSS 640 × 450 : espace disponible équivalent à 1280 × 900 au zoom navigateur 200 %",
+      "width": 640,
+      "scrollWidth": 640
+    }
+  ],
+  "security": [
+    {
+      "page": "index",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    },
+    {
+      "page": "categorie",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    },
+    {
+      "page": "produit",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    },
+    {
+      "page": "recherche",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    },
+    {
+      "page": "connexion",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    },
+    {
+      "page": "inscription",
+      "events": [
+        {
+          "directive": "style-src-attr",
+          "blocked": "inline"
+        }
+      ],
+      "headingRed": false
+    }
+  ],
+  "responsiveImages": [
+    {
+      "width": 360,
+      "src": "http://127.0.0.1:8766/img/tensiometre-face-400.jpg"
+    },
+    {
+      "width": 1280,
+      "src": "http://127.0.0.1:8766/img/tensiometre-face-800.jpg"
+    }
+  ]
+}

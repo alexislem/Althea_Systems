@@ -1,0 +1,16 @@
+[
+  {
+    "page": "connexion",
+    "before": false,
+    "after": true,
+    "method": "POST",
+    "url": "http://127.0.0.1:8766/connexion.html"
+  },
+  {
+    "page": "inscription",
+    "before": false,
+    "after": true,
+    "method": "POST",
+    "url": "http://127.0.0.1:8766/inscription.html"
+  }
+]

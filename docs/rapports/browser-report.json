@@ -1,0 +1,2031 @@
+{
+  "date": "2026-11-03T14:23:14.000Z",
+  "browser": "156.0.8078.80",
+  "sizes": [
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "missingImages": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingImages": []
+    }
+  ],
+  "axe": [
+    {
+      "page": "index",
+      "mode": "light",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "checks": [
+    {
+      "page": "index",
+      "motion": {
+        "transition": "0s",
+        "scroll": "auto"
+      },
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "UL",
+          "id": "",
+          "text": "Équipez votre cabinet\n              Découvrir le diagno",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Découvrir le diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Voir le tensiomètre",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Voir les Top Produits",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Afficher la slide 1",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Afficher la slide 2",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Afficher la slide 3",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Soins",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Hygiène",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mobilier médical",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Tensiomètre OMRON M2 Basic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Stéthoscope double pavillon",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Thermomètre numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Oxymètre de pouls",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Otoscope portatif",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Balance numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "carousel": {
+        "scrollLeft": 328,
+        "width": 328,
+        "hash": "#une-2"
+      }
+    },
+    {
+      "page": "categorie",
+      "motion": {
+        "transition": "0s",
+        "scroll": "auto"
+      },
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Stéthoscope double pavillon",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Thermomètre numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Oxymètre de pouls",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Otoscope portatif",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Balance numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Tensiomètre OMRON M2 Basic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 1",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 2",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 3",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Suivant",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "page": "produit",
+      "motion": {
+        "transition": "0s",
+        "scroll": "auto"
+      },
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "UL",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "text": "Tailles de brassards — données pédagogiques\n           ",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Tensiomètre de poignet",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Stéthoscope double pavillon",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Thermomètre numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Oxymètre de pouls",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Otoscope portatif",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Balance numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "page": "produit",
+      "selector": ".galerie",
+      "keyboardScroll": {
+        "left": 268,
+        "scrollWidth": 787,
+        "clientWidth": 296
+      }
+    },
+    {
+      "page": "produit",
+      "selector": ".defile-tableau",
+      "keyboardScroll": {
+        "left": 40,
+        "scrollWidth": 608,
+        "clientWidth": 296
+      }
+    },
+    {
+      "print": {
+        "header": "none",
+        "footer": "none",
+        "bodyColor": "rgb(0, 0, 0)",
+        "visibleGalleryImages": 1
+      }
+    },
+    {
+      "page": "recherche",
+      "motion": {
+        "transition": "0s",
+        "scroll": "auto"
+      },
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "f-nom",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "f-caracteristique",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "prix-min",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "prix-max",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "c-diagnostic",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "c-soins",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "c-hygiene",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "c-mobilier",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "disponible",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "SELECT",
+          "id": "tri",
+          "text": "Prix croissant\n              Prix décroissant\n         ",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Stéthoscope double pavillon",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Thermomètre numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Oxymètre de pouls",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Otoscope portatif",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Balance numérique",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Tensiomètre OMRON M2 Basic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 1",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 2",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Page 3",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Suivant",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "page": "connexion",
+      "motion": null,
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "email-connexion",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "mdp-connexion",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mot de passe oublié ?",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Créer un compte",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "forms": {
+        "page": "connexion",
+        "emptyValid": false,
+        "badEmailValid": false,
+        "shortPasswordValid": true,
+        "method": "POST",
+        "url": "http://127.0.0.1:8765/connexion.html",
+        "passwordInURL": false,
+        "bodyHasPassword": true
+      }
+    },
+    {
+      "page": "inscription",
+      "motion": null,
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Aller au contenu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Panier (2 articles)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Menu",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "q",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Rechercher",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Accueil",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Diagnostic",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "S’inscrire",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Mentions légales",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "À propos d’Althea Systems",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Instagram (nouvel onglet)",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Français",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "English",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "العربية",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "prenom",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "nom",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "email-inscription",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "mdp-inscription",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "confirmation",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "id": "cgu",
+          "text": "",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Lire les CGU",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Créer mon compte",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Déjà un compte ? Se connecter",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "visible": true
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "forms": {
+        "page": "inscription",
+        "emptyValid": false,
+        "badEmailValid": false,
+        "shortPasswordValid": false,
+        "method": "POST",
+        "url": "http://127.0.0.1:8765/inscription.html",
+        "passwordInURL": false,
+        "bodyHasPassword": true
+      }
+    }
+  ],
+  "failures": [],
+  "sizesNote": "Mesures finales effectuées après attente du chargement des variantes srcset. Les contrôles clavier et axe proviennent de la première passe."
+}

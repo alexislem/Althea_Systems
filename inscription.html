@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créer un compte · Althea Systems</title>
+    <meta name="description"
+      content="Formulaire d’inscription de la maquette Althea Systems.">
+    <link rel="icon" href="img/Logo.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <a class="evitement" href="#contenu">Aller au contenu</a>
+
+    <header class="entete">
+      <a class="logo" href="index.html">
+        <img src="img/Logo.svg" alt="Althea Systems, accueil"
+          width="160" height="40">
+      </a>
+      <a class="panier" href="panier.html">
+        Panier <span class="visually-hidden">(2 articles)</span>
+      </a>
+      <button class="menu-bouton" type="button"
+        aria-expanded="true" aria-controls="menu-principal">Menu</button>
+      <form class="recherche" role="search"
+        action="recherche.html" method="get">
+        <label for="q">Rechercher un produit</label>
+        <input id="q" name="q" type="search">
+        <button type="submit">Rechercher</button>
+      </form>
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul class="liste-reset">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie.html">Diagnostic</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="inscription.html" aria-current="page">S’inscrire</a></li>
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos d’Althea Systems</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+        <p class="langues">
+          Langue :
+          <a href="inscription.html" lang="fr" hreflang="fr"
+            aria-current="true">Français</a>
+          <a href="en/inscription.html" lang="en" hreflang="en">English</a>
+          <a href="ar/inscription.html" lang="ar" hreflang="ar"
+            dir="rtl">العربية</a>
+        </p>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <h1>Créer un compte</h1>
+      <p class="aide">
+        Maquette sans serveur : l’inscription n’est pas enregistrée.
+        Utilisez des données fictives.
+      </p>
+
+      <form class="formulaire" action="inscription.html" method="post">
+        <p>
+          <label for="prenom">Prénom (obligatoire)</label>
+          <input id="prenom" name="prenom" type="text"
+            autocomplete="given-name" maxlength="50" required
+            aria-describedby="erreur-prenom">
+          <span id="erreur-prenom" class="erreur">
+            Indiquez votre prénom, 50 caractères maximum.
+          </span>
+        </p>
+
+        <p>
+          <label for="nom">Nom (obligatoire)</label>
+          <input id="nom" name="nom" type="text"
+            autocomplete="family-name" maxlength="50" required
+            aria-describedby="erreur-nom">
+          <span id="erreur-nom" class="erreur">
+            Indiquez votre nom, 50 caractères maximum.
+          </span>
+        </p>
+
+        <p>
+          <label for="email-inscription">Adresse e-mail (obligatoire)</label>
+          <input id="email-inscription" name="email" type="email"
+            autocomplete="email" maxlength="254" required
+            aria-describedby="erreur-email">
+          <span id="erreur-email" class="erreur">
+            Écrivez une adresse e-mail valide.
+          </span>
+        </p>
+
+        <p>
+          <label for="mdp-inscription">Mot de passe (obligatoire)</label>
+          <input id="mdp-inscription" name="motDePasse" type="password"
+            autocomplete="new-password" minlength="12" required
+            aria-describedby="aide-mdp erreur-mdp">
+          <span id="aide-mdp" class="aide">
+            Choisissez un mot de passe d’au moins 12 caractères.
+          </span>
+          <span id="erreur-mdp" class="erreur">
+            Saisissez au moins 12 caractères.
+          </span>
+        </p>
+
+        <p>
+          <label for="confirmation">
+            Confirmation du mot de passe (obligatoire)
+          </label>
+          <input id="confirmation" name="confirmation" type="password"
+            autocomplete="new-password" minlength="12" required
+            aria-describedby="aide-confirmation erreur-confirmation">
+          <span id="aide-confirmation" class="aide">
+            Répétez le même mot de passe.
+          </span>
+          <span id="erreur-confirmation" class="erreur">
+            Répétez un mot de passe d’au moins 12 caractères.
+          </span>
+        </p>
+
+        <p class="aide">
+          La comparaison des deux mots de passe sera ajoutée avec
+          JavaScript et devra aussi être faite par le serveur.
+        </p>
+
+        <p class="case">
+          <input id="cgu" name="cgu" type="checkbox" required
+            aria-describedby="erreur-cgu">
+          <label for="cgu">J’accepte les CGU (obligatoire)</label>
+          <a href="cgu.html">Lire les CGU</a>
+          <span id="erreur-cgu" class="erreur">
+            Acceptez les CGU pour continuer.
+          </span>
+        </p>
+
+        <button type="submit">Créer mon compte</button>
+      </form>
+
+      <p><a href="connexion.html">Déjà un compte ? Se connecter</a></p>
+    </main>
+
+    <footer class="pied">
+      <nav aria-label="Informations légales">
+        <ul class="liste-reset">
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Contact">
+        <ul class="liste-reset">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Réseaux sociaux">
+        <ul class="liste-reset">
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Althea Systems</p>
+    </footer>
+  </body>
+</html>

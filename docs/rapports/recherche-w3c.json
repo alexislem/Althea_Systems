@@ -1,0 +1,111 @@
+{
+  "version": "26.11.3",
+  "messages": [
+    {
+      "type": "info",
+      "lastLine": 14,
+      "lastColumn": 52,
+      "firstColumn": 5,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): external stylesheet “css/variables.css” blocked by “style-src” directive.",
+      "extract": "svg\">\n    <link rel=\"stylesheet\" href=\"css/variables.css\">\n    <",
+      "hiliteStart": 10,
+      "hiliteLength": 48
+    },
+    {
+      "type": "info",
+      "lastLine": 15,
+      "lastColumn": 48,
+      "firstColumn": 5,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): external stylesheet “css/style.css” blocked by “style-src” directive.",
+      "extract": "css\">\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n  </h",
+      "hiliteStart": 10,
+      "hiliteLength": 44
+    },
+    {
+      "type": "info",
+      "lastLine": 24,
+      "firstLine": 23,
+      "lastColumn": 34,
+      "firstColumn": 9,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/Logo.svg” blocked by “img-src” directive.",
+      "extract": ">\n        <img src=\"img/Logo.svg\" alt=\"Althea Systems, accueil\"\n          width=\"160\" height=\"40\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 88
+    },
+    {
+      "type": "info",
+      "lastLine": 147,
+      "firstLine": 146,
+      "lastColumn": 69,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/stethoscope.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/stethoscope.jpg\"\n                  alt=\"Stéthoscope à double pavillon\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 100
+    },
+    {
+      "type": "info",
+      "lastLine": 156,
+      "firstLine": 155,
+      "lastColumn": 61,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/thermometre.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/thermometre.jpg\"\n                  alt=\"Thermomètre numérique\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 92
+    },
+    {
+      "type": "info",
+      "lastLine": 165,
+      "firstLine": 164,
+      "lastColumn": 57,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/oxymetre.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/oxymetre.jpg\"\n                  alt=\"Oxymètre de pouls\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 85
+    },
+    {
+      "type": "info",
+      "lastLine": 174,
+      "firstLine": 173,
+      "lastColumn": 57,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/otoscope.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/otoscope.jpg\"\n                  alt=\"Otoscope portatif\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 85
+    },
+    {
+      "type": "info",
+      "lastLine": 183,
+      "firstLine": 182,
+      "lastColumn": 57,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/balance.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/balance.jpg\"\n                  alt=\"Balance numérique\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 84
+    },
+    {
+      "type": "info",
+      "lastLine": 192,
+      "firstLine": 191,
+      "lastColumn": 72,
+      "firstColumn": 17,
+      "subType": "warning",
+      "message": "Resource violates Content Security Policy (meta tag): image “img/tensiometre.jpg” blocked by “img-src” directive.",
+      "extract": "          <img src=\"img/tensiometre.jpg\"\n                  alt=\"OMRON M2 Basic avec son brassard\" loading=\"lazy\">\n     ",
+      "hiliteStart": 10,
+      "hiliteLength": 103
+    }
+  ]
+}

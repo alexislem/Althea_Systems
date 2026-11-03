@@ -1,0 +1,14 @@
+{
+  "cssvalidation" : {
+     "uri"       : "file://localhost/TextArea",
+     "checkedby" : "http://www.w3.org/2005/07/css-validator",
+     "csslevel"  : "css3",
+     "date"      : "2026-11-03T02:22:11Z",
+     "timestamp" : "1793715731012",
+     "validity"  : true,
+     "result"    : {
+		"errorcount"   : 0,
+		"warningcount" : 0
+                   }
+    }
+}

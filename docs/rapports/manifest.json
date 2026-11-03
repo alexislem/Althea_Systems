@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-11-03",
+  "branch": "Branch-Aymen_aitsaid",
+  "files": {
+    "categorie.html": "ca73a11439ea88ef0ae7d0c08c3257bfcfb30a63c667114b9c65cf73eeb18574",
+    "connexion.html": "feed250d1050d03da1e8958a1070269c4678b9e4cf1ccfc5a38f8efc9f6fe861",
+    "index.html": "56a8066b7dd4761398ada2450e07ec6959bd9bce3666a293177641fd92056089",
+    "inscription.html": "0c8b5f69a9ad3927c3082d5358ab4a1f5e9f1b6bb15da7d642656dcea44b4100",
+    "produit.html": "9822058550b303048b598243deb79ce42dd00e638649ecbf8e27fe9309fd0083",
+    "recherche.html": "82bb2feeccc1a7f1d7b20cf3efe917795658927f31ad26c1d892654e7b16f413",
+    "css/style.css": "318960bd7808384d13481ac36d5d0230c10fc6e096ec2c5a1c7376c634e84f30",
+    "css/variables.css": "23b878892161b3425a8d7a6ee740923c708fab9c2eb7fbbb43ff312b911df368",
+    "docs/captures/accueil-1280.png": "6f09e857846383d4abcb313fc4620cebf377b311c86f4d4c25a4ad085ea962cc",
+    "docs/captures/accueil-360.png": "ed59d67d792c9f415e58b6715569f8defce106bb2aad6034c577002fb996314d",
+    "docs/captures/accueil-768.png": "f0367abd59294e297fdd7c5199a281c7d401f35792c6d011d932cac3afd00eda",
+    "docs/captures/accueil-sombre.png": "ade582bf8d314821981fa9b93c0dd35be620d5efeb457578c0158baef857737d",
+    "docs/captures/categorie-1280.png": "2efb1c246c3e1413c38d45fbe1f5d45e0b6891d614435ceed72ae3ba32668bc1",
+    "docs/captures/categorie-360.png": "86d61a1838fbc675d3b8fca5df3ece7a87af6e1f290785d2b1f4101b7159b838",
+    "docs/captures/categorie-768.png": "1b093c78909e211b02748552825e25e33ec8c7333269838f1af095b7ef5b0a0c",
+    "docs/captures/produit-1280.png": "1be7db889dfe9a657ac4c79252493313408b5b0eeca6e6cbf0a2111685d503b7",
+    "docs/captures/produit-360.png": "05a95f5b618de66b74a051e8bfdf1b29edeb12139511c6d2e085a9abca133ef4",
+    "docs/captures/produit-768.png": "6b263decfb8d4c3902ad3318131e22339816e0f143e7d25b2d21c24e4ad419cf"
+  }
+}
