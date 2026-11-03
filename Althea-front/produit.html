@@ -1,420 +1,86 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- Le header est l'en-tête de la page,
-       le main est le contenu principal,
-       et le footer est le pied de page. -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tensiomètre électronique de bras - Althea Systems</title>
 
-    <!-- Titre de la page produit -->
-    <title>Tensiomètre électronique de bras - Althea Systems</title>
+  <meta name="description"
+        content="Découvrez notre tensiomètre électronique de bras pour mesurer facilement votre tension artérielle.">
 
-    <!-- Description du produit -->
-    <meta name="description" content="Découvrez notre tensiomètre électronique de bras pour mesurer facilement votre tension artérielle.">
+  <meta property="og:title"
+        content="Tensiomètre électronique de bras - Althea Systems">
 
-    <!-- Étape 21 : Aperçu de partage -->
-    <meta property="og:title"
-          content="Tensiomètre électronique de bras - Althea Systems">
+  <meta property="og:description"
+        content="Découvrez notre tensiomètre de bras pour mesurer et surveiller votre pression artérielle.">
 
-    <meta property="og:description"
-          content="Découvrez notre tensiomètre de bras pour mesurer et surveiller votre pression artérielle.">
+  <meta property="og:image"
+        content="https://raw.githubusercontent.com/alexislem/Althea_Systems/main/Althea-front/img/tensiometre_bras.jpg">
 
-    <meta property="og:image"
-          content="https://raw.githubusercontent.com/alexislem/Althea_Systems/main/Althea-front/img/tensiometre_bras.jpg">
+  <meta property="og:type" content="product">
 
-    <meta property="og:type" content="product">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Couleur du thème -->
-    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
+</head>
 
-    <!-- Feuilles de style -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
+<body>
 
-    <!-- Icône du site -->
-    <link rel="icon" href="img/logo.png">
-  </head>
+  <a class="evitement" href="#contenu">Aller au contenu</a>
 
-  <body>
+  <header class="entete">
 
-    <!-- Étape 4 : Lien d'évitement -->
-    <a class="evitement" href="#contenu">Aller au contenu</a>
+    <a class="logo" href="index.html">
+      <img src="img/logo.png" alt="Althea Systems, accueil">
+    </a>
 
-    <!-- En-tête -->
-    <header class="entete">
+    <a class="panier" href="panier.html">
+      Panier
+      <span class="visually-hidden">(4 articles)</span>
+    </a>
 
-      <!-- Étape 5 : Logo -->
-      <a class="logo" href="index.html">
-        <img src="img/logo.png" alt="Althea Systems, accueil">
-      </a>
+    <button class="menu-bouton"
+            type="button"
+            aria-expanded="true"
+            aria-controls="menu-principal">
+      Menu
+    </button>
 
-      <!-- Étape 5 : Panier -->
-      <a class="panier" href="panier.html">
-        Panier
-        <span class="visually-hidden">(4 articles)</span>
-      </a>
+    <form class="recherche" role="search" action="recherche.html">
 
-      <!-- Étape 6 : Bouton du menu -->
-      <button class="menu-bouton"
-              type="button"
-              aria-expanded="true"
-              aria-controls="menu-principal">
-        Menu
-      </button>
+      <label for="q">Rechercher un produit</label>
 
-      <!-- Étape 6 : Barre de recherche -->
-      <form class="recherche" role="search" action="recherche.html">
+      <input id="q" name="q" type="search">
 
-        <label for="q">Rechercher un produit</label>
+      <button type="submit">Rechercher</button>
 
-        <input id="q" name="q" type="search">
+    </form>
 
-        <button type="submit">Rechercher</button>
+    <nav id="menu-principal"
+         class="menu"
+         aria-label="Menu principal">
 
-      </form>
-
-      <!-- Étape 7 : Menu de navigation -->
-      <nav id="menu-principal"
-           class="menu"
-           aria-label="Menu principal">
-
-        <ul class="liste-reset">
-
-          <li>
-            <a href="index.html">Accueil</a>
-          </li>
-
-          <li>
-            <a href="catalogue.html">Catalogue</a>
-          </li>
-
-          <li>
-            <a href="compte.html">Mon compte</a>
-          </li>
-
-          <li>
-            <a href="cgu.html">CGU</a>
-          </li>
-
-          <li>
-            <a href="mentions-legales.html">Mentions légales</a>
-          </li>
-
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-    </header>
-
-    <!-- Contenu principal de la page produit -->
-    <main id="contenu">
-
-      <!-- Étape 15 : Fil d'Ariane -->
-      <nav class="ariane" aria-label="Fil d'Ariane">
-
-        <ol class="liste-reset">
-
-          <!-- Lien vers l'accueil -->
-          <li>
-            <a href="index.html">Accueil</a>
-          </li>
-
-          <!-- Lien vers la catégorie Diagnostic -->
-          <li>
-            <a href="catalogue.html">Diagnostic</a>
-          </li>
-
-          <!-- Page actuelle -->
-          <li>
-            <a href="produit.html" aria-current="page">
-              Tensiomètre électronique de bras
-            </a>
-          </li>
-
-        </ol>
-
-      </nav>
-
-      <!-- Étape 16 : Fiche du produit -->
-      <article class="fiche">
-
-        <!-- Nom du produit -->
-        <h1>Tensiomètre électronique de bras</h1>
-
-        <!-- Section des illustrations -->
-        <section class="illustrations"
-                 aria-label="Photos du produit">
-
-          <ul class="liste-reset">
-
-            <!-- Photo 1 -->
-            <li>
-              <img src="img/tensiometre_bras.jpg"
-                   alt="Tensiomètre de bras avec brassard et manomètre"
-                   width="600"
-                   height="450">
-            </li>
-
-            <!-- Photo 2 -->
-            <li>
-              <img src="img/tensiometre_bras.jpg"
-                   alt="Tensiomètre manuel avec cadran à aiguille"
-                   width="600"
-                   height="450"
-                   loading="lazy">
-            </li>
-
-            <!-- Photo 3 -->
-            <li>
-              <img src="img/tensiometre_bras.jpg"
-                   alt="Tensiomètre avec brassard et poire de gonflage"
-                   width="600"
-                   height="450"
-                   loading="lazy">
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!-- Étape 17 : Description du produit -->
-        <p class="description">
-          Ce tensiomètre de bras est conçu pour mesurer
-          la pression artérielle. Il permet de surveiller
-          sa tension grâce à un brassard adapté au bras.
-          Il est destiné aux professionnels de santé
-          ainsi qu'aux particuliers.
-        </p>
-
-        <!-- Étape 17 : Prix du produit -->
-        <p class="prix-fiche">
-          <data value="49.90">49,90 €</data> TTC
-        </p>
-
-        <!-- Étape 17 : Disponibilité du produit -->
-        <p class="stock stock-rupture">
-          Disponibilité : en rupture de stock
-        </p>
-
-        <!-- Étape 18 : Formulaire d'achat -->
-        <form class="achat" action="panier.html">
-
-          <!-- Choix de la quantité -->
-          <label for="quantite">Quantité</label>
-
-          <input id="quantite"
-                 name="quantite"
-                 type="number"
-                 min="1"
-                 max="10"
-                 value="1"
-                 disabled>
-
-          <!-- Bouton d'achat désactivé -->
-          <button class="btn"
-                  type="submit"
-                  disabled>
-            En rupture de stock
-          </button>
-
-        </form>
-
-        <!-- Étape 19 : Caractéristiques techniques -->
-        <section class="caracteristiques"
-                 aria-labelledby="titre-carac">
-
-          <h2 id="titre-carac">Caractéristiques techniques</h2>
-
-          <dl>
-
-            <!-- Tour de bras -->
-            <dt>Tour de bras</dt>
-            <dd>22 à 42 cm</dd>
-
-            <!-- Mémoire -->
-            <dt>Mémoire</dt>
-            <dd>60 mesures enregistrables</dd>
-
-            <!-- Alimentation -->
-            <dt>Alimentation</dt>
-            <dd>4 piles AA</dd>
-
-            <!-- Poids -->
-            <dt>Poids</dt>
-            <dd>300 g</dd>
-
-          </dl>
-
-        </section>
-
-      </article>
-
-      <!-- Étape 20 : Produits similaires -->
-      <section class="top-produits"
-               aria-labelledby="titre-similaires">
-
-        <h2 id="titre-similaires">Produits similaires</h2>
-
-        <ul class="liste-reset">
-
-          <!-- Produit 1 : Tensiomètre manuel -->
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Tensiomètre manuel de bras</a>
-              </h3>
-
-              <p class="prix">
-                <data value="29.90">29,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <!-- Produit 2 : Gants médicaux -->
-          <li>
-            <article class="produit">
-
-              <img src="img/gants.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Gants médicaux</a>
-              </h3>
-
-              <p class="prix">
-                <data value="9.90">9,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <!-- Produit 3 : Pansements stériles -->
-          <li>
-            <article class="produit">
-
-              <img src="img/pansements.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Pansements stériles</a>
-              </h3>
-
-              <p class="prix">
-                <data value="5.90">5,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <!-- Produit 4 : Tensiomètre de consultation -->
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Tensiomètre de consultation</a>
-              </h3>
-
-              <p class="prix">
-                <data value="39.90">39,90 €</data>
-              </p>
-
-              <p class="stock stock-rupture">
-                En rupture de stock
-              </p>
-
-            </article>
-          </li>
-
-          <!-- Produit 5 : Pansements adhésifs -->
-          <li>
-            <article class="produit">
-
-              <img src="img/pansements.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Pansements adhésifs</a>
-              </h3>
-
-              <p class="prix">
-                <data value="4.50">4,50 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <!-- Produit 6 : Gants d'examen en nitrile -->
-          <li>
-            <article class="produit">
-
-              <img src="img/gants.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">Gants d'examen en nitrile</a>
-              </h3>
-
-              <p class="prix">
-                <data value="12.90">12,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-        </ul>
-
-      </section>
-
-    </main>
-
-    <!-- Étape 8 : Pied de page -->
-    <footer class="pied">
-
-      <!-- Liens du pied de page -->
       <ul class="liste-reset">
+
+        <li>
+          <a href="index.html">Accueil</a>
+        </li>
+
+        <li>
+          <a href="catalogue.html">Catalogue</a>
+        </li>
+
+        <li>
+          <a href="connexion.html">Se connecter</a>
+        </li>
+
+        <li>
+          <a href="inscription.html">S'inscrire</a>
+        </li>
 
         <li>
           <a href="cgu.html">CGU</a>
@@ -429,19 +95,335 @@
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="a-propos.html">À propos d'Althea Systems</a>
         </li>
 
       </ul>
 
-      <!-- Copyright -->
-      <p>© 2026 Althea Systems</p>
+      <p class="langues">
+        Langue :
 
-    </footer>
+        <a href="produit.html"
+           lang="fr"
+           hreflang="fr"
+           aria-current="true">Français</a>
 
-  </body>
+        <a href="en/produit.html"
+           lang="en"
+           hreflang="en">English</a>
+
+        <a href="ar/produit.html"
+           lang="ar"
+           hreflang="ar"
+           dir="rtl">العربية</a>
+      </p>
+
+    </nav>
+
+  </header>
+
+  <main id="contenu">
+
+    <nav class="ariane" aria-label="Fil d'Ariane">
+
+      <ol class="liste-reset">
+
+        <li>
+          <a href="index.html">Accueil</a>
+        </li>
+
+        <li>
+          <a href="catalogue.html">Diagnostic</a>
+        </li>
+
+        <li>
+          <a href="produit.html" aria-current="page">
+            Tensiomètre électronique de bras
+          </a>
+        </li>
+
+      </ol>
+
+    </nav>
+
+    <article class="fiche">
+
+      <h1>Tensiomètre électronique de bras</h1>
+
+      <section class="illustrations" aria-label="Photos du produit">
+
+        <ul class="liste-reset">
+
+          <li>
+            <img src="img/tensiometre_bras.jpg"
+                 alt="Tensiomètre de bras avec brassard et manomètre"
+                 width="600"
+                 height="450">
+          </li>
+
+          <li>
+            <img src="img/tensiometre_bras.jpg"
+                 alt="Tensiomètre manuel avec cadran à aiguille"
+                 width="600"
+                 height="450"
+                 loading="lazy">
+          </li>
+
+          <li>
+            <img src="img/tensiometre_bras.jpg"
+                 alt="Tensiomètre avec brassard et poire de gonflage"
+                 width="600"
+                 height="450"
+                 loading="lazy">
+          </li>
+
+        </ul>
+
+      </section>
+
+      <p class="description">
+        Ce tensiomètre de bras est conçu pour mesurer
+        la pression artérielle. Il permet de surveiller
+        sa tension grâce à un brassard adapté au bras.
+        Il est destiné aux professionnels de santé
+        ainsi qu'aux particuliers.
+      </p>
+
+      <p class="prix-fiche">
+        <data value="49.90">49,90 €</data> TTC
+      </p>
+
+      <p class="stock stock-rupture">
+        Disponibilité : en rupture de stock
+      </p>
+
+      <form class="achat" action="panier.html">
+
+        <label for="quantite">Quantité</label>
+
+        <input id="quantite"
+               name="quantite"
+               type="number"
+               min="1"
+               max="10"
+               value="1"
+               disabled>
+
+        <button class="btn"
+                type="submit"
+                disabled>
+          En rupture de stock
+        </button>
+
+      </form>
+
+      <section class="caracteristiques"
+               aria-labelledby="titre-carac">
+
+        <h2 id="titre-carac">Caractéristiques techniques</h2>
+
+        <dl>
+
+          <dt>Tour de bras</dt>
+          <dd>22 à 42 cm</dd>
+
+          <dt>Mémoire</dt>
+          <dd>60 mesures enregistrables</dd>
+
+          <dt>Alimentation</dt>
+          <dd>4 piles AA</dd>
+
+          <dt>Poids</dt>
+          <dd>300 g</dd>
+
+        </dl>
+
+      </section>
+
+    </article>
+
+    <section class="top-produits"
+             aria-labelledby="titre-similaires">
+
+      <h2 id="titre-similaires">Produits similaires</h2>
+
+      <ul class="liste-reset">
+
+        <li>
+          <article class="produit">
+
+            <img src="img/tensiometre_bras.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Tensiomètre manuel de bras</a>
+            </h3>
+
+            <p class="prix">
+              <data value="29.90">29,90 €</data>
+            </p>
+
+            <p class="stock">En stock</p>
+
+          </article>
+        </li>
+
+        <li>
+          <article class="produit">
+
+            <img src="img/gants.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Gants médicaux</a>
+            </h3>
+
+            <p class="prix">
+              <data value="9.90">9,90 €</data>
+            </p>
+
+            <p class="stock">En stock</p>
+
+          </article>
+        </li>
+
+        <li>
+          <article class="produit">
+
+            <img src="img/pansements.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Pansements stériles</a>
+            </h3>
+
+            <p class="prix">
+              <data value="5.90">5,90 €</data>
+            </p>
+
+            <p class="stock">En stock</p>
+
+          </article>
+        </li>
+
+        <li>
+          <article class="produit">
+
+            <img src="img/tensiometre_bras.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Tensiomètre de consultation</a>
+            </h3>
+
+            <p class="prix">
+              <data value="39.90">39,90 €</data>
+            </p>
+
+            <p class="stock stock-rupture">
+              En rupture de stock
+            </p>
+
+          </article>
+        </li>
+
+        <li>
+          <article class="produit">
+
+            <img src="img/pansements.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Pansements adhésifs</a>
+            </h3>
+
+            <p class="prix">
+              <data value="4.50">4,50 €</data>
+            </p>
+
+            <p class="stock">En stock</p>
+
+          </article>
+        </li>
+
+        <li>
+          <article class="produit">
+
+            <img src="img/gants.jpg"
+                 alt=""
+                 width="400"
+                 height="300"
+                 loading="lazy">
+
+            <h3>
+              <a href="produit.html">Gants d'examen en nitrile</a>
+            </h3>
+
+            <p class="prix">
+              <data value="12.90">12,90 €</data>
+            </p>
+
+            <p class="stock">En stock</p>
+
+          </article>
+        </li>
+
+      </ul>
+
+    </section>
+
+  </main>
+
+  <footer class="pied">
+
+  <nav aria-label="Informations légales">
+    <ul class="liste-reset">
+      <li>
+        <a href="cgu.html">CGU</a>
+      </li>
+      <li>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav aria-label="Contact">
+    <ul class="liste-reset">
+      <li>
+        <a href="contact.html">Nous contacter</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav aria-label="Réseaux sociaux">
+    <ul class="liste-reset">
+      <li>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/">Instagram</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p>© 2026 Althea Systems</p>
+
+</footer>
+
+</body>
 </html>
