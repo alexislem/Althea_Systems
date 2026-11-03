@@ -828,3 +828,103 @@ main,
   }
 
 }
+
+
+/* Bandeau avec image et titre superposés */
+.bandeau {
+  display: grid;
+  overflow: hidden;
+  border-radius: var(--arrondi);
+}
+
+/* Image et titre placés dans la même case */
+.bandeau > * {
+  grid-area: 1 / 1;
+}
+
+/* Image du bandeau au format 16/9 */
+.bandeau img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Titre en bas de l'image avec un dégradé sombre */
+.bandeau h1 {
+  align-self: end;
+  margin: 0;
+  padding: var(--espace);
+  color: #ffffff;
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.85),
+    transparent
+  );
+}
+
+
+/* Produits affichés sur une seule colonne sur téléphone */
+.produits {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--espace) 0.5rem;
+}
+
+/* Empêche les cartes de dépasser leur colonne */
+.produits > li {
+  min-width: 0;
+}
+
+/* Grille adaptative sur tablette et ordinateur */
+@media (min-width: 48rem) {
+  .produits {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(100%, 16rem), 1fr)
+    );
+  }
+}
+
+
+/* Pagination centrée avec retour à la ligne */
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Espacement entre les produits et la pagination */
+.pagination {
+  margin-block-start: var(--espace-grand);
+}
+
+/* Liens de pagination adaptés au tactile */
+.pagination a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 0.75rem;
+  border: 1px solid var(--couleur-primaire);
+  border-radius: var(--arrondi);
+  background-color: var(--couleur-surface);
+  color: var(--couleur-primaire);
+  text-decoration: none;
+}
+
+/* Mise en évidence de la page actuelle */
+.pagination a[aria-current="page"] {
+  background-color: var(--couleur-primaire);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Effet au survol des autres pages */
+.pagination a:hover:not([aria-current="page"]) {
+  background-color: var(--couleur-primaire);
+  color: #ffffff;
+}
