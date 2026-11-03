@@ -25,3 +25,37 @@ Les problèmes principaux concernent :
 - Le carrousel de l'accueil qui n'est pas encore défilant.
 
 Les prochaines étapes permettront d'améliorer ces éléments grâce à Flexbox, CSS Grid et aux media queries.
+
+
+## Carrousel sans JavaScript
+
+Le carrousel de la page d'accueil et la galerie de la
+page produit utilisent CSS Grid, le défilement horizontal
+et Scroll Snap.
+
+Ces fonctionnalités permettent de naviguer entre les
+images sans utiliser de JavaScript.
+
+| Ce qui fonctionne sans JavaScript | Ce qui manque encore (Jour 3) |
+|---|---|
+| Faire défiler les images horizontalement au doigt, à la souris ou au pavé tactile. | Ajouter des boutons Précédent et Suivant pour contrôler le défilement. |
+| Aligner automatiquement chaque image avec CSS Scroll Snap. | Mettre en place un défilement automatique des diapositives. |
+| Parcourir les images au clavier avec Tab et les flèches directionnelles. | Gérer les interactions et l'état du carrousel avec JavaScript. |
+| Accéder directement aux trois diapositives de l'accueil grâce aux pastilles. | Indiquer automatiquement quelle pastille correspond à la diapositive active. |
+
+### Bilan
+
+HTML et CSS permettent déjà de créer un carrousel
+responsive, accessible au clavier et défilant
+horizontalement.
+
+Le carrousel de l'accueil possède trois diapositives
+et des pastilles de navigation.
+
+La galerie de la fiche produit réutilise les mêmes
+principes de défilement, en laissant apparaître une
+partie de la photographie suivante.
+
+Lors du Jour 3, JavaScript permettra d'ajouter
+des boutons de navigation, un défilement automatique
+et la gestion de la pastille active.

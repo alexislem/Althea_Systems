@@ -928,3 +928,293 @@ main,
   background-color: var(--couleur-primaire);
   color: #ffffff;
 }
+
+
+/* Fiche produit organisée verticalement sur téléphone */
+.fiche {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--espace);
+}
+
+/* Empêche les blocs de dépasser leur colonne */
+.fiche-images,
+.fiche-infos,
+.fiche-description {
+  min-width: 0;
+}
+
+/* Fiche produit en deux colonnes sur ordinateur */
+@media (min-width: 64rem) {
+  .fiche {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "images infos"
+      "description infos";
+    align-items: start;
+  }
+
+  /* Photographies dans la colonne de gauche */
+  .fiche-images {
+    grid-area: images;
+  }
+
+  /* Informations d'achat dans la colonne de droite */
+  .fiche-infos {
+    grid-area: infos;
+    align-self: start;
+  }
+
+  /* Description sous les photographies */
+  .fiche-description {
+    grid-area: description;
+  }
+}
+
+
+/* Galerie horizontale laissant apparaître la photo suivante */
+.illustrations .galerie {
+  grid-template-columns: none;
+  grid-auto-columns: 85%;
+  gap: 1rem;
+}
+
+/* Chaque photo s'aligne au début de la zone défilante */
+.illustrations .galerie > li {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+/* Annule l'ancien agrandissement de la première photo */
+.illustrations .galerie > li:first-child {
+  grid-column: auto;
+}
+
+
+/* Espacement de la section des tailles */
+.tailles-brassard {
+  margin-block-start: var(--espace-grand);
+}
+
+.tailles-brassard p {
+  margin-bottom: var(--espace);
+}
+
+/* Défilement horizontal limité au tableau */
+.defile-tableau {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Tableau des tailles */
+.formats {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  background-color: var(--couleur-surface);
+}
+
+/* Titre du tableau */
+.formats caption {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Espacement et alignement des cellules */
+.formats th,
+.formats td {
+  padding: 0.5rem 1rem;
+  text-align: start;
+  border-bottom: 1px solid var(--couleur-texte-discret);
+}
+
+/* En-têtes des colonnes */
+.formats thead {
+  background-color: var(--couleur-primaire);
+  color: #ffffff;
+}
+
+/* Alternance de couleur entre les lignes */
+.formats tbody tr:nth-child(even) {
+  background-color: var(--couleur-fond);
+}
+
+/* Première colonne visible pendant le défilement */
+.formats tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 1;
+  background-color: var(--couleur-surface);
+}
+
+/* Conserve la couleur des lignes alternées */
+.formats tbody tr:nth-child(even) th {
+  background-color: var(--couleur-fond);
+}
+
+/* Première cellule de l'en-tête également fixe */
+.formats thead th:first-child {
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 2;
+  background-color: var(--couleur-primaire);
+}
+
+
+/* Format des pages imprimées */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+/* Mise en page réservée à l'impression */
+@media print {
+
+  /* Éléments inutiles sur une fiche imprimée */
+  .evitement,
+  .entete,
+  .pied,
+  .ariane,
+  .achat,
+  .pastilles,
+  .top-produits {
+    display: none !important;
+  }
+
+  /* Texte noir sur fond blanc */
+  body {
+    color: #000000 !important;
+    background: #ffffff !important;
+    font-size: 10pt;
+  }
+
+  /* Suppression des marges de la mise en page écran */
+  main {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Fiche sur une seule colonne */
+  .fiche {
+    display: flex;
+    flex-direction: column;
+    gap: 8pt;
+    padding: 0;
+    margin: 0;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Informations du produit avant les photographies */
+  .fiche-infos {
+    order: -1;
+  }
+
+  /* Espacements réduits pour économiser du papier */
+  .fiche h1 {
+    margin-bottom: 8pt;
+    font-size: 18pt;
+  }
+
+  .prix-fiche {
+    color: #000000 !important;
+    font-size: 16pt;
+    margin-bottom: 6pt;
+  }
+
+  .stock,
+  .stock-rupture {
+    color: #000000 !important;
+    margin-bottom: 6pt;
+  }
+
+  /* Galerie sans défilement horizontal */
+  .illustrations .galerie {
+    display: block;
+    overflow: visible;
+    width: 100%;
+  }
+
+  /* Une seule photographie imprimée */
+  .illustrations .galerie li:not(:first-child) {
+    display: none;
+  }
+
+  .illustrations .galerie li:first-child {
+    display: block;
+  }
+
+  /* Photographie adaptée au format papier */
+  .illustrations img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 6cm;
+    aspect-ratio: auto;
+    object-fit: contain;
+    margin-inline: auto;
+    filter: none;
+  }
+
+  /* Sections conservées ensemble lors de l'impression */
+  .caracteristiques,
+  .tailles-brassard,
+  .formats {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Tableau entièrement visible sans défilement */
+  .defile-tableau {
+    overflow: visible;
+    max-width: 100%;
+  }
+
+  .formats {
+    width: 100%;
+    min-width: 0;
+    font-size: 9pt;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Cellules compactes et lisibles */
+  .formats th,
+  .formats td {
+    padding: 4pt 5pt;
+    border: 1px solid #555555;
+    overflow-wrap: anywhere;
+    color: #000000 !important;
+  }
+
+  /* Suppression des fonds colorés du tableau */
+  .formats thead,
+  .formats thead th,
+  .formats tbody th,
+  .formats tbody tr:nth-child(even),
+  .formats tbody tr:nth-child(even) th {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* La première colonne ne reste plus fixe */
+  .formats tbody th,
+  .formats thead th:first-child {
+    position: static;
+  }
+
+  /* Affichage de l'adresse après les liens externes */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    overflow-wrap: anywhere;
+  }
+
+}
