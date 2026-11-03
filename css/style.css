@@ -405,3 +405,231 @@ main > * + * {
 .pied {
   display: none;
 }
+
+
+
+
+/* Jour 2 : contenu fluide et centré dans la platforme Althea System*/
+main,
+.pied {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.entete {
+  padding-inline: 1rem;
+}
+
+@media(min-width: 48rem){
+    :root{
+        --espace:   1.5rem;
+    }
+}
+
+@media(min-width: 64rem){
+    :root{
+        --espace:   2rem;
+    }
+}
+
+/* En-tête : éléments côte à côte si la place le permet */
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espace);
+}
+
+/* Remplace les anciennes marges par le gap */
+.entete > * + * {
+  margin-top: 0;
+}
+
+/* Le logo pousse les éléments suivants vers la droite */
+.entete .logo {
+  margin-inline-end: auto;
+}
+
+/* Sur téléphone : recherche et navigation sur toute la ligne */
+.recherche,
+.menu {
+  flex-basis: 100%;
+}
+
+/* Sur tablette : la recherche peut rejoindre les autres éléments */
+@media (min-width: 48rem) {
+  .recherche {
+    flex-basis: 20rem;
+  }
+}
+/* Choix de la langue */
+.langues {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espace-petit) var(--espace);
+  margin-top: var(--espace);
+}
+
+.langues a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--cible);
+}
+
+.langues a[aria-current="true"] {
+  font-weight: 700;
+}
+
+/* Pied visible sur ordinateur, à partir d’environ 1024 px */
+@media (min-width: 64rem) {
+  .pied {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espace);
+    padding-block: var(--espace);
+  }
+
+  .pied ul {
+    flex-direction: column;
+  }
+
+  .pied > p {
+    grid-column: 1 / -1;
+  }
+}
+/* Une slide occupe toute la largeur du carrousel */
+.defile {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Image et texte superposés */
+.defile > .slide {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.defile > .slide > img,
+.defile > .slide > picture,
+.defile > .slide > .slide-texte {
+  grid-area: 1 / 1;
+  min-width: 0;
+}
+
+.defile > .slide > img,
+.defile picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texte lisible sur un dégradé sombre */
+.slide-texte {
+  z-index: 1;
+  align-self: end;
+  padding: var(--espace);
+  color: #ffffff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.slide-texte h2 {
+  margin-top: 0;
+}
+
+.slide-texte a {
+  color: inherit;
+}
+
+/* Animation seulement si la personne l’autorise */
+@media (prefers-reduced-motion: no-preference) {
+  .defile {
+    scroll-behavior: smooth;
+  }
+}
+/* Pastilles centrées sous le carrousel */
+.pastilles {
+  display: flex;
+  justify-content: center;
+  gap: var(--espace-petit);
+}
+
+.pastilles a {
+  display: grid;
+  place-items: center;
+  min-width: var(--cible);
+  min-height: var(--cible);
+  padding: 0;
+}
+
+.pastilles a::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--couleur-primaire);
+}
+/* Catégories : nombre de colonnes adapté à la place disponible */
+.categories ul {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
+  gap: var(--espace);
+}
+
+/* Le gap remplace les anciennes marges entre catégories */
+.categories li + li {
+  margin-top: 0;
+}
+/* Cartes côte à côte, avec retour à la ligne */
+.top-produits > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espace);
+}
+
+/* Taille de départ : 14rem, ajustable selon la place */
+.top-produits > ul > li {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+/* Le gap remplace les anciennes marges */
+.top-produits > ul > li + li {
+  margin-top: 0;
+}
+
+/* Contenu empilé, cartes de même hauteur sur une ligne */
+.produit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Pousse le prix vers le bas, au-dessus de la disponibilité */
+.produit .prix {
+  margin-block-start: auto;
+}
+/* Animations uniquement si la personne les autorise */
+@media (prefers-reduced-motion: no-preference) {
+  .produit {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .produit:hover,
+  .produit:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
+  }
+
+  button,
+  .btn {
+    transition: background-color 0.2s ease;
+  }
+}

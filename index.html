@@ -36,95 +36,143 @@
         <span class="visually-hidden">(2 articles)</span>
       </a>
 
-      <!-- Bouton du menu, ouvert pour cette version HTML -->
+      <!-- Menu visible pour cette version sans JavaScript -->
       <button class="menu-bouton" type="button"
         aria-expanded="true" aria-controls="menu-principal">
         Menu
       </button>
 
       <!-- Recherche -->
-      <form class="recherche" role="search" action="recherche.html">
+      <form class="recherche" role="search"
+        action="recherche.html" method="get">
         <label for="q">Rechercher un produit</label>
         <input id="q" name="q" type="search">
         <button type="submit">Rechercher</button>
       </form>
 
-      <!-- Navigation principale -->
+      <!-- Navigation pour un visiteur non connecté -->
       <nav id="menu-principal" class="menu" aria-label="Menu principal">
         <ul class="liste-reset">
           <li>
             <a href="index.html" aria-current="page">Accueil</a>
           </li>
-          <li><a href="catalogue.html">Catalogue</a></li>
-          <li><a href="compte.html">Mon compte</a></li>
+          <li><a href="categorie.html">Catégories</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="inscription.html">S’inscrire</a></li>
           <li><a href="cgu.html">CGU</a></li>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="a-propos.html">À propos d’Althea Systems</a>
+          </li>
           <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/">Instagram</a></li>
         </ul>
+
+        <!-- Choix de la langue -->
+        <p class="langues">
+          Langue :
+          <a href="index.html" lang="fr" hreflang="fr"
+            aria-current="true">Français</a>
+          <a href="en/index.html" lang="en" hreflang="en">English</a>
+          <a href="ar/index.html" lang="ar" hreflang="ar"
+            dir="rtl">العربية</a>
+        </p>
       </nav>
     </header>
 
     <!-- Contenu de l’accueil -->
     <main id="contenu">
-      <!-- Étape 9 : titre principal -->
+      <!-- Titre principal -->
       <h1>Des équipements médicaux pour votre cabinet</h1>
 
-      <!-- Étape 10 : carrousel de trois slides -->
+       <!-- Carrousel de trois slides -->
       <section class="carrousel" aria-label="À la une">
-        <ul class="liste-reset">
-          <li class="slide">
-            <img src="img/diagnostic.jpg"
-              alt="Équipements de diagnostic médical">
-            <h2>Équipez votre cabinet</h2>
-            <a href="catalogue.html">Découvrir le catalogue</a>
+        <ul class="defile liste-reset" tabindex="0"
+          aria-label="À la une, à faire défiler">
+
+          <!-- Première slide : image adaptée à l’écran -->
+          <li id="une-1" class="slide">
+            <picture>
+              <source media="(min-width: 48rem)"
+                srcset="img/diagnostic-large.jpg">
+              <img src="img/diagnostic-carre.jpg"
+                alt="Équipements de diagnostic médical"
+                width="800" height="800"
+                fetchpriority="high">
+            </picture>
+
+            <div class="slide-texte">
+              <h2>Équipez votre cabinet</h2>
+              <a href="categorie.html">Découvrir le catalogue</a>
+            </div>
           </li>
 
-          <li class="slide">
+          <!-- Deuxième slide : tensiomètre -->
+          <li id="une-2" class="slide">
             <img src="img/tensiometre.jpg"
               alt="Tensiomètre de bras OMRON M2 Basic">
-            <h2>Découvrez notre tensiomètre</h2>
-            <a href="produit.html">Voir le tensiomètre</a>
+
+            <div class="slide-texte">
+              <h2>Découvrez notre tensiomètre</h2>
+              <a href="produit.html">Voir le tensiomètre</a>
+            </div>
           </li>
 
-          <li class="slide">
+          <!-- Troisième slide : sélection -->
+          <li id="une-3" class="slide">
             <img src="img/materiel-medical.jpg"
               alt="Sélection de matériel médical">
-            <h2>Découvrez notre sélection</h2>
-            <a href="#top-produits">Voir les Top Produits</a>
+
+            <div class="slide-texte">
+              <h2>Découvrez notre sélection</h2>
+              <a href="#top-produits">Voir les Top Produits</a>
+            </div>
           </li>
         </ul>
+
+        <!-- Pastilles pour choisir une slide -->
+        <nav class="pastilles" aria-label="Choisir une slide">
+          <a href="#une-1">
+            <span class="visually-hidden">Afficher la slide 1</span>
+          </a>
+          <a href="#une-2">
+            <span class="visually-hidden">Afficher la slide 2</span>
+          </a>
+          <a href="#une-3">
+            <span class="visually-hidden">Afficher la slide 3</span>
+          </a>
+        </nav>
       </section>
 
-      <!-- Étape 11 : présentation -->
+      <!-- Présentation -->
       <p>
         Althea Systems propose du matériel médical pour équiper
         les cabinets et accompagner les professionnels de santé.
         Découvrez nos catégories et notre sélection de produits.
       </p>
 
-      <!-- Étape 12 : catégories -->
+      <!-- Catégories -->
       <section class="categories" aria-labelledby="titre-categories">
         <h2 id="titre-categories">Nos catégories</h2>
 
         <ul class="liste-reset">
           <li>
-            <a href="catalogue.html?categorie=diagnostic">
+            <a href="categorie.html?categorie=diagnostic">
               <img src="img/categorie-diagnostic.jpg" alt="">
               <span>Diagnostic</span>
             </a>
           </li>
 
           <li>
-            <a href="catalogue.html?categorie=soins">
+            <a href="categorie.html?categorie=soins">
               <img src="img/categorie-soins.jpg" alt="">
               <span>Soins</span>
             </a>
           </li>
 
           <li>
-            <a href="catalogue.html?categorie=hygiene">
+            <a href="categorie.html?categorie=hygiene">
               <img src="img/categorie-hygiene.jpg" alt="">
               <span>Hygiène</span>
             </a>
@@ -132,7 +180,7 @@
         </ul>
       </section>
 
-      <!-- Étape 13 : cartes produits de démonstration -->
+      <!-- Top Produits : données de démonstration -->
       <section id="top-produits" class="top-produits"
         aria-labelledby="titre-top-produits">
         <h2 id="titre-top-produits">Les Top Produits du moment</h2>
@@ -237,13 +285,29 @@
 
     <!-- Pied de page commun -->
     <footer class="pied">
-      <ul class="liste-reset">
-        <li><a href="cgu.html">CGU</a></li>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-      </ul>
+      <!-- Colonne 1 : informations légales -->
+      <nav aria-label="Informations légales">
+        <ul class="liste-reset">
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </nav>
+
+      <!-- Colonne 2 : contact -->
+      <nav aria-label="Contact">
+        <ul class="liste-reset">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Colonne 3 : réseaux sociaux -->
+      <nav aria-label="Réseaux sociaux">
+        <ul class="liste-reset">
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+      </nav>
+
       <p>© 2026 Althea Systems</p>
     </footer>
   </body>
