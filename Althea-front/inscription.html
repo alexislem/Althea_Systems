@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Créer un compte - Althea Systems</title>
+
+  <meta name="description"
+        content="Créez votre compte Althea Systems pour accéder à votre espace personnel et à nos produits médicaux.">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+  <a class="evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+
+    <a class="logo" href="index.html">
+      <img src="img/logo.png" alt="Althea Systems, accueil">
+    </a>
+
+    <a class="panier" href="panier.html">
+      Panier
+      <span class="visually-hidden">(4 articles)</span>
+    </a>
+
+    <button class="menu-bouton"
+            type="button"
+            aria-expanded="true"
+            aria-controls="menu-principal">
+      Menu
+    </button>
+
+    <form class="recherche"
+          role="search"
+          action="recherche.html"
+          method="get">
+
+      <label for="q">Rechercher un produit</label>
+
+      <input id="q" name="q" type="search">
+
+      <button type="submit">Rechercher</button>
+
+    </form>
+
+    <nav id="menu-principal"
+         class="menu"
+         aria-label="Menu principal">
+
+      <ul class="liste-reset">
+
+        <li>
+          <a href="index.html">Accueil</a>
+        </li>
+
+        <li>
+          <a href="categorie.html">Diagnostic</a>
+        </li>
+
+        <li>
+          <a href="connexion.html">Se connecter</a>
+        </li>
+
+        <li>
+          <a href="inscription.html"
+             aria-current="page">S'inscrire</a>
+        </li>
+
+        <li>
+          <a href="cgu.html">CGU</a>
+        </li>
+
+        <li>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+        <li>
+          <a href="a-propos.html">
+            À propos d'Althea Systems
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="langues">
+        Langue :
+
+        <a href="inscription.html"
+           lang="fr"
+           hreflang="fr"
+           aria-current="true">Français</a>
+
+        <a href="en/inscription.html"
+           lang="en"
+           hreflang="en">English</a>
+
+        <a href="ar/inscription.html"
+           lang="ar"
+           hreflang="ar"
+           dir="rtl">العربية</a>
+      </p>
+
+    </nav>
+
+  </header>
+
+  <main id="contenu">
+
+    <h1>Créer un compte</h1>
+
+    <form class="formulaire"
+          action="inscription.html"
+          method="post">
+
+      <div class="champ">
+
+        <label for="inscription-prenom">
+          Prénom (obligatoire)
+        </label>
+
+        <input
+          id="inscription-prenom"
+          name="prenom"
+          type="text"
+          autocomplete="given-name"
+          maxlength="50"
+          required
+          aria-describedby="erreur-prenom">
+
+        <span class="erreur" id="erreur-prenom">
+          Saisissez votre prénom.
+        </span>
+
+      </div>
+
+      <div class="champ">
+
+        <label for="inscription-nom">
+          Nom (obligatoire)
+        </label>
+
+        <input
+          id="inscription-nom"
+          name="nom"
+          type="text"
+          autocomplete="family-name"
+          maxlength="50"
+          required
+          aria-describedby="erreur-nom">
+
+        <span class="erreur" id="erreur-nom">
+          Saisissez votre nom.
+        </span>
+
+      </div>
+
+      <div class="champ">
+
+        <label for="inscription-email">
+          Adresse e-mail (obligatoire)
+        </label>
+
+        <input
+          id="inscription-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          maxlength="254"
+          required
+          aria-describedby="erreur-inscription-email">
+
+        <span class="erreur" id="erreur-inscription-email">
+          Saisissez une adresse e-mail valide.
+        </span>
+
+      </div>
+
+      <div class="champ">
+
+        <label for="inscription-mdp">
+          Mot de passe (obligatoire)
+        </label>
+
+        <input
+          id="inscription-mdp"
+          name="motDePasse"
+          type="password"
+          autocomplete="new-password"
+          minlength="12"
+          required
+          aria-describedby="aide-mdp erreur-inscription-mdp">
+
+        <span class="aide" id="aide-mdp">
+          Votre mot de passe doit contenir au moins 12 caractères.
+        </span>
+
+        <span class="erreur" id="erreur-inscription-mdp">
+          Le mot de passe doit contenir au moins 12 caractères.
+        </span>
+
+      </div>
+
+      <div class="champ">
+
+        <label for="confirmation-mdp">
+          Confirmer le mot de passe (obligatoire)
+        </label>
+
+        <input
+          id="confirmation-mdp"
+          name="confirmationMotDePasse"
+          type="password"
+          autocomplete="new-password"
+          minlength="12"
+          required
+          aria-describedby="erreur-confirmation-mdp">
+
+        <span class="erreur" id="erreur-confirmation-mdp">
+          Confirmez votre mot de passe avec au moins 12 caractères.
+        </span>
+
+      </div>
+
+      <div class="acceptation">
+
+        <div class="case-ligne">
+
+          <input
+            id="acceptation-cgu"
+            name="acceptationCgu"
+            type="checkbox"
+            value="oui"
+            required
+            aria-describedby="erreur-cgu">
+
+          <label for="acceptation-cgu">
+            J'accepte les
+            <a href="cgu.html">conditions générales d'utilisation</a>
+            (obligatoire)
+          </label>
+
+        </div>
+
+        <span class="erreur" id="erreur-cgu">
+          Vous devez accepter les CGU pour créer un compte.
+        </span>
+
+      </div>
+
+      <button type="submit">
+        Créer mon compte
+      </button>
+
+      <p>
+        Vous avez déjà un compte ?
+        <a href="connexion.html">
+          Se connecter
+        </a>
+      </p>
+
+    </form>
+
+  </main>
+
+  <footer class="pied">
+
+    <nav aria-label="Informations légales">
+      <ul class="liste-reset">
+        <li>
+          <a href="cgu.html">CGU</a>
+        </li>
+        <li>
+          <a href="mentions-legales.html">
+            Mentions légales
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Contact">
+      <ul class="liste-reset">
+        <li>
+          <a href="contact.html">
+            Nous contacter
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Réseaux sociaux">
+      <ul class="liste-reset">
+        <li>
+          <a href="https://www.linkedin.com/">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/">
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <p>© 2026 Althea Systems</p>
+
+  </footer>
+
+</body>
+</html>
