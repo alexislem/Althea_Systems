@@ -112,9 +112,9 @@ Les principaux formats étudiés sont :
 
 | Page | 360 px | 768 px | 1 280 px |
 |---|---|---|---|
-| Accueil | ![Accueil 360](Althea-front/docs/captures/accueil-360.png) | ![Accueil 768](Althea-front/docs/captures/accueil-768.png) | ![Accueil 1280](Althea-front/docs/captures/accueil-1280.png) |
-| Catégorie | ![Catégorie 360](Althea-front/docs/captures/categorie-360.png) | ![Catégorie 768](Althea-front/docs/captures/categorie-768.png) | ![Catégorie 1280](Althea-front/docs/captures/categorie-1280.png) |
-| Produit | ![Produit 360](Althea-front/docs/captures/produit-360.png) | ![Produit 768](Althea-front/docs/captures/produit-768.png) | ![Produit 1280](Althea-front/docs/captures/produit-1280.png) |
+| Accueil | ![Accueil 360](Althea-front/captures/accueil_360.png) | ![Accueil 768](Althea-front/captures/accueil_768.png) | ![Accueil 1280](Althea-front/captures/accueil_1280.png) |
+| Catégorie | ![Catégorie 360](Althea-front/captures/categorie_360.png) | ![Catégorie 768](Althea-front/captures/categorie_768.png) | ![Catégorie 1280](Althea-front/captures/categorie_1280.png) |
+| Produit | ![Produit 360](Althea-front/captures/produit_360.png) | ![Produit 768](Althea-front/captures/produit_768.png) | ![Produit 1280](Althea-front/captures/produit_1280.png) |
 
 ### Mode sombre
 
@@ -125,7 +125,7 @@ Les couleurs sont centralisées dans variables.css,
 ce qui permet de changer le thème sans modifier
 la structure des pages.
 
-![Accueil en mode sombre](Althea-front/docs/captures/accueil-sombre.png)
+![Accueil en mode sombre](Althea-front/captures/Mode_Clair_Accueil.png)
 
 ### Problèmes rencontrés et corrections
 
