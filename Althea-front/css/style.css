@@ -1,8 +1,3 @@
-
-/* ==========================================
-   Étape 27 : Reset CSS - Althea Systems
-   ========================================== */
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -20,11 +15,6 @@ img {
 input, button {
   font: inherit;
 }
-
-
-/* ==========================================
-   Étape 28 : La base CSS
-   ========================================== */
 
 body {
   font-family: var(--police);
@@ -58,11 +48,6 @@ main {
   padding: var(--espace);
 }
 
-
-/* ==========================================
-   Étape 29 : Accessibilité CSS
-   ========================================== */
-
 :focus-visible {
   outline: 3px solid var(--couleur-primaire);
   outline-offset: 3px;
@@ -91,11 +76,6 @@ main {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
-
-/* ==========================================
-   Étape 30 : Les composants communs
-   ========================================== */
 
 /* Listes sans puces */
 .liste-reset {
@@ -133,10 +113,6 @@ main {
   font-weight: bold;
 }
 
-
-/* ==========================================
-   Étape 31 : L'en-tête et le pied de page
-   ========================================== */
 
 /* En-tête */
 .entete {
@@ -217,10 +193,6 @@ main {
   display: none;
 }
 
-
-/* ==========================================
-   Étape 32 : Les pages
-   ========================================== */
 
 /* ------------------------------------------
    A. Styles communs aux sections
@@ -457,14 +429,16 @@ main h2 {
 
 /* Amélioration de l'affichage des catégories */
 
+/* Grille responsive des catégories */
 .categories > ul {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(min(100%, 180px), 1fr)
+    minmax(min(100%, 9rem), 1fr)
   );
-  gap: var(--espace);
+  gap: 0.5rem;
 }
+
 
 .categories li {
   background-color: var(--couleur-surface);
@@ -514,6 +488,343 @@ main h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
+  }
+
+}
+
+/* Contenu principal et pied de page centrés */
+main,
+.pied {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+/* En-tête sur toute la largeur de l'écran */
+.entete {
+  padding-inline: var(--espace);
+}
+
+
+/* Espacements adaptés aux tablettes */
+@media (min-width: 48rem) {
+  :root {
+    --espace: 1.5rem;
+  }
+}
+
+/* Espacements adaptés aux ordinateurs */
+@media (min-width: 64rem) {
+  :root {
+    --espace: 2rem;
+  }
+}
+
+
+/* Organisation flexible de l'en-tête */
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espace);
+}
+
+/* Logo aligné à gauche, autres éléments poussés à droite */
+.entete .logo {
+  margin-inline-end: auto;
+}
+
+/* Recherche et navigation sur toute la largeur du téléphone */
+.entete .recherche,
+.entete .menu {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+/* Organisation du formulaire de recherche */
+.entete .recherche {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Libellé de recherche au-dessus du champ */
+.entete .recherche label {
+  flex: 0 0 100%;
+}
+
+/* Champ de recherche adaptable */
+.entete .recherche input {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+
+/* Bouton de recherche à sa taille naturelle */
+.entete .recherche button {
+  flex: 0 0 auto;
+}
+
+/* Recherche replacée à côté du logo sur tablette */
+@media (min-width: 48rem) {
+  .entete .recherche {
+    flex: 0 1 20rem;
+  }
+
+  .entete .menu {
+    flex: 1 1 100%;
+  }
+}
+
+/* Navigation intégrée à la ligne principale sur ordinateur */
+@media (min-width: 64rem) {
+  .entete .menu {
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .entete .menu ul {
+    gap: 0 0.5rem;
+  }
+
+  .entete .menu a {
+    padding-inline: 0.375rem;
+  }
+}
+
+
+/* Liens du menu et du pied de page alignés horizontalement */
+.menu ul,
+.pied ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+
+/* Liens suffisamment grands pour être utilisés au doigt */
+.menu a,
+.pied a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+
+/* Langues alignées horizontalement avec retour à la ligne */
+.langues {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1rem;
+  margin-block-start: 0.5rem;
+}
+
+/* Liens de langue accessibles au toucher */
+.langues a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Mise en évidence de la langue sélectionnée */
+.langues a[aria-current="true"] {
+  font-weight: bold;
+}
+
+
+/* Pied de page masqué sur téléphone et tablette */
+.pied {
+  display: none;
+}
+
+/* Pied de page en trois colonnes sur ordinateur */
+@media (min-width: 64rem) {
+  .pied {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--espace);
+  }
+
+  /* Liens organisés verticalement dans chaque colonne */
+  .pied nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  /* Copyright sur toute la largeur du pied de page */
+  .pied p {
+    grid-column: 1 / -1;
+  }
+}
+
+
+/* Image principale du carrousel au format carré sur téléphone */
+.carrousel .slide:first-child picture {
+  display: block;
+  width: 100%;
+}
+
+.carrousel .slide:first-child picture img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Image large sur tablette et ordinateur */
+@media (min-width: 48rem) {
+  .carrousel .slide:first-child picture img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+
+/* Carrousel horizontal avec défilement aimanté */
+.defile {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+}
+
+/* Chaque diapositive occupe toute la largeur du carrousel */
+.defile > .slide {
+  display: grid;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+/* Superposition de l'image et du texte */
+.defile > .slide > picture,
+.defile > .slide > img,
+.defile > .slide > .slide-texte {
+  grid-area: 1 / 1;
+}
+
+/* Images occupant la largeur de leur diapositive */
+.defile > .slide > picture,
+.defile > .slide > img {
+  width: 100%;
+}
+
+/* Images sans déformation */
+.defile > .slide > img,
+.defile > .slide > picture img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Texte placé en bas de l'image */
+.slide-texte {
+  align-self: end;
+  z-index: 1;
+  padding: var(--espace);
+  color: #ffffff;
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.9),
+    rgb(0 0 0 / 0.55) 65%,
+    transparent
+  );
+  border-radius: 0 0 var(--arrondi) var(--arrondi);
+}
+
+/* Liens lisibles sur le fond sombre */
+.slide-texte a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Défilement doux uniquement si les animations sont autorisées */
+@media (prefers-reduced-motion: no-preference) {
+  .defile {
+    scroll-behavior: smooth;
+  }
+}
+
+
+/* Navigation entre les diapositives */
+.pastilles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-start: var(--espace);
+}
+
+/* Zone cliquable suffisamment grande pour le doigt */
+.pastilles a {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Petits ronds de navigation */
+.pastilles a::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--couleur-primaire);
+}
+
+/* Changement de couleur au survol */
+.pastilles a:hover::before {
+  background-color: var(--couleur-primaire-fonce);
+}
+
+
+/* Liste des produits avec retour automatique à la ligne */
+.top-produits > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espace);
+}
+
+/* Chaque carte peut grandir ou rétrécir selon l'espace disponible */
+.top-produits > ul > li {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+/* Cartes de même hauteur avec contenu organisé verticalement */
+.produit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+}
+
+/* Prix alignés en bas des cartes */
+.produit .prix {
+  margin-block-start: auto;
+}
+
+/* Animations activées uniquement si l'utilisateur les autorise */
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Transition douce des cartes produits */
+  .produit {
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+  }
+
+  /* Carte mise en évidence au survol ou au clavier */
+  .produit:hover,
+  .produit:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 0.15);
+  }
+
+  /* Transition douce de la couleur des boutons */
+  .btn,
+  .recherche button {
+    transition: background-color 0.2s ease;
   }
 
 }
