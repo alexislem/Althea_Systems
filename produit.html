@@ -59,18 +59,31 @@
       </form>
 
       <!-- Navigation principale -->
-      <nav id="menu-principal" class="menu" aria-label="Menu principal">
-        <ul class="liste-reset">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="catalogue.html">Catalogue</a></li>
-          <li><a href="compte.html">Mon compte</a></li>
-          <li><a href="cgu.html">CGU</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/">Instagram</a></li>
-        </ul>
-      </nav>
+<!-- Navigation pour un visiteur non connecté -->
+<nav id="menu-principal" class="menu" aria-label="Menu principal">
+  <ul class="liste-reset">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="categorie.html">Catégories</a></li>
+    <li><a href="connexion.html">Se connecter</a></li>
+    <li><a href="inscription.html">S’inscrire</a></li>
+    <li><a href="cgu.html">CGU</a></li>
+    <li><a href="mentions-legales.html">Mentions légales</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="a-propos.html">À propos d’Althea Systems</a></li>
+    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/">Instagram</a></li>
+  </ul>
+
+  <!-- Choix de la langue : traductions non réalisées -->
+  <p class="langues">
+    Langue :
+    <a href="index.html" lang="fr" hreflang="fr"
+      aria-current="true">Français</a>
+    <a href="en/index.html" lang="en" hreflang="en">English</a>
+    <a href="ar/index.html" lang="ar" hreflang="ar"
+      dir="rtl">العربية</a>
+  </p>
+</nav>
     </header>
 
     <!-- Contenu de la page produit -->
@@ -267,16 +280,31 @@
     </main>
 
     <!-- Pied de page commun -->
-    <footer class="pied">
-      <ul class="liste-reset">
-        <li><a href="cgu.html">CGU</a></li>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-      </ul>
+<footer class="pied">
+  <!-- Colonne 1 : informations légales -->
+  <nav aria-label="Informations légales">
+    <ul class="liste-reset">
+      <li><a href="cgu.html">CGU</a></li>
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+    </ul>
+  </nav>
 
-      <p>© 2026 Althea Systems</p>
-    </footer>
+  <!-- Colonne 2 : contact -->
+  <nav aria-label="Contact">
+    <ul class="liste-reset">
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Colonne 3 : réseaux sociaux -->
+  <nav aria-label="Réseaux sociaux">
+    <ul class="liste-reset">
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+    </ul>
+  </nav>
+
+  <p>© 2026 Althea Systems</p>
+</footer>
   </body>
 </html>
