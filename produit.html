@@ -1,277 +1,272 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Encodage et affichage sur téléphone -->
     <meta charset="utf-8">
+    <!-- Étape 29 : ressources et formulaires limités au site -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Informations de la page produit -->
     <title>OMRON M2 Basic · Althea Systems</title>
     <meta name="description"
-      content="Découvrez le tensiomètre de bras OMRON M2 Basic, son prix et ses caractéristiques techniques.">
-    <meta name="theme-color" content="#005A70">
+      content="Description et caractéristiques du tensiomètre OMRON M2 Basic.">
 
-    <!-- Aperçu de partage : remplacer le domaine avant publication -->
-    <meta property="og:title"
-      content="OMRON M2 Basic · Althea Systems">
+    <!-- Adresse de partage provisoire -->
+    <meta property="og:title" content="OMRON M2 Basic · Althea Systems">
     <meta property="og:description"
-      content="Tensiomètre de bras avec brassard de 22 à 32 cm et mémorisation de la dernière mesure.">
+      content="Découvrez la fiche du tensiomètre de bras OMRON M2 Basic.">
     <meta property="og:image"
-      content="https://althea.example/img/tensiometre-face.jpg">
+      content="https://althea.example/img/tensiometre-face-800.jpg">
     <meta property="og:type" content="product">
 
-    <!-- Icône et feuilles de style -->
-    <link rel="icon" href="img/favicon.svg">
+    <link rel="icon" href="img/Logo.svg">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <!-- Accès direct au contenu -->
     <a class="evitement" href="#contenu">Aller au contenu</a>
 
-    <!-- En-tête commun -->
     <header class="entete">
-      <!-- Logo -->
       <a class="logo" href="index.html">
-        <img src="img/Logo.svg"
-          alt="Althea Systems, accueil"
+        <img src="img/Logo.svg" alt="Althea Systems, accueil"
           width="160" height="40">
       </a>
-
-      <!-- Panier : nombre d’articles simulé -->
       <a class="panier" href="panier.html">
-        Panier
-        <span class="visually-hidden">(2 articles)</span>
+        Panier <span class="visually-hidden">(2 articles)</span>
       </a>
-
-      <!-- Menu visible pour cette version HTML -->
       <button class="menu-bouton" type="button"
-        aria-expanded="true" aria-controls="menu-principal">
-        Menu
-      </button>
-
-      <!-- Recherche -->
-      <form class="recherche" role="search" action="recherche.html">
+        aria-expanded="true" aria-controls="menu-principal">Menu</button>
+      <form class="recherche" role="search"
+        action="recherche.html" method="get">
         <label for="q">Rechercher un produit</label>
         <input id="q" name="q" type="search">
         <button type="submit">Rechercher</button>
       </form>
-
-      <!-- Navigation principale -->
-<!-- Navigation pour un visiteur non connecté -->
-<nav id="menu-principal" class="menu" aria-label="Menu principal">
-  <ul class="liste-reset">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="categorie.html">Catégories</a></li>
-    <li><a href="connexion.html">Se connecter</a></li>
-    <li><a href="inscription.html">S’inscrire</a></li>
-    <li><a href="cgu.html">CGU</a></li>
-    <li><a href="mentions-legales.html">Mentions légales</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="a-propos.html">À propos d’Althea Systems</a></li>
-    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    <li><a href="https://www.instagram.com/">Instagram</a></li>
-  </ul>
-
-  <!-- Choix de la langue : traductions non réalisées -->
-  <p class="langues">
-    Langue :
-    <a href="index.html" lang="fr" hreflang="fr"
-      aria-current="true">Français</a>
-    <a href="en/index.html" lang="en" hreflang="en">English</a>
-    <a href="ar/index.html" lang="ar" hreflang="ar"
-      dir="rtl">العربية</a>
-  </p>
-</nav>
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul class="liste-reset">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie.html">Diagnostic</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="inscription.html">S’inscrire</a></li>
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos d’Althea Systems</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+        <p class="langues">
+          Langue :
+          <a href="produit.html" lang="fr" hreflang="fr"
+            aria-current="true">Français</a>
+          <a href="en/produit.html" lang="en" hreflang="en">English</a>
+          <a href="ar/produit.html" lang="ar" hreflang="ar"
+            dir="rtl">العربية</a>
+        </p>
+      </nav>
     </header>
 
-    <!-- Contenu de la page produit -->
     <main id="contenu">
-      <!-- Fil d’Ariane -->
       <nav class="ariane" aria-label="Fil d’Ariane">
         <ol>
           <li><a href="index.html">Accueil</a></li>
-          <li>
-            <a href="catalogue.html?categorie=diagnostic">Diagnostic</a>
-          </li>
-          <li>
-            <span aria-current="page">OMRON M2 Basic</span>
-          </li>
+          <li><a href="categorie.html">Diagnostic</a></li>
+          <li><span aria-current="page">OMRON M2 Basic</span></li>
         </ol>
       </nav>
 
-      <!-- Fiche détaillée -->
-      <article class="fiche">
-        <h1>Tensiomètre de bras OMRON M2 Basic</h1>
-
-        <!-- Trois vues du produit -->
-        <section class="illustrations" aria-labelledby="titre-photos">
-          <h2 id="titre-photos">Photos du produit</h2>
-
-          <ul class="liste-reset">
+      <!-- Trois zones : images, informations, description -->
+      <article class="fiche" aria-labelledby="nom-produit">
+        <section class="fiche-images" aria-label="Photos du produit">
+          <ul class="defile galerie liste-reset" tabindex="0"
+            aria-label="Photos du produit, à faire défiler">
             <li>
-              <img src="img/tensiometre-face.jpg"
-                alt="OMRON M2 Basic vu de face avec son écran">
+              <img src="img/tensiometre-face-400.jpg"
+                srcset="img/tensiometre-face-400.jpg 400w,
+                        img/tensiometre-face-800.jpg 800w"
+                sizes="(min-width: 64rem) 50vw, 100vw"
+                alt="Détail du tensiomètre OMRON M2 Basic"
+                width="400" height="300">
             </li>
             <li>
-              <img src="img/tensiometre-brassard.jpg"
-                alt="Brassard du tensiomètre OMRON M2 Basic">
+              <img src="img/tensiometre-brassard-400.jpg"
+                srcset="img/tensiometre-brassard-400.jpg 400w,
+                        img/tensiometre-brassard-800.jpg 800w"
+                sizes="(min-width: 64rem) 50vw, 100vw"
+                alt="Brassard du tensiomètre OMRON M2 Basic"
+                width="400" height="300">
             </li>
             <li>
-              <img src="img/tensiometre-contenu.jpg"
-                alt="Tensiomètre OMRON M2 Basic et ses accessoires">
+              <img src="img/tensiometre-contenu-400.jpg"
+                srcset="img/tensiometre-contenu-400.jpg 400w,
+                        img/tensiometre-contenu-800.jpg 800w"
+                sizes="(min-width: 64rem) 50vw, 100vw"
+                alt="OMRON M2 Basic avec ses accessoires"
+                width="400" height="300">
             </li>
           </ul>
         </section>
 
-        <!-- Description du produit -->
-        <p class="description">
-          Le tensiomètre de bras OMRON M2 Basic permet de mesurer
-          la pression artérielle et le pouls. Son brassard convient
-          aux tours de bras de 22 à 32 cm. L’appareil mémorise
-          la dernière mesure et fonctionne avec quatre piles AA.
-        </p>
+        <!-- Informations d’achat -->
+        <div class="fiche-infos">
+          <h1 id="nom-produit">Tensiomètre de bras OMRON M2 Basic</h1>
+          <p class="prix-fiche">
+            <data value="45.70">45,70 € TTC</data>
+          </p>
+          <p class="stock stock-rupture">
+            Disponibilité : en rupture de stock
+          </p>
+          <p class="aide">Prix de référence et rupture simulée pour le TP.</p>
 
-        <!-- Prix de référence retenu pour le TP -->
-        <p class="prix-fiche">
-          Prix : <data value="45.70">45,70 € TTC</data>
-        </p>
+          <form class="achat" action="panier.html" method="post">
+            <label for="quantite">Quantité</label>
+            <input id="quantite" name="quantite" type="number"
+              min="1" max="10" value="1" disabled>
+            <button class="btn" type="submit" disabled>
+              En rupture de stock
+            </button>
+          </form>
+        </div>
 
-        <!-- Rupture de stock simulée pour le TP -->
-        <p class="stock stock-rupture">
-          Disponibilité : en rupture de stock
-        </p>
+        <!-- Description et caractéristiques -->
+        <div class="fiche-description">
+          <h2>Description du produit</h2>
+          <p>
+            Le tensiomètre de bras OMRON M2 Basic mesure la pression
+            artérielle et le pouls. Il mémorise la dernière mesure.
+          </p>
 
-        <!-- Achat désactivé pour le produit épuisé -->
-        <form class="achat" action="panier.html">
-          <label for="quantite">Quantité</label>
-          <input id="quantite" name="quantite" type="number"
-            min="1" max="10" value="1" disabled>
+          <section class="caracteristiques"
+            aria-labelledby="titre-caracteristiques">
+            <h2 id="titre-caracteristiques">Caractéristiques techniques</h2>
+            <dl>
+              <dt>Brassard inclus</dt>
+              <dd>Tour de bras de 22 à 32 cm</dd>
+              <dt>Mémoire</dt>
+              <dd>Dernière mesure enregistrée</dd>
+              <dt>Alimentation</dt>
+              <dd>4 piles AA de 1,5 V</dd>
+              <dt>Poids de l’appareil</dt>
+              <dd>Environ 250 g sans piles</dd>
+            </dl>
+          </section>
 
-          <button class="btn" type="submit" disabled>
-            En rupture de stock
-          </button>
-        </form>
+          <!-- Tableau pédagogique demandé à l’étape 23 -->
+          <section aria-labelledby="titre-tailles">
+            <h2 id="titre-tailles">Choisir la taille du brassard</h2>
+            <p>
+              Mesurez le tour du bras à mi-distance entre l’épaule
+              et le coude avec un ruban souple.
+            </p>
+            <p id="aide-tailles" class="aide">
+              Tableau fictif de l’exercice : ces références ne décrivent
+              pas les accessoires compatibles OMRON. Le brassard de la
+              fiche ci-dessus est de 22 à 32 cm.
+            </p>
 
-        <!-- Caractéristiques techniques -->
-        <section class="caracteristiques"
-          aria-labelledby="titre-caracteristiques">
-          <h2 id="titre-caracteristiques">Caractéristiques techniques</h2>
-
-          <dl>
-            <dt>Tour de bras</dt>
-            <dd>De 22 à 32 cm</dd>
-
-            <dt>Mémoire</dt>
-            <dd>Dernière mesure enregistrée</dd>
-
-            <dt>Alimentation</dt>
-            <dd>4 piles AA de 1,5 V</dd>
-
-            <dt>Poids de l’appareil</dt>
-            <dd>Environ 250 g sans piles</dd>
-          </dl>
-        </section>
+            <section class="defile-tableau" tabindex="0"
+              aria-labelledby="legende-tailles"
+              aria-describedby="aide-tailles">
+              <table class="tailles">
+                <caption id="legende-tailles">
+                  Tailles de brassards — données pédagogiques
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Taille</th>
+                    <th scope="col">Tour de bras</th>
+                    <th scope="col">Pour qui</th>
+                    <th scope="col">Référence fictive</th>
+                    <th scope="col">Fourni dans le TP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Petit</th>
+                    <td>17–22 cm</td>
+                    <td>Petit tour de bras</td>
+                    <td>TP-P</td>
+                    <td>Non</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Standard</th>
+                    <td>22–42 cm</td>
+                    <td>Tour de bras standard</td>
+                    <td>TP-S</td>
+                    <td>Oui, scénario du TP</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Grand</th>
+                    <td>32–52 cm</td>
+                    <td>Grand tour de bras</td>
+                    <td>TP-G</td>
+                    <td>Non</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+        </div>
       </article>
 
-      <!-- Six cartes de démonstration de la catégorie Diagnostic -->
-      <section class="top-produits" aria-labelledby="titre-similaires">
+      <!-- Six produits similaires statiques -->
+      <section class="similaires" aria-labelledby="titre-similaires">
         <h2 id="titre-similaires">Produits similaires</h2>
+        <p class="aide">Sélection et prix de démonstration.</p>
 
-        <ul class="liste-reset">
+        <ul class="produits liste-reset">
           <li>
             <article class="produit">
               <img src="img/tensiometre-poignet.jpg"
-                alt="Tensiomètre à placer au poignet">
-              <h3>
-                <a href="produit.html?ref=tensiometre-poignet">
-                  Tensiomètre de poignet
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="39.90">39,90 € TTC</data>
-              </p>
+                alt="Tensiomètre de poignet" loading="lazy">
+              <h3><a href="produit.html?ref=poignet">Tensiomètre de poignet</a></h3>
+              <p class="prix"><data value="39.90">39,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
-
           <li>
             <article class="produit">
               <img src="img/stethoscope.jpg"
-                alt="Stéthoscope médical à double pavillon">
-              <h3>
-                <a href="produit.html?ref=stethoscope">
-                  Stéthoscope double pavillon
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="29.90">29,90 € TTC</data>
-              </p>
+                alt="Stéthoscope à double pavillon" loading="lazy">
+              <h3><a href="produit.html?ref=stethoscope">Stéthoscope double pavillon</a></h3>
+              <p class="prix"><data value="29.90">29,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
-
           <li>
             <article class="produit">
               <img src="img/thermometre.jpg"
-                alt="Thermomètre numérique">
-              <h3>
-                <a href="produit.html?ref=thermometre">
-                  Thermomètre numérique
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="14.90">14,90 € TTC</data>
-              </p>
+                alt="Thermomètre numérique" loading="lazy">
+              <h3><a href="produit.html?ref=thermometre">Thermomètre numérique</a></h3>
+              <p class="prix"><data value="14.90">14,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
-
           <li>
             <article class="produit">
               <img src="img/oxymetre.jpg"
-                alt="Oxymètre de pouls à placer au doigt">
-              <h3>
-                <a href="produit.html?ref=oxymetre">
-                  Oxymètre de pouls
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="34.90">34,90 € TTC</data>
-              </p>
+                alt="Oxymètre de pouls" loading="lazy">
+              <h3><a href="produit.html?ref=oxymetre">Oxymètre de pouls</a></h3>
+              <p class="prix"><data value="34.90">34,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
-
           <li>
             <article class="produit">
               <img src="img/otoscope.jpg"
-                alt="Otoscope médical portatif">
-              <h3>
-                <a href="produit.html?ref=otoscope">
-                  Otoscope portatif
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="79.90">79,90 € TTC</data>
-              </p>
+                alt="Otoscope portatif" loading="lazy">
+              <h3><a href="produit.html?ref=otoscope">Otoscope portatif</a></h3>
+              <p class="prix"><data value="79.90">79,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
-
           <li>
             <article class="produit">
               <img src="img/balance.jpg"
-                alt="Balance numérique médicale">
-              <h3>
-                <a href="produit.html?ref=balance">
-                  Balance numérique
-                </a>
-              </h3>
-              <p class="prix">
-                <data value="49.90">49,90 € TTC</data>
-              </p>
+                alt="Balance numérique" loading="lazy">
+              <h3><a href="produit.html?ref=balance">Balance numérique</a></h3>
+              <p class="prix"><data value="49.90">49,90 € TTC</data></p>
               <p class="stock">En stock</p>
             </article>
           </li>
@@ -279,32 +274,25 @@
       </section>
     </main>
 
-    <!-- Pied de page commun -->
-<footer class="pied">
-  <!-- Colonne 1 : informations légales -->
-  <nav aria-label="Informations légales">
-    <ul class="liste-reset">
-      <li><a href="cgu.html">CGU</a></li>
-      <li><a href="mentions-legales.html">Mentions légales</a></li>
-    </ul>
-  </nav>
-
-  <!-- Colonne 2 : contact -->
-  <nav aria-label="Contact">
-    <ul class="liste-reset">
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Colonne 3 : réseaux sociaux -->
-  <nav aria-label="Réseaux sociaux">
-    <ul class="liste-reset">
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/">Instagram</a></li>
-    </ul>
-  </nav>
-
-  <p>© 2026 Althea Systems</p>
-</footer>
+    <footer class="pied">
+      <nav aria-label="Informations légales">
+        <ul class="liste-reset">
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Contact">
+        <ul class="liste-reset">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Réseaux sociaux">
+        <ul class="liste-reset">
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Althea Systems</p>
+    </footer>
   </body>
 </html>
