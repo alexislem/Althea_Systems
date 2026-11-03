@@ -1,21 +1,31 @@
-
-
 :root {
+  color-scheme: light dark;
 
   /* Couleurs principales */
-  --couleur-primaire: #075985;        /* Bleu Althea : contraste 7,56:1 sur blanc */
-  --couleur-primaire-fonce: #0B3B60;  /* Bleu foncé : contraste 11,61:1 sur blanc */
+  --couleur-primaire: #075985;
+  --couleur-primaire-fonce: #0B3B60;
 
   /* Couleurs des textes */
-  --couleur-texte: #1F2937;          /* Texte principal : contraste 14,68:1 */
-  --couleur-texte-discret: #475569;   /* Texte secondaire : contraste 7,58:1 */
+  --couleur-texte: #1F2937;
+  --couleur-texte-discret: #475569;
 
   /* Couleurs des fonds */
-  --couleur-fond: #F8FAFC;           /* Fond général du site */
-  --couleur-surface: #FFFFFF;        /* Fond des cartes et sections */
+  --couleur-fond: #F8FAFC;
+  --couleur-surface: #FFFFFF;
 
   /* Couleur d'alerte */
-  --couleur-alerte: #B91C1C;         /* Rouge rupture de stock : contraste 6,47:1 */
+  --couleur-alerte: #B91C1C;
+
+  /* Texte des boutons et sur les images */
+  --couleur-bouton-texte: #FFFFFF;
+  --couleur-sur-image: #FFFFFF;
+
+  /* Contrastes du mode clair sur blanc :
+     Bleu : 7,56:1
+     Texte principal : 14,68:1
+     Texte secondaire : 7,58:1
+     Alerte : 6,47:1
+  */
 
   /* Police d'écriture */
   --police: system-ui, sans-serif;
@@ -36,5 +46,38 @@
 
   /* Taille minimale des éléments cliquables */
   --cible: 44px;
+}
 
+/* Couleurs utilisées lorsque l'appareil est en mode sombre */
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    /* Couleurs principales */
+    --couleur-primaire: #7DD3FC;
+    --couleur-primaire-fonce: #38BDF8;
+
+    /* Couleurs des textes */
+    --couleur-texte: #F8FAFC;
+    --couleur-texte-discret: #CBD5E1;
+
+    /* Couleurs des fonds */
+    --couleur-fond: #0F172A;
+    --couleur-surface: #1E293B;
+
+    /* Couleur d'alerte */
+    --couleur-alerte: #FCA5A5;
+
+    /* Texte des boutons et sur les images */
+    --couleur-bouton-texte: #0F172A;
+    --couleur-sur-image: #FFFFFF;
+
+    /* Contrastes sur le fond sombre et la surface :
+       Texte principal : 17,06:1 / 13,98:1
+       Texte secondaire : 12,02:1 / 9,85:1
+       Bleu principal : 10,71:1 / 8,77:1
+       Alerte : 9,41:1 / 7,71:1
+       Texte des boutons sur bleu : 10,71:1
+    */
+
+  }
 }
