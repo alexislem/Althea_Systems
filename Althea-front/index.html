@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
+
+<script type="module" src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -110,7 +113,7 @@
     
   <section class="carrousel" aria-label="À la une">
 
-    <ul class="defile liste-reset"
+    <ul id="une-defile" class="defile liste-reset"
         tabindex="0"
         aria-label="À la une, à faire défiler">
 
@@ -193,7 +196,7 @@
 
 <nav class="pastilles" aria-label="Choisir une slide">
 
-  <a href="#une-1">
+  <a href="#une-1" aria-current="true">
     <span class="visually-hidden">
       Afficher la diapositive 1 : Gants médicaux
     </span>
@@ -212,6 +215,26 @@
   </a>
 
 </nav>
+
+
+<div class="commandes-carrousel">
+
+  <button
+    class="precedent"
+    type="button"
+    aria-controls="une-defile">
+    Précédent
+  </button>
+
+  <button
+    class="suivant"
+    type="button"
+    aria-controls="une-defile">
+    Suivant
+  </button>
+
+</div>
+
 
   </section>
 

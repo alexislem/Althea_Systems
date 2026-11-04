@@ -5,6 +5,15 @@ import { afficherCatalogue } from "./catalogue.js";
 import { ajouter } from "./panier.js";
 import { mettreAJourIcone } from "./icone-panier.js";
 import { lancerTests } from "./tests.js";
+import { initialiserMenu } from "./menu.js";
+import { initialiserCarrousel } from "./carrousel.js";
+
+
+/* Initialise le menu sur toutes les pages */
+initialiserMenu();
+
+/* Initialise le carrousel sur la page d'accueil */
+initialiserCarrousel();
 
 /* Récupération des éléments du catalogue */
 const liste = document.querySelector("#liste-produits");
@@ -14,14 +23,12 @@ const choixTri = document.querySelector("#choix-tri");
 
 if (liste && caseDispo && nombreProduits && choixTri) {
 
-  // Récupère le tri enregistré dans l'adresse
   const parametres = new URLSearchParams(window.location.search);
 
   choixTri.value = lireTri(parametres.get("tri"));
 
   /* Filtre, trie et affiche les produits */
   const rafraichir = () => {
-
     const produitsFiltres = caseDispo.checked
       ? produits.filter((produit) => produit.stock > 0)
       : produits;
@@ -44,7 +51,6 @@ if (liste && caseDispo && nombreProduits && choixTri) {
 
   /* Choix du tri */
   choixTri.addEventListener("change", () => {
-
     const adresse = new URL(window.location.href);
 
     adresse.searchParams.set("tri", choixTri.value);
@@ -60,7 +66,6 @@ if (liste && caseDispo && nombreProduits && choixTri) {
 
   /* Ajout au panier avec délégation d'événement */
   liste.addEventListener("click", (event) => {
-
     const bouton = event.target.closest("button[data-id]");
 
     if (!bouton || bouton.disabled) {
@@ -71,14 +76,13 @@ if (liste && caseDispo && nombreProduits && choixTri) {
     mettreAJourIcone();
   });
 
-  // Premier affichage
   rafraichir();
 }
 
-/* Initialise le compteur du panier */
+/* Met à jour l'indicateur du panier */
 mettreAJourIcone();
 
-/* Lance les tests uniquement si l'URL contient ?tests */
+/* Lance les tests uniquement si l'adresse contient ?tests */
 if (new URLSearchParams(window.location.search).has("tests")) {
   lancerTests();
 }
