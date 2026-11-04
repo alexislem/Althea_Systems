@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
+
+  <script type="module" src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -142,141 +145,51 @@
 
       <h2 id="titre-produits">Les produits de la catégorie</h2>
 
-      <ul class="produits liste-reset">
 
-        <li>
-          <article class="produit">
+      
+<div class="filtre">
 
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
+  <label>
+    <input
+      type="checkbox"
+      id="dispo-seulement">
 
-            <h3>
-              <a href="produit.html">Tensiomètre manuel de bras</a>
-            </h3>
+    Disponibles seulement
+  </label>
 
-            <p class="prix">
-              <data value="29.90">29,90 €</data>
-            </p>
+  <div class="filtre-tri">
 
-            <p class="stock">En stock</p>
+    <label for="choix-tri">
+      Trier par
+    </label>
 
-          </article>
-        </li>
+    <select id="choix-tri" name="tri">
 
-        <li>
-          <article class="produit">
+      <option value="recommande">
+        Recommandé
+      </option>
 
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
+      <option value="prix-croissant">
+        Prix croissant
+      </option>
 
-            <h3>
-              <a href="produit.html">Tensiomètre de consultation</a>
-            </h3>
+      <option value="prix-decroissant">
+        Prix décroissant
+      </option>
 
-            <p class="prix">
-              <data value="39.90">39,90 €</data>
-            </p>
+    </select>
 
-            <p class="stock">En stock</p>
+  </div>
 
-          </article>
-        </li>
+  <p id="nb-produits" aria-live="polite"></p>
 
-        <li>
-          <article class="produit">
+</div>
 
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
 
-            <h3>
-              <a href="produit.html">Tensiomètre portable</a>
-            </h3>
 
-            <p class="prix">
-              <data value="34.90">34,90 €</data>
-            </p>
+      <ul id="liste-produits" class="produits liste-reset">
 
-            <p class="stock">En stock</p>
-
-          </article>
-        </li>
-
-        <li>
-          <article class="produit">
-
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
-
-            <h3>
-              <a href="produit.html">Tensiomètre compact de bras</a>
-            </h3>
-
-            <p class="prix">
-              <data value="44.90">44,90 €</data>
-            </p>
-
-            <p class="stock">En stock</p>
-
-          </article>
-        </li>
-
-        <li>
-          <article class="produit">
-
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
-
-            <h3>
-              <a href="produit.html">Tensiomètre avec brassard large</a>
-            </h3>
-
-            <p class="prix">
-              <data value="54.90">54,90 €</data>
-            </p>
-
-            <p class="stock">En stock</p>
-
-          </article>
-        </li>
-
-        <li>
-          <article class="produit">
-
-            <img src="img/tensiometre_bras.jpg"
-                 alt=""
-                 width="400"
-                 height="300"
-                 loading="lazy">
-
-            <h3>
-              <a href="produit.html">Tensiomètre électronique de bras</a>
-            </h3>
-
-            <p class="prix">
-              <data value="49.90">49,90 €</data>
-            </p>
-
-            <p class="stock stock-rupture">
-              En rupture de stock
-            </p>
-
-          </article>
-        </li>
+          <!-- Les cartes produits seront créées par JavaScript -->
 
       </ul>
 
