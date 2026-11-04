@@ -154,9 +154,9 @@
 
     </nav>
 
-    
-<article class="fiche">
 
+<article class="fiche" data-id="tensiometre-electronique-bras">
+  
   <div class="fiche-images">
 
     
@@ -221,7 +221,7 @@
     </p>
 
     <form class="achat" action="panier.html">
-
+    
       <label for="quantite">Quantité</label>
 
       <input
@@ -236,6 +236,9 @@
       <button class="btn" type="submit" disabled>
         En rupture de stock
       </button>
+
+<p class="message-achat" aria-live="polite"></p>
+
 
     </form>
 
@@ -344,6 +347,23 @@
 </section>
 
   </div>
+
+
+<!-- Avis clients chargés depuis un fichier JSON -->
+<section class="avis" aria-labelledby="titre-avis">
+
+  <h2 id="titre-avis">Avis clients</h2>
+
+  <p id="etat-avis" aria-live="polite">
+    Chargement des avis…
+  </p>
+
+  <ul id="liste-avis" class="liste-reset">
+    <!-- Les avis seront ajoutés automatiquement en JavaScript -->
+  </ul>
+
+</section>
+
 
 </article>
 

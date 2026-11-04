@@ -1,0 +1,27 @@
+
+[
+  {
+    "produit": "tensiometre-electronique-bras",
+    "auteur": "Sophie Martin",
+    "note": 5,
+    "texte": "Très bon tensiomètre, facile à utiliser et pratique au quotidien."
+  },
+  {
+    "produit": "tensiometre-electronique-bras",
+    "auteur": "Thomas Bernard",
+    "note": 4,
+    "texte": "Produit satisfaisant, les mesures sont faciles à lire."
+  },
+  {
+    "produit": "tensiometre-electronique-bras",
+    "auteur": "<img src=x onerror=alert(1)>",
+    "note": 3,
+    "texte": "Avis de test <strong>texte piégé</strong> : ce HTML ne doit pas être interprété."
+  },
+  {
+    "produit": "tensiometre-electronique-bras",
+    "auteur": "Utilisateur test",
+    "note": 50,
+    "texte": "Cet avis possède une note invalide et ne doit pas apparaître."
+  }
+]
