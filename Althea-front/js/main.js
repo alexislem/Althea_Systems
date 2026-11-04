@@ -9,6 +9,7 @@ import { initialiserMenu } from "./menu.js";
 import { initialiserCarrousel } from "./carrousel.js";
 import { initialiserFiche } from "./fiche.js";
 import { chargerAvis } from "./avis.js";
+import { initialiserRecherche } from "./recherche.js";
 
 
 
@@ -23,6 +24,9 @@ initialiserFiche();
 
 /* Charge et affiche les avis du produit courant */
 chargerAvis();
+
+/* Initialise la recherche sur la page Recherche */
+initialiserRecherche();
 
 /* Récupération des éléments du catalogue */
 const liste = document.querySelector("#liste-produits");
