@@ -1,14 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-   <meta http-equiv="Content-Security-Policy"
+
+  <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 
   <meta name="referrer"
         content="strict-origin-when-cross-origin">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Recherche - Althea Systems</title>
 
@@ -21,8 +25,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
 
-<script type="module" src="js/main.js"></script>
-
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -47,6 +50,7 @@
       Menu
     </button>
 
+    <!-- Recherche rapide dans l'en-tête -->
     <form class="recherche"
           role="search"
           action="recherche.html"
@@ -60,6 +64,7 @@
 
     </form>
 
+    <!-- Navigation principale -->
     <nav id="menu-principal"
          class="menu"
          aria-label="Menu principal">
@@ -100,22 +105,29 @@
 
       </ul>
 
+      <!-- Sélection de la langue -->
       <p class="langues">
         Langue :
 
         <a href="recherche.html"
            lang="fr"
            hreflang="fr"
-           aria-current="true">Français</a>
+           aria-current="true">
+          Français
+        </a>
 
         <a href="en/recherche.html"
            lang="en"
-           hreflang="en">English</a>
+           hreflang="en">
+          English
+        </a>
 
         <a href="ar/recherche.html"
            lang="ar"
            hreflang="ar"
-           dir="rtl">العربية</a>
+           dir="rtl">
+          العربية
+        </a>
       </p>
 
     </nav>
@@ -128,6 +140,7 @@
 
     <div class="recherche-avancee">
 
+      <!-- Formulaire de recherche avancée -->
       <form class="facettes"
             action="recherche.html"
             method="get"
@@ -136,90 +149,132 @@
 
         <h2>Filtres de recherche</h2>
 
+        <!-- Recherche par nom -->
         <div class="champ">
+
           <label for="f-nom">Nom du produit</label>
+
           <input id="f-nom"
                  name="nom"
                  type="search">
+
         </div>
 
+        <!-- Recherche par description -->
         <div class="champ">
+
           <label for="f-description">Description</label>
+
           <input id="f-description"
                  name="description"
                  type="search">
+
         </div>
 
+        <!-- Recherche par caractéristique -->
         <div class="champ">
+
           <label for="f-caracteristique">Caractéristique</label>
+
           <input id="f-caracteristique"
                  name="caracteristique"
                  type="search">
+
         </div>
 
+        <!-- Filtres de prix -->
         <fieldset>
 
           <legend>Prix en euros</legend>
 
           <div class="champ">
+
             <label for="f-prix-min">Prix minimum</label>
+
             <input id="f-prix-min"
                    name="prixMin"
                    type="number"
                    min="0"
                    step="0.01">
+
           </div>
 
           <div class="champ">
+
             <label for="f-prix-max">Prix maximum</label>
+
             <input id="f-prix-max"
                    name="prixMax"
                    type="number"
                    min="0"
                    step="0.01">
+
           </div>
 
         </fieldset>
 
+        <!-- Filtres de catégories -->
         <fieldset>
 
           <legend>Catégories</legend>
 
           <div class="choix">
+
             <input id="f-diagnostic"
                    type="checkbox"
                    name="categorie[]"
                    value="diagnostic">
-            <label for="f-diagnostic">Diagnostic</label>
+
+            <label for="f-diagnostic">
+              Diagnostic
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-soins"
                    type="checkbox"
                    name="categorie[]"
                    value="soins">
-            <label for="f-soins">Soins</label>
+
+            <label for="f-soins">
+              Soins
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-mobilier"
                    type="checkbox"
                    name="categorie[]"
                    value="mobilier">
-            <label for="f-mobilier">Mobilier</label>
+
+            <label for="f-mobilier">
+              Mobilier
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-consommables"
                    type="checkbox"
                    name="categorie[]"
                    value="consommables">
-            <label for="f-consommables">Consommables</label>
+
+            <label for="f-consommables">
+              Consommables
+            </label>
+
           </div>
 
         </fieldset>
 
+        <!-- Filtre de disponibilité -->
         <div class="choix">
+
           <input id="f-disponible"
                  type="checkbox"
                  name="disponible"
@@ -228,25 +283,28 @@
           <label for="f-disponible">
             Disponibles seulement
           </label>
+
         </div>
 
+        <!-- Choix du tri -->
         <div class="champ">
 
           <label for="f-tri">Trier par</label>
 
           <select id="f-tri" name="tri">
-            <option value="prix-asc">
+
+            <option value="recommande">
+              Recommandé
+            </option>
+
+            <option value="prix-croissant">
               Prix croissant
             </option>
-            <option value="prix-desc">
+
+            <option value="prix-decroissant">
               Prix décroissant
             </option>
-            <option value="nouveaute">
-              Nouveauté
-            </option>
-            <option value="disponibilite">
-              Disponibilité
-            </option>
+
           </select>
 
         </div>
@@ -257,165 +315,28 @@
 
       </form>
 
+      <!-- Résultats de la recherche générés en JavaScript -->
       <section class="resultats"
                aria-labelledby="titre-resultats">
 
         <h2 id="titre-resultats">
-          Résultats : 6 produits
+          Résultats de recherche
         </h2>
 
-        <ul class="produits liste-reset">
+        <!-- Message affiché lorsque la recherche ne trouve rien -->
+        <p id="aucun-resultat" hidden>
+          Aucun produit ne correspond à votre recherche.
+        </p>
 
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre manuel de bras
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="29.90">29,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre de consultation
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="39.90">39,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre portable
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="34.90">34,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre compact de bras
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="44.90">44,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre avec brassard large
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="54.90">54,90 €</data>
-              </p>
-
-              <p class="stock">En stock</p>
-
-            </article>
-          </li>
-
-          <li>
-            <article class="produit">
-
-              <img src="img/tensiometre_bras.jpg"
-                   alt=""
-                   width="400"
-                   height="300"
-                   loading="lazy">
-
-              <h3>
-                <a href="produit.html">
-                  Tensiomètre électronique de bras
-                </a>
-              </h3>
-
-              <p class="prix">
-                <data value="49.90">49,90 €</data>
-              </p>
-
-              <p class="stock stock-rupture">
-                En rupture de stock
-              </p>
-
-            </article>
-          </li>
-
+        <!-- Les produits seront ajoutés par afficherCatalogue() -->
+        <ul id="resultats-produits"
+            class="produits liste-reset">
         </ul>
 
+        <!-- Pagination conservée mais masquée -->
         <nav class="pagination"
-             aria-label="Pagination des résultats">
+             aria-label="Pagination des résultats"
+             hidden>
 
           <ul class="liste-reset">
 
@@ -454,19 +375,23 @@
 
   </main>
 
+  <!-- Pied de page commun -->
   <footer class="pied">
 
     <nav aria-label="Informations légales">
 
       <ul class="liste-reset">
+
         <li>
           <a href="cgu.html">CGU</a>
         </li>
+
         <li>
           <a href="mentions-legales.html">
             Mentions légales
           </a>
         </li>
+
       </ul>
 
     </nav>
@@ -474,11 +399,13 @@
     <nav aria-label="Contact">
 
       <ul class="liste-reset">
+
         <li>
           <a href="contact.html">
             Nous contacter
           </a>
         </li>
+
       </ul>
 
     </nav>
@@ -486,24 +413,24 @@
     <nav aria-label="Réseaux sociaux">
 
       <ul class="liste-reset">
-        
-<li>
-  <a href="https://www.linkedin.com/"
-     target="_blank"
-     rel="noopener noreferrer">
-    LinkedIn
-    <span class="visually-hidden">(nouvel onglet)</span>
-  </a>
-</li>
 
-<li>
-  <a href="https://www.instagram.com/"
-     target="_blank"
-     rel="noopener noreferrer">
-    Instagram
-    <span class="visually-hidden">(nouvel onglet)</span>
-  </a>
-</li>
+        <li>
+          <a href="https://www.linkedin.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            LinkedIn
+            <span class="visually-hidden">(nouvel onglet)</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Instagram
+            <span class="visually-hidden">(nouvel onglet)</span>
+          </a>
+        </li>
 
       </ul>
 

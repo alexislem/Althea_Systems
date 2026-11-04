@@ -1,11 +1,12 @@
 
 import { formaterPrix } from "./outils.js";
 import { trierCatalogue, trierPar, lireTri } from "./tri.js";
+import { normaliser, filtrerProduits } from "./recherche.js";
 
-/* Exécute les tests du catalogue et du formatage des prix */
+/* Exécute les tests du catalogue, du tri et de la recherche */
 export const lancerTests = () => {
 
-  // Produits fictifs utilisés uniquement pour les tests
+  // Produits fictifs réservés aux tests
   const donneesTest = [
     {
       id: "epuise",
@@ -52,6 +53,12 @@ export const lancerTests = () => {
     "tri-inconnu"
   );
 
+  // Vérifie le filtrage avec un prix maximum de 20 €
+  const resultatsPrixMax = filtrerProduits(
+    donneesTest,
+    { prixMax: 20 }
+  );
+
   const essais = [
 
     // Test 1 : prix décimal
@@ -66,19 +73,21 @@ export const lancerTests = () => {
       formaterPrix(24) === "24,00 €"
     ],
 
-    // Test 3 : les produits épuisés sont à la fin
+    // Test 3 : produits épuisés à la fin
     [
       "Produits épuisés à la fin",
-      catalogueTrie.slice(-2).every((p) => p.stock === 0)
+      catalogueTrie.slice(-2).every(
+        (p) => p.stock === 0
+      )
     ],
 
-    // Test 4 : un produit prioritaire disponible est en tête
+    // Test 4 : produit prioritaire disponible en tête
     [
       "Produit prioritaire en tête",
       catalogueTrie[0].id === "prioritaire"
     ],
 
-    // Test 5 : un produit épuisé prioritaire reste à la fin
+    // Test 5 : produit épuisé prioritaire à la fin
     [
       "Produit épuisé prioritaire à la fin",
       catalogueTrie.slice(-2).some(
@@ -86,19 +95,21 @@ export const lancerTests = () => {
       )
     ],
 
-    // Test 6 : le tableau original ne change pas
+    // Test 6 : le tri ne modifie pas la liste d'origine
     [
       "Tableau d'origine inchangé",
       donneesTest.map((p) => p.id).join(",") === ordreInitial
       && catalogueTrie !== donneesTest
     ],
 
-    // Test 7 : le tri par prix garde les épuisés à la fin
+    // Test 7 : tri par prix avec ruptures de stock à la fin
     [
       "Prix croissant avec épuisés à la fin",
       prixCroissant[0].id === "normal"
       && prixCroissant[1].id === "prioritaire"
-      && prixCroissant.slice(-2).every((p) => p.stock === 0)
+      && prixCroissant.slice(-2).every(
+        (p) => p.stock === 0
+      )
     ],
 
     // Test 8 : un tri inconnu utilise le tri recommandé
@@ -107,17 +118,37 @@ export const lancerTests = () => {
       lireTri("tri-inconnu") === "recommande"
       && triInconnu.map((p) => p.id).join(",")
         === catalogueTrie.map((p) => p.id).join(",")
+    ],
+
+    // Test 9 : suppression des accents et des majuscules
+    [
+      "Normalisation du mot StéThoscope",
+      normaliser(" StéThoscope ") === "stethoscope"
+    ],
+
+    // Test 10 : filtre avec un prix maximum de 20 €
+    [
+      "Filtre par prix maximum",
+      resultatsPrixMax.length === 3
+      && resultatsPrixMax.every(
+        (p) => p.prix <= 20
+      )
+      && !resultatsPrixMax.some(
+        (p) => p.id === "prioritaire"
+      )
     ]
 
   ];
 
-  // Affiche uniquement les tests qui échouent
+  // Affiche les erreurs des tests qui échouent
   essais.forEach(([nom, reussi]) => {
     console.assert(reussi, `Échec : ${nom}`);
   });
 
-  // Résumé des tests dans la console
-  const reussis = essais.filter(([, reussi]) => reussi).length;
+  // Compte les tests réussis
+  const reussis = essais.filter(
+    ([, reussi]) => reussi
+  ).length;
 
   console.log(`Tests : ${reussis} / ${essais.length} réussis`);
 };
