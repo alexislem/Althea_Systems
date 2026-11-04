@@ -28,7 +28,10 @@ initialiserVuePanier();
 chargerAvis();
 initialiserRecherche();
 
-/* Récupère les éléments de la page Catégorie */
+/* Initialise la recherche sur la page Recherche */
+initialiserRecherche();
+
+/* Récupération des éléments du catalogue */
 const liste = document.querySelector("#liste-produits");
 const caseDispo = document.querySelector("#dispo-seulement");
 const nombreProduits = document.querySelector("#nb-produits");

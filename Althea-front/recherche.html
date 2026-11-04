@@ -51,7 +51,7 @@
       Menu
     </button>
 
-    <!-- Recherche rapide -->
+    <!-- Recherche rapide dans l'en-tête -->
     <form class="recherche"
           role="search"
           action="recherche.html"
@@ -104,7 +104,7 @@
 
       </ul>
 
-      <!-- Choix de la langue -->
+      <!-- Sélection de la langue -->
       <p class="langues">
         Langue :
 
@@ -149,39 +149,46 @@
 
         <h2>Filtres de recherche</h2>
 
-        <!-- Nom du produit -->
+        <!-- Recherche par nom -->
         <div class="champ">
+
           <label for="f-nom">Nom du produit</label>
 
           <input id="f-nom"
                  name="nom"
                  type="search">
+
         </div>
 
-        <!-- Description -->
+        <!-- Recherche par description -->
         <div class="champ">
+
           <label for="f-description">Description</label>
 
           <input id="f-description"
                  name="description"
                  type="search">
+
         </div>
 
-        <!-- Caractéristiques -->
+        <!-- Recherche par caractéristique -->
         <div class="champ">
+
           <label for="f-caracteristique">Caractéristique</label>
 
           <input id="f-caracteristique"
                  name="caracteristique"
                  type="search">
+
         </div>
 
-        <!-- Fourchette de prix -->
+        <!-- Filtres de prix -->
         <fieldset>
 
           <legend>Prix en euros</legend>
 
           <div class="champ">
+
             <label for="f-prix-min">Prix minimum</label>
 
             <input id="f-prix-min"
@@ -189,9 +196,11 @@
                    type="number"
                    min="0"
                    step="0.01">
+
           </div>
 
           <div class="champ">
+
             <label for="f-prix-max">Prix maximum</label>
 
             <input id="f-prix-max"
@@ -199,55 +208,73 @@
                    type="number"
                    min="0"
                    step="0.01">
+
           </div>
 
         </fieldset>
 
-        <!-- Catégories -->
+        <!-- Filtres de catégories -->
         <fieldset>
 
           <legend>Catégories</legend>
 
           <div class="choix">
+
             <input id="f-diagnostic"
                    type="checkbox"
                    name="categorie[]"
                    value="diagnostic">
 
-            <label for="f-diagnostic">Diagnostic</label>
+            <label for="f-diagnostic">
+              Diagnostic
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-soins"
                    type="checkbox"
                    name="categorie[]"
                    value="soins">
 
-            <label for="f-soins">Soins</label>
+            <label for="f-soins">
+              Soins
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-mobilier"
                    type="checkbox"
                    name="categorie[]"
                    value="mobilier">
 
-            <label for="f-mobilier">Mobilier</label>
+            <label for="f-mobilier">
+              Mobilier
+            </label>
+
           </div>
 
           <div class="choix">
+
             <input id="f-consommables"
                    type="checkbox"
                    name="categorie[]"
                    value="consommables">
 
-            <label for="f-consommables">Consommables</label>
+            <label for="f-consommables">
+              Consommables
+            </label>
+
           </div>
 
         </fieldset>
 
-        <!-- Disponibilité -->
+        <!-- Filtre de disponibilité -->
         <div class="choix">
+
           <input id="f-disponible"
                  type="checkbox"
                  name="disponible"
@@ -256,9 +283,10 @@
           <label for="f-disponible">
             Disponibles seulement
           </label>
+
         </div>
 
-        <!-- Tri des résultats -->
+        <!-- Choix du tri -->
         <div class="champ">
 
           <label for="f-tri">Trier par</label>
@@ -287,7 +315,7 @@
 
       </form>
 
-      <!-- Résultats générés automatiquement -->
+      <!-- Résultats de la recherche générés en JavaScript -->
       <section class="resultats"
                aria-labelledby="titre-resultats">
 
@@ -295,12 +323,12 @@
           Résultats de recherche
         </h2>
 
-        <!-- Message si aucun produit n'est trouvé -->
+        <!-- Message affiché lorsque la recherche ne trouve rien -->
         <p id="aucun-resultat" hidden>
           Aucun produit ne correspond à votre recherche.
         </p>
 
-        <!-- JavaScript ajoute les produits dans cette liste -->
+        <!-- Les produits seront ajoutés par afficherCatalogue() -->
         <ul id="resultats-produits"
             class="produits liste-reset">
         </ul>
@@ -341,7 +369,7 @@
 
   </main>
 
-  <!-- Pied de page -->
+  <!-- Pied de page commun -->
   <footer class="pied">
 
     <nav aria-label="Informations légales">
