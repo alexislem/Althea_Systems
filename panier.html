@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon panier · Althea Systems</title>
+    <meta name="description"
+      content="Consultez les articles de votre panier Althea Systems et modifiez leurs quantités.">
+    <link rel="icon" href="img/Logo.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <a class="evitement" href="#contenu">Aller au contenu</a>
+
+
+    <header class="entete">
+      <a class="logo" href="index.html">
+         <img src="img/Logo.svg" alt="Althea Systems, accueil"
+          width="160" height="40">
+      </a>
+      <a class="panier" href="panier.html" aria-current="page">
+        Panier <span class="visually-hidden">(0 article)</span>
+      </a>
+      <button class="menu-bouton" type="button"
+        aria-expanded="true" aria-controls="menu-principal">Menu</button>
+      <form class="recherche" role="search"
+        action="recherche.html" method="get">
+        <label for="q">Rechercher un produit</label>
+        <input id="q" name="q" type="search">
+        <button type="submit">Rechercher</button>
+      </form>
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul class="liste-reset">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie.html">Diagnostic</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="inscription.html">S’inscrire</a></li>
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos d’Althea Systems</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+        <p class="langues">
+          Langue :
+          <a href="panier.html" lang="fr" hreflang="fr"
+            aria-current="true">Français</a>
+          <a href="en/panier.html" lang="en" hreflang="en">English</a>
+          <a href="ar/panier.html" lang="ar" hreflang="ar"
+            dir="rtl">العربية</a>
+        </p>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <h1 id="titre-panier" tabindex="-1">Mon panier</h1>
+      <p id="panier-vide" hidden>Votre panier est vide.</p>
+      <ul id="lignes-panier" class="liste-reset" aria-label="Articles du panier"></ul>
+      <p class="total-panier" aria-live="polite">Total TTC : <strong id="total">0,00 €</strong></p>
+      <p id="message-panier" class="message" role="status" aria-live="polite"></p>
+      <p id="message-stockage" role="status" aria-live="polite"></p>
+      <p><a href="categorie.html">Continuer mes achats</a></p>
+      <noscript><p>Activez JavaScript pour consulter votre panier.</p></noscript>
+    </main>
+
+    <footer class="pied">
+      <nav aria-label="Informations légales">
+        <ul class="liste-reset">
+          <li><a href="cgu.html">CGU</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Contact">
+        <ul class="liste-reset">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Réseaux sociaux">
+        <ul class="liste-reset">
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(nouvel onglet)</span></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="visually-hidden">(nouvel onglet)</span></a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Althea Systems</p>
+    </footer>
+  </body>
+</html>

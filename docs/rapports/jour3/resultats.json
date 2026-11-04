@@ -1,0 +1,682 @@
+{
+  "date": "2026-11-04T11:29:15.752Z",
+  "tests": [
+    {
+      "nom": "Etapes 7 et 13 : catalogue et 10 tests",
+      "ok": true,
+      "detail": {
+        "reussis": 10,
+        "total": 10,
+        "essais": [
+          [
+            "prix 89.9",
+            true
+          ],
+          [
+            "prix 24",
+            true
+          ],
+          [
+            "épuisés à la fin",
+            true
+          ],
+          [
+            "prioritaire en tête",
+            true
+          ],
+          [
+            "prioritaire épuisé reste à la fin",
+            true
+          ],
+          [
+            "tableau original intact",
+            true
+          ],
+          [
+            "tri par prix et épuisés à la fin",
+            true
+          ],
+          [
+            "tri inconnu recommandé",
+            true
+          ],
+          [
+            "normalisation",
+            true
+          ],
+          [
+            "filtre prix maximum",
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "nom": "Etape 13 : un tri casse est detecte",
+      "ok": true,
+      "detail": {
+        "reussis": 8,
+        "total": 10,
+        "sourceSauvegardeeModifiee": false
+      }
+    },
+    {
+      "nom": "Etape 8 : nom piege litteral, sans image injectee",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 8 : comparaison innerHTML/textContent avec CSP active",
+      "ok": true,
+      "detail": {
+        "htmlCree": true,
+        "texteSecurise": true,
+        "alertes": 0,
+        "cspConservee": true
+      }
+    },
+    {
+      "nom": "Etape 9 : filtre disponibles et clavier",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 10 : tri partage, conservation et liste blanche",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etapes 11 et 12 : ajout delegue, total et icone",
+      "ok": true,
+      "detail": {
+        "lignes": [
+          {
+            "id": "oxymetre",
+            "quantite": 2
+          }
+        ],
+        "total": 69.8,
+        "nombre": 2
+      }
+    },
+    {
+      "nom": "Etapes 14 et 15 : menu mobile, Echap et retour du focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etapes 16 et 17 : carrousel, pastilles et mouvement reduit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etapes 18 et 20 : produit epuise, avis, moyenne et note 50 exclue",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 20 : JSON absent et erreur reseau geres",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 19 : achat de 3, rejet de 0, 50 et abc sans max HTML",
+      "ok": true,
+      "detail": {
+        "quantitesRefusees": [
+          "0",
+          "50",
+          "abc",
+          "1.5",
+          ""
+        ],
+        "nombreConserve": 3
+      }
+    },
+    {
+      "nom": "Etape 19 : depassement du stock refuse sans ajout partiel",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 21 : recherche depuis accueil, sans accent et depuis URL piegee",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 22 : prix, disponibilite, tri et valeurs non fiables",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etapes 23 a 25 : total manuel, quantite, persistance et suppression",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 25 : stockage corrompu, faux prix, doublons et quantites invalides",
+      "ok": true,
+      "detail": [
+        {
+          "id": "oxymetre",
+          "quantite": 2
+        },
+        {
+          "id": "stethoscope",
+          "quantite": 1
+        }
+      ]
+    },
+    {
+      "nom": "Etape 26 : synchronisation entre deux onglets et localStorage.clear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 25 : stockage indisponible sans plantage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etape 27 : points arret CDP, ajout et calcul reduce",
+      "ok": true,
+      "detail": [
+        {
+          "id": "oxymetre",
+          "quantite": null,
+          "avant": 0,
+          "somme": null
+        },
+        {
+          "id": "oxymetre",
+          "quantite": null,
+          "avant": 1,
+          "somme": null
+        },
+        {
+          "id": "oxymetre",
+          "quantite": 2,
+          "avant": 0,
+          "somme": 0
+        }
+      ]
+    },
+    {
+      "nom": "Etape 28 : sept pages sans erreur, quatre largeurs, modes clair/sombre",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "nom": "Etapes 14 et 28 : menu visible sans JavaScript",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "consoleErrors": [],
+  "sizes": [
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "panier",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    }
+  ],
+  "axe": [
+    {
+      "page": "index",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "index",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "categorie",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "categorie",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "produit",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "produit",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "recherche",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "recherche",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "panier",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "panier",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "connexion",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "connexion",
+      "mode": "dark",
+      "violations": []
+    },
+    {
+      "page": "inscription",
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "page": "inscription",
+      "mode": "dark",
+      "violations": []
+    }
+  ]
+}

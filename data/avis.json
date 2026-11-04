@@ -1,0 +1,7 @@
+[
+  { "produit": "tensiometre", "auteur": "Camille — exemple pédagogique", "note": 4, "texte": "Les informations de la fiche sont faciles à lire. Avis fictif pour le TP." },
+  { "produit": "tensiometre", "auteur": "Alex — exemple pédagogique", "note": 5, "texte": "La présentation des caractéristiques est claire. Avis fictif pour le TP." },
+  { "produit": "tensiometre", "auteur": "<img src=x onerror=alert(1)>", "note": 3, "texte": "<strong>Test XSS : ceci doit rester du texte.</strong>" },
+  { "produit": "tensiometre", "auteur": "Note incorrecte", "note": 50, "texte": "Cet avis doit être ignoré." },
+  { "produit": "oxymetre", "auteur": "Exemple pédagogique", "note": 4, "texte": "Avis fictif pour tester le filtrage par identifiant du produit." }
+]

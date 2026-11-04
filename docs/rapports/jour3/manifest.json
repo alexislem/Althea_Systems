@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04",
+  "branche": "Branch-Aymen_aitsaid",
+  "normalisationTexte": "LF",
+  "fichiers": {
+    "categorie.html": "fa2a64e417e60c14cb49065690b9f4ded7fb7c3a7195bee9fac5cc8cd98de235",
+    "connexion.html": "5edaf548ec301f4392fa3127bf1bf58ea77c27b8e1cc3b3b092864429b9479b1",
+    "index.html": "66047b07325869f5b02ce6a8a8214d8b1914a6e0201c68ca3f65c0e0e6f23518",
+    "inscription.html": "af70f955f955a3a6933ea48dcb700bda0e7a47310829f0ec8f151449697a0498",
+    "panier.html": "fe8ed1e84761d9718cff5f5dce321394d4619e25c3f4f65412e9a031fdfe1982",
+    "produit.html": "766dd67956f1e4b627e703c6c8af98b4b6c1d9ec01959e66f49986b022b65cde",
+    "recherche.html": "7e534ae5ca43f5ba67098ef8cfb044c38a3c10d2dc6ad4837ca5b74a76ee05fe",
+    "js/avis.js": "ae86bca9f5ef5b09546a27885f8a5cfd8a1507b7e398cbfbda6d2bb16ec7100c",
+    "js/carrousel.js": "24cf0702fc0d61de4524891f81025c6c457ec2dee7f16331764c24c002229f18",
+    "js/catalogue.js": "dc1469b299001c199e4db6832a53d65853b8269c312411f5da463810ba66748e",
+    "js/fiche.js": "f8f05a0a782064475f0c8a2747d058a091b4f45f20f5b6d5e8d50d3359f76327",
+    "js/icone-panier.js": "d0a246d398fe3985a66237591c0e08dec702678a55bdc45d0111001156c34bb3",
+    "js/main.js": "386b3853cb67803000b78f4a3a3e81eb4c5532cbf303c4b03974c7a89226cd1e",
+    "js/menu.js": "b22e2962f62d8da3c8ee8c34d607741ab7e356345b670ff1b720ea48003ff700",
+    "js/outils.js": "6151032cdb2e791a2f9292a83c47186566078123134f1a4eaefb0e3f0c7fca9f",
+    "js/panier.js": "bf304b71a9053dcfc4eae6a66db5b96a27e3a99da67d665b4ba015e9d5943b03",
+    "js/produits.js": "e1ae792d9f968ceff95f8291db1bd440fd1eb9503a8de201b74eeb69f3238e17",
+    "js/recherche.js": "30a7b1ed3f83a7cd7b5af2c5c66f0ff8f95119686cd01effe2254b737b1365c3",
+    "js/tests.js": "570c1227b3aa39228bf845f4230e7c21418e64d13ebcc4a711a75a3063ab1491",
+    "js/tri.js": "5226c331f67ab4cc7a85a887af21554058e06bebfda244232e3b4a76be45948c",
+    "js/vue-panier.js": "64817cafd5bd2284844fb10e2c2592e95b1ba9e110a566af7ee8de2c42a7ae59",
+    "css/style.css": "7a1d18711404414510e8d64d6f8856ec083305fb254e2581c2f3e44c9c9f1b8c",
+    "css/variables.css": "adfd5d305e602f2a4258ec769d06e837cb2f43aff9104cc1532e9159e074e57c",
+    "data/avis.json": "93e2eefcea49417b14033d0d788fb484161d745aefcf230bc43f7340d2ebe639"
+  }
+}

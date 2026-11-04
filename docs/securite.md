@@ -39,3 +39,35 @@ Les tests de soumission utilisent des valeurs fictives et une interception rése
 sans création de compte. La suppression de `required` dans le DOM autorise l’envoi vide : cette démonstration
 confirme la nécessité des contrôles serveur. Aucune modification de test n’a été sauvegardée dans les pages.
 Les fichiers JSON de preuve sont dans `rapports/`.
+
+
+## XSS — Jour 3
+
+Un nom de produit, un auteur d’avis ou un mot de recherche peut contenir du HTML malveillant.
+Ces données sont écrites exclusivement avec `textContent` ; les cartes et les avis sont construits avec
+`createElement` et `append`. Aucun `innerHTML` n’est utilisé dans le JavaScript livré.
+
+Le produit permanent de test contient `Gants nitrile <img src="x" onerror="alert(1)">`.
+Un avis contient aussi du HTML dans son auteur et son texte ; les notes doivent être des entiers de 1 à 5.
+La recherche affiche le mot issu de l’adresse avec `textContent`, y compris un mot piégé.
+
+Avec `innerHTML`, la démonstration crée une vraie balise ; la CSP actuelle bloque toutefois son événement
+en ligne : l’absence d’alerte ne prouve donc pas à elle seule que le code est sûr. Avec `textContent`,
+aucune balise n’est créée. La démonstration temporaire n’a pas été enregistrée dans les fichiers du site.
+La CSP n’a pas été affaiblie : aucun `unsafe-inline`, aucun gestionnaire d’événement dans le HTML applicatif.
+
+## Validation JavaScript et stockage — Jour 3
+
+- Tri par liste blanche via `Object.hasOwn` ; tri inconnu : recommandé.
+- Prix de filtre lus seulement s’ils sont finis et positifs ou nuls.
+- Quantité de la fiche : entier de 1 à 10 et stock disponible, y compris les unités déjà dans le panier.
+- Quantité du panier : entier de 1 à 99, limité au stock ; zéro ou moins supprime la ligne.
+- Relecture du stockage dans un `try/catch` : tableau uniquement, produit connu et disponible,
+  quantité entière valide ; doublons regroupés, champs supplémentaires ignorés.
+- Seuls `id` et `quantite` sont sauvegardés. Les prix viennent toujours du catalogue.
+- Aucun mot de passe, avis personnel ou identifiant de compte dans localStorage.
+- Avis JSON : vérification du statut HTTP, du tableau et des propriétés avant affichage.
+
+Ces protections sont côté navigateur : elles ne remplacent pas une validation serveur ni le recalcul
+du prix et du stock avant une véritable commande. Les avis livrés sont fictifs et signalés comme tels.
+Les tests détaillés et leurs limites sont dans [tests-js.md](tests-js.md).

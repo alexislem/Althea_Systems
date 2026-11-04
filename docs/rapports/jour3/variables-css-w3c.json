@@ -1,0 +1,19 @@
+[
+  {
+    "chunk": 1,
+    "report": {
+      "cssvalidation": {
+        "uri": "file://localhost/TextArea",
+        "checkedby": "http://www.w3.org/2005/07/css-validator",
+        "csslevel": "css3",
+        "date": "2026-11-04T11:28:31Z",
+        "timestamp": "1793791711722",
+        "validity": true,
+        "result": {
+          "errorcount": 0,
+          "warningcount": 0
+        }
+      }
+    }
+  }
+]

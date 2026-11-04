@@ -13,6 +13,7 @@
     <link rel="icon" href="img/Logo.svg">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
   </head>
 
   <body>
@@ -21,11 +22,11 @@
 
     <header class="entete">
       <a class="logo" href="index.html">
-        <img src="img/Logo.svg" alt="Althea Systems, accueil"
+         <img src="img/Logo.svg" alt="Althea Systems, accueil"
           width="160" height="40">
       </a>
       <a class="panier" href="panier.html">
-        Panier <span class="visually-hidden">(2 articles)</span>
+        Panier <span class="visually-hidden">(0 article)</span>
       </a>
       <button class="menu-bouton" type="button"
         aria-expanded="true" aria-controls="menu-principal">Menu</button>
@@ -77,68 +78,28 @@
 
 
       <section aria-labelledby="titre-produits">
-        <h2 id="titre-produits">Les produits de la catégorie</h2>
+     <h2 id="titre-produits">Les produits de la catégorie</h2>
 
-        <ul class="produits liste-reset">
-          <li>
-            <article class="produit">
-              <img src="img/stethoscope.jpg"
-                alt="Stéthoscope à double pavillon" loading="lazy">
-              <h3><a href="produit.html?ref=stethoscope">Stéthoscope double pavillon</a></h3>
-              <p class="prix"><data value="29.90">29,90 € TTC</data></p>
-              <p class="stock">En stock</p>
-            </article>
-          </li>
-          <li>
-            <article class="produit">
-              <img src="img/thermometre.jpg"
-                alt="Thermomètre numérique" loading="lazy">
-              <h3><a href="produit.html?ref=thermometre">Thermomètre numérique</a></h3>
-              <p class="prix"><data value="14.90">14,90 € TTC</data></p>
-              <p class="stock">En stock</p>
-            </article>
-          </li>
-          <li>
-            <article class="produit">
-              <img src="img/oxymetre.jpg"
-                alt="Oxymètre de pouls" loading="lazy">
-              <h3><a href="produit.html?ref=oxymetre">Oxymètre de pouls</a></h3>
-              <p class="prix"><data value="34.90">34,90 € TTC</data></p>
-              <p class="stock">En stock</p>
-            </article>
-          </li>
-          <li>
-            <article class="produit">
-              <img src="img/otoscope.jpg"
-                alt="Otoscope portatif" loading="lazy">
-              <h3><a href="produit.html?ref=otoscope">Otoscope portatif</a></h3>
-              <p class="prix"><data value="79.90">79,90 € TTC</data></p>
-              <p class="stock">En stock</p>
-            </article>
-          </li>
-          <li>
-            <article class="produit">
-              <img src="img/balance.jpg"
-                alt="Balance numérique" loading="lazy">
-              <h3><a href="produit.html?ref=balance">Balance numérique</a></h3>
-              <p class="prix"><data value="49.90">49,90 € TTC</data></p>
-              <p class="stock">En stock</p>
-            </article>
-          </li>
-          <li>
-            <article class="produit">
-              <img src="img/tensiometre.jpg"
-                alt="OMRON M2 Basic avec son brassard" loading="lazy">
-              <h3><a href="produit.html">Tensiomètre OMRON M2 Basic</a></h3>
-              <p class="prix"><data value="45.70">45,70 € TTC</data></p>
-              <p class="stock stock-rupture">En rupture de stock</p>
-            </article>
-          </li>
-        </ul>
+
+        <div class="filtre">
+          <label class="case" for="dispo-seulement">
+            <input id="dispo-seulement" type="checkbox"> Disponibles seulement
+          </label>
+          <div>
+            <label for="choix-tri">Trier par</label>
+            <select id="choix-tri">
+              <option value="recommande">Recommandé</option>
+              <option value="prix-croissant">Prix croissant</option>
+              <option value="prix-decroissant">Prix décroissant</option>
+            </select>
+          </div>
+          <p id="nb-produits" role="status" aria-live="polite"></p>
+        </div>
+        <ul id="liste-produits" class="produits liste-reset"></ul>
       </section>
 
 
-      <nav class="pagination" aria-label="Pagination">
+      <nav class="pagination" aria-label="Pagination" hidden>
         <ul class="liste-reset">
           <li>
             <a href="categorie.html?page=1" aria-current="page">
@@ -158,6 +119,8 @@
           <li><a href="categorie.html?page=2">Suivant</a></li>
         </ul>
       </nav>
+      <p id="message-catalogue" class="message" role="status" aria-live="polite"></p>
+      <noscript><p>Activez JavaScript pour afficher le catalogue interactif.</p></noscript>
     </main>
 
     <footer class="pied">

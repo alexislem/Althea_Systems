@@ -1,105 +1,121 @@
 # Althea Systems
 
-Maquette pédagogique de vente de matériel médical, réalisée en HTML et CSS pour les TP Jour 1 et Jour 2.
-Le travail personnel est conservé sur **`Branch-Aymen_aitsaid`**, sans fusion dans le `main` du camarade.
+Maquette pédagogique de vente de matériel médical, développée en HTML, CSS et JavaScript ES6 pour les TP Jour 1, Jour 2 et Jour 3.
 
-## Pages réalisées
+**Travail personnel sur `Branch-Aymen_aitsaid`, sans fusion dans le `main` du camarade**, conformément à la consigne de l’enseignante.
 
-| Fichier | Page |
-|---|---|
-| `index.html` | Accueil : trois slides, catégories et Top Produits |
-| `categorie.html` | Diagnostic : bandeau, six produits et pagination |
-| `produit.html` | OMRON M2 Basic : galerie, informations, tableau pédagogique et impression |
-| `recherche.html` | Filtres, tri, résultats et pagination statiques |
-| `connexion.html` | Formulaire de connexion en POST |
-| `inscription.html` | Formulaire d’inscription en POST |
+## Lancer le projet
 
-## Ouvrir le site
-
-Depuis la racine du projet, lancer un serveur HTTP, puis ouvrir son adresse :
+Depuis la racine du projet, avec Python installé :
 
 ```bash
 python -m http.server 8000
 ```
 
-Adresse : `http://localhost:8000/index.html`. Python doit être installé pour cette commande.
-Un serveur HTTP sans injection de JavaScript permet de tester la CSP sans bruit de rechargement automatique.
-L’extension Live Server peut aussi afficher le site, mais son script de rechargement peut être refusé par la CSP.
+Ouvrir `http://localhost:8000/index.html`. Les modules et `fetch` nécessitent HTTP ; le double-clic sur les fichiers ne suffit pas.
+Un serveur sans injection de script évite les avertissements CSP du rechargement automatique de Live Server.
+La CSP n’a pas à être affaiblie pour le serveur de développement.
 
-## Organisation et choix techniques
+## Pages
 
-- HTML : structure des six pages ; aucune logique JavaScript applicative au Jour 2.
-- `css/variables.css` : palette, tailles, espacements et mode sombre automatique.
-- `css/style.css` : mise en page mobile d’abord, Flexbox, Grid, composants partagés et impression.
-- `img/` : fichiers locaux ; versions adaptées au carrousel et à la galerie.
-- `docs/` : analyse, audit historique, recette Jour 2, sécurité, sources et preuves.
+| Fichier | Interface |
+|---|---|
+| `index.html` | Accueil, catégories, Top Produits et carrousel |
+| `categorie.html` | Catalogue, disponibilité, tri et ajout au panier |
+| `produit.html` | Fiche, achat validé et avis ; choix par `?id=…` ou ancien `?ref=…` |
+| `recherche.html` | Recherche sans accents et facettes |
+| `panier.html` | Quantités, suppression, total et sauvegarde |
+| `connexion.html` | Formulaire HTML de connexion, sans serveur d’authentification |
+| `inscription.html` | Formulaire HTML d’inscription, sans création réelle de compte |
 
-Les couleurs existantes sont conservées. Les espacements augmentent aux paliers de 48rem et 64rem.
-Les mêmes classes servent aux cartes de plusieurs pages. Le défilement et les pastilles utilisent
-les fonctions natives du navigateur et du CSS ; les transitions respectent la préférence de mouvement réduit.
+## JavaScript — Jour 3
 
-## Responsive : corrections et preuves
+| Fichier | Rôle |
+|---|---|
+| `js/produits.js` | Données du catalogue et recherche par identifiant. |
+| `js/tri.js` | Rang, tris autorisés et lecture sûre du choix. |
+| `js/outils.js` | Présentation des prix en euros. |
+| `js/catalogue.js` | Fabrication et affichage des cartes avec le DOM. |
+| `js/panier.js` | État, validation, total et persistance du panier. |
+| `js/icone-panier.js` | Nombre d’articles et point du panier. |
+| `js/menu.js` | Menu mobile, Échap et focus. |
+| `js/carrousel.js` | Boutons, défilement et observation de la slide visible. |
+| `js/fiche.js` | Choix de la fiche, stock et vérification de l’achat. |
+| `js/avis.js` | Chargement JSON et affichage sécurisé des avis. |
+| `js/recherche.js` | Normalisation, lecture de l’URL et facettes. |
+| `js/vue-panier.js` | Lignes du panier, champs de quantité et suppression. |
+| `js/tests.js` | Dix assertions demandées par le TP. |
+| `js/main.js` | Point d’entrée qui relie les modules et les pages. |
 
-Les corrections finales portent sur les images absentes, le texte blanc sur les photos,
-`color-scheme` pour les contrôles natifs et les lignes alternées du tableau.
-Aucun débordement détecté à **320, 360, 768 et 1280 pixels**, dans les modes clair et sombre,
-sur les six pages. Le reflow à 200 % a été contrôlé par une zone CSS équivalente ; la méthode
-exacte et les limites sont dans [la recette](docs/responsive.md).
+Le catalogue est trié sur une copie : prioritaires disponibles, autres disponibles, épuisés.
+Les tris par prix conservent eux aussi les épuisés à la fin. Les noms de tri sont validés par liste blanche.
 
-### Captures finales
+Les données sont écrites avec **`textContent`**, jamais interprétées comme du HTML.
+Les cartes, avis et lignes du panier sont créés avec `createElement` et assemblés avec `append`.
+Les événements passent par `addEventListener`, avec délégation pour les listes qui sont reconstruites.
 
-| Page | Téléphone, 360 px | Tablette, 768 px | Ordinateur, 1280 px |
-|---|---|---|---|
-| Accueil | ![Accueil à 360 pixels](docs/captures/accueil-360.png) | ![Accueil à 768 pixels](docs/captures/accueil-768.png) | ![Accueil à 1280 pixels](docs/captures/accueil-1280.png) |
-| Catégorie | ![Catégorie à 360 pixels](docs/captures/categorie-360.png) | ![Catégorie à 768 pixels](docs/captures/categorie-768.png) | ![Catégorie à 1280 pixels](docs/captures/categorie-1280.png) |
-| Produit | ![Produit à 360 pixels](docs/captures/produit-360.png) | ![Produit à 768 pixels](docs/captures/produit-768.png) | ![Produit à 1280 pixels](docs/captures/produit-1280.png) |
+Le panier n’enregistre que `id` et `quantite` dans localStorage. Les quantités relues sont vérifiées,
+les prix viennent du catalogue et le total utilise des centimes entiers. L’événement `storage` synchronise
+les onglets du même site. Le panier normal reste vide tant que l’utilisateur n’ajoute rien.
 
-![Accueil en mode sombre](docs/captures/accueil-sombre.png)
+## Essayer les fonctionnalités
 
-### Résultats du Jour 2 — 3 novembre 2026
+- `categorie.html?tests` : la console affiche **Tests : 10 / 10 réussis**.
+- `categorie.html?tri=prix-croissant` : tri conservé dans l’adresse et au rechargement.
+- `recherche.html?q=stethoscope` : trouve le nom accentué.
+- `recherche.html?prixMax=50&disponible=oui` : quatre résultats avec les données de démonstration.
+- `produit.html` : tensiomètre épuisé, achat bloqué et avis fictifs chargés depuis `data/avis.json`.
+- `produit.html?id=stethoscope` : produit disponible pour tester une quantité de 1 à 10.
+- `panier.html?demo` : deux articles de démonstration si le panier est vide ; les rechargements ne les multiplient pas.
+- Ouvrir le panier et le catalogue dans deux onglets : un ajout met à jour le premier onglet sans rechargement.
 
-| Page | Accessibilité | Bonnes pratiques | SEO | Erreurs HTML |
-|---|---|---|---|---|
-| Accueil | 100/100 | 100/100 | 100/100 | 0 |
-| Catégorie | 100/100 | 100/100 | 100/100 | 0 |
-| Produit | 100/100 | 100/100 | 100/100 | 0 |
-| Recherche | 100/100 | 100/100 | 100/100 | 0 |
-| Connexion | 100/100 | 100/100 | 100/100 | 0 |
-| Inscription | 100/100 | 100/100 | 100/100 | 0 |
+## Recette du 4 novembre 2026
 
-Rapports Lighthouse obtenus sous Chrome, configuration mobile. La catégorie Performance n’a pas été mesurée.
-Les deux CSS n’ont aucune erreur de syntaxe ; validation CSS W3C sans erreur, profil CSS3 + SVG
-pour `style.css`, contrôlé par lots complets de règles à cause de la limite du service.
-Les réponses brutes et avertissements sont archivés dans [les rapports](docs/rapports/).
+- **24 groupes de vérification réussis sur 24**, dont les dix assertions du TP et une mutation volontaire du tri détectée.
+- Sept pages à 320, 360, 768 et 1280 pixels, en clair et sombre : **56 combinaisons sans débordement global ni image introuvable**.
+- Aucune erreur JavaScript ou CSP au chargement normal sur le serveur de test.
+- Aucune violation des règles WCAG A/AA testées par axe sur les 14 combinaisons page/mode ; ce contrôle n’est pas un audit humain exhaustif.
+- Ajout, quantités et suppression également testés au clavier à 360 pixels ; Échap restitue le focus du menu.
+- **0 erreur HTML Nu/W3C sur les sept pages** et **0 erreur de syntaxe CSS**.
+- Validation CSS W3C sans erreur, profil CSS3 + SVG, par lots complets de règles à cause de la limite du service ; avertissements archivés.
+- Aucun nouveau score Lighthouse revendiqué pour le Jour 3 ; les mesures précédentes restent datées du Jour 2.
 
-Les tests axe ne signalent aucune violation des règles WCAG A/AA testées, en clair comme en sombre.
-Ils ne remplacent pas une évaluation humaine complète. Les anciens scores du Jour 1 sont conservés
-dans `docs/audit.md` et ne sont pas présentés comme des mesures du Jour 2.
+[Rapport détaillé des tests](docs/tests-js.md) · [Suivi des 29 étapes](docs/etapes-jour3.md) · [Preuves JSON](docs/rapports/jour3/).
 
-## Documents utiles
+### Captures du Jour 3 à 360 pixels
 
-- [Suivi des 31 étapes](docs/etapes-jour2.md).
-- [Recette responsive et limites des tests](docs/responsive.md).
-- [Sécurité : protections et limites](docs/securite.md).
-- [Contrastes calculés](docs/contrastes.md).
-- [Sources et licences des photographies](docs/sources-images.md).
-- [Fiche produit imprimée : deux pages A4](docs/rapports/produit-impression.pdf).
+| Interface | Clair | Sombre |
+|---|---|---|
+| Accueil | [Voir](docs/captures/jour3/index-light-360.png) | [Voir](docs/captures/jour3/index-dark-360.png) |
+| Catégorie | [Voir](docs/captures/jour3/categorie-light-360.png) | [Voir](docs/captures/jour3/categorie-dark-360.png) |
+| Produit | [Voir](docs/captures/jour3/produit-light-360.png) | [Voir](docs/captures/jour3/produit-dark-360.png) |
+| Recherche | [Voir](docs/captures/jour3/recherche-light-360.png) | [Voir](docs/captures/jour3/recherche-dark-360.png) |
+| Panier | [Voir](docs/captures/jour3/panier-light-360.png) | [Voir](docs/captures/jour3/panier-dark-360.png) |
 
-## Limites et demandes particulières
+## Sécurité et différences explicites avec le TP
 
-- Le champ de filtre « Description » a été retiré à la demande de l’auteur, malgré sa présence à l’étape 25.
-- Les commentaires de code ont été retirés à sa demande ; les ratios de contraste sont donc documentés séparément.
-- Recherche, tris, pagination, menu interactif, comptes, panier et achat : maquette, sans traitement applicatif.
-- POST ne chiffre pas les données : une vraie authentification nécessite HTTPS et des contrôles serveur.
-- La confirmation des mots de passe sera comparée en JavaScript puis sur le serveur au développement de la logique.
-- Les traductions et les pages annexes non demandées au Jour 2 restent des destinations prévues.
-- Les produits/prix et la rupture sont des données d’exercice ; le tableau des brassards est explicitement fictif.
-- Les photos génériques ne prouvent pas les caractéristiques d’un article ; la galerie OMRON utilise des recadrages.
-- L’adresse Open Graph `althea.example` reste une adresse de démonstration.
+- La CSP du Jour 2 est conservée. Pendant le test XSS, elle empêche l’alerte `onerror` même lorsque
+  la chaîne est temporairement interprétée : la présence ou l’absence d’une vraie balise a aussi été vérifiée.
+- Le nom piégé reste dans les données, l’avis piégé est affiché comme texte et la note de 50 est ignorée.
+- Les avis sont fictifs et présentés comme des données de démonstration, pas comme de vrais témoignages clients.
+- Les prix du catalogue initial sont conservés : deux oxymètres à 34,90 € font **69,80 €**, et non le 69 cité dans le TP.
+- Le filtre « Description » reste retiré à la demande de l’auteur ; les champs existants Catégories et Caractéristique fonctionnent.
+- Les commentaires de source restent retirés à sa demande ; les explications et les ratios sont dans `docs/`.
+- Les deux produits de travail du panier sont activés seulement par `?demo`, pour ne pas créer de faux achats dans le panier normal.
+- Ces validations côté navigateur ne remplacent pas les validations serveur d’une vraie commande.
+- Les comptes et la comparaison des mots de passe appartiennent au travail d’intersession séparé, pas aux étapes 1 à 29.
+- Les pages légales, traductions et autres destinations annexes ne sont pas inventées ; elles restent hors du périmètre réalisé.
+
+[Protections et test XSS](docs/securite.md) · [Sources des photos](docs/sources-images.md) · [Contrastes](docs/contrastes.md).
+
+## Historique du Jour 2
+
+Les variables CSS, composants partagés, tableaux accessibles, impression et mode sombre sont conservés.
+La palette n’a pas été changée. La [recette du Jour 2](docs/responsive.md), ses captures et ses rapports restent
+archivés et datés ; ils décrivent la version du Jour 2, avant l’ajout du JavaScript.
 
 ## Version à remettre
 
-Le dépôt partagé possède déjà une étiquette `jour-2`. Elle ne doit pas être déplacée ni remplacée.
-La version personnelle finalisée reste sur `Branch-Aymen_aitsaid` ; une étiquette distincte
-`jour-2-Aymen-aitsaid` identifie ce rendu sans toucher à `main` ni à l’étiquette commune.
-Le lien à remettre est celui de la branche personnelle, pas une demande de fusion.
+Branche : `Branch-Aymen_aitsaid`. Étiquette personnelle : **`jour-3-Aymen-aitsaid`**.
+Cette étiquette distingue le travail personnel sans déplacer les étiquettes partagées ni fusionner dans `main`.
+Le lien de la branche personnelle est à remettre à l’enseignante. Aucun message n’est envoyé automatiquement.

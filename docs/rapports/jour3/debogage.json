@@ -1,0 +1,20 @@
+[
+  {
+    "id": "oxymetre",
+    "quantite": null,
+    "avant": 0,
+    "somme": null
+  },
+  {
+    "id": "oxymetre",
+    "quantite": null,
+    "avant": 1,
+    "somme": null
+  },
+  {
+    "id": "oxymetre",
+    "quantite": 2,
+    "avant": 0,
+    "somme": 0
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "nom": "Etape 28 : ajout, navigation panier, quantite et suppression au clavier uniquement a 360 px",
+    "ok": true,
+    "totalDeuxStethoscopes": "59,80 €",
+    "focusFinal": "titre-panier"
+  },
+  {
+    "nom": "Etapes 23 et 25 : deux produits de demonstration seulement avec ?demo, sans doublon au rechargement",
+    "ok": true,
+    "total": "64,80 €"
+  }
+]
