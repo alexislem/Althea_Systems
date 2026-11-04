@@ -2,7 +2,12 @@
 import { produits } from "./produits.js";
 import { trierPar, lireTri } from "./tri.js";
 import { afficherCatalogue } from "./catalogue.js";
-import { ajouter } from "./panier.js";
+import {
+  ajouter,
+  CLE,
+  recharger
+} from "./panier.js";
+
 import { mettreAJourIcone } from "./icone-panier.js";
 import { lancerTests } from "./tests.js";
 import { initialiserMenu } from "./menu.js";
@@ -10,20 +15,18 @@ import { initialiserCarrousel } from "./carrousel.js";
 import { initialiserFiche } from "./fiche.js";
 import { chargerAvis } from "./avis.js";
 import { initialiserRecherche } from "./recherche.js";
+import {
+  initialiserVuePanier,
+  afficherPanier
+} from "./vue-panier.js";
 
-
-
-/* Initialise le menu sur toutes les pages */
+/* Initialise les composants des différentes pages */
 initialiserMenu();
-
-/* Initialise le carrousel sur la page d'accueil */
 initialiserCarrousel();
-
-/* Initialise la fiche produit sur la page produit */
 initialiserFiche();
-
-/* Charge et affiche les avis du produit courant */
+initialiserVuePanier();
 chargerAvis();
+initialiserRecherche();
 
 /* Initialise la recherche sur la page Recherche */
 initialiserRecherche();
@@ -36,12 +39,14 @@ const choixTri = document.querySelector("#choix-tri");
 
 if (liste && caseDispo && nombreProduits && choixTri) {
 
+  // Récupère le tri indiqué dans l'adresse
   const parametres = new URLSearchParams(window.location.search);
 
   choixTri.value = lireTri(parametres.get("tri"));
 
   /* Filtre, trie et affiche les produits */
   const rafraichir = () => {
+
     const produitsFiltres = caseDispo.checked
       ? produits.filter((produit) => produit.stock > 0)
       : produits;
@@ -62,8 +67,9 @@ if (liste && caseDispo && nombreProduits && choixTri) {
   /* Filtre de disponibilité */
   caseDispo.addEventListener("change", rafraichir);
 
-  /* Choix du tri */
+  /* Mise à jour du tri */
   choixTri.addEventListener("change", () => {
+
     const adresse = new URL(window.location.href);
 
     adresse.searchParams.set("tri", choixTri.value);
@@ -77,8 +83,9 @@ if (liste && caseDispo && nombreProduits && choixTri) {
     rafraichir();
   });
 
-  /* Ajout au panier avec délégation d'événement */
+  /* Ajoute un produit au panier depuis le catalogue */
   liste.addEventListener("click", (event) => {
+
     const bouton = event.target.closest("button[data-id]");
 
     if (!bouton || bouton.disabled) {
@@ -89,13 +96,45 @@ if (liste && caseDispo && nombreProduits && choixTri) {
     mettreAJourIcone();
   });
 
+  // Affiche les produits dès le chargement
   rafraichir();
 }
 
-/* Met à jour l'indicateur du panier */
+/* Met à jour le compteur du panier */
 mettreAJourIcone();
 
-/* Lance les tests uniquement si l'adresse contient ?tests */
+/* Exécute les tests uniquement avec le paramètre ?tests */
 if (new URLSearchParams(window.location.search).has("tests")) {
   lancerTests();
 }
+
+
+/* Initialise la page Panier */
+if (document.querySelector("#lignes-panier")) {
+
+  // Affiche uniquement les produits réellement enregistrés
+  initialiserVuePanier();
+
+}
+
+
+/* Synchronise le panier lorsque localStorage change dans un autre onglet */
+window.addEventListener("storage", (event) => {
+
+  // Ignore les modifications qui concernent d'autres données
+  if (event.key !== CLE) {
+    return;
+  }
+
+  // Recharge les nouvelles données du panier
+  recharger();
+
+  // Met à jour l'indicateur du panier dans l'en-tête
+  mettreAJourIcone();
+
+  // Actualise les lignes et le total si la page Panier est ouverte
+  if (document.querySelector("#lignes-panier")) {
+    afficherPanier();
+  }
+
+});

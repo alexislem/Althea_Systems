@@ -23,7 +23,7 @@ export const creerCarte = (produit) => {
   const titre = document.createElement("h3");
   const lien = document.createElement("a");
 
-  lien.href = "produit.html";
+  lien.href = `produit.html?id=${encodeURIComponent(id)}`;
   lien.textContent = nom;
 
   titre.append(lien);

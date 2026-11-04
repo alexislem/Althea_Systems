@@ -2,20 +2,24 @@
 import { trouverProduit } from "./produits.js";
 import { ajouter } from "./panier.js";
 import { mettreAJourIcone } from "./icone-panier.js";
+import { formaterPrix } from "./outils.js";
 
-/* Initialise les informations et l'achat sur la fiche produit */
+/* Initialise la fiche correspondant au produit sélectionné */
 export const initialiserFiche = () => {
 
-  // Récupère la fiche du produit
+  // Récupère la fiche produit
   const fiche = document.querySelector("article.fiche");
 
-  // Ne fait rien sur les pages sans fiche produit
   if (!fiche) {
     return;
   }
 
-  // Recherche le produit correspondant à la fiche
-  const id = fiche.dataset.id;
+  /* Identifie le produit sélectionné dans l'adresse */
+  const parametres = new URLSearchParams(window.location.search);
+
+  const id = parametres.get("id") || fiche.dataset.id;
+
+  // Récupère les données du produit
   const produit = trouverProduit(id);
 
   if (!produit) {
@@ -23,7 +27,42 @@ export const initialiserFiche = () => {
     return;
   }
 
-  // Récupère les éléments du formulaire d'achat
+  // Synchronise l'identifiant de la fiche
+  fiche.dataset.id = produit.id;
+
+  /* Met à jour le titre du produit */
+  const titreProduit = fiche.querySelector(".fiche-infos h1");
+
+  if (titreProduit) {
+    titreProduit.textContent = produit.nom;
+  }
+
+  // Met à jour le titre de l'onglet
+  document.title = `${produit.nom} - Althea Systems`;
+
+  /* Met à jour le prix du produit */
+  const zonePrix = fiche.querySelector(".prix-fiche");
+  const montant = zonePrix?.querySelector("data");
+
+  if (montant) {
+    montant.value = String(produit.prix);
+    montant.textContent = formaterPrix(produit.prix);
+  } else if (zonePrix) {
+    zonePrix.textContent = `${formaterPrix(produit.prix)} TTC`;
+  }
+
+  /* Met à jour le fil d'Ariane */
+  const lienAriane = document.querySelector(
+    '.ariane a[aria-current="page"]'
+  );
+
+  if (lienAriane) {
+    lienAriane.textContent = produit.nom;
+    lienAriane.href =
+      `produit.html?id=${encodeURIComponent(produit.id)}`;
+  }
+
+  /* Récupère le formulaire d'achat */
   const formulaire = fiche.querySelector("form.achat");
 
   if (!formulaire) {
@@ -41,71 +80,68 @@ export const initialiserFiche = () => {
   /* Vérifie la disponibilité du produit */
   const rupture = produit.stock === 0;
 
-  // Bloque l'achat si le produit est épuisé
+  // Active ou désactive le formulaire
   champ.disabled = rupture;
   bouton.disabled = rupture;
 
-  // Adapte le texte du bouton
+  // Met à jour le texte du bouton
   bouton.textContent = rupture
     ? "En rupture de stock"
     : "Ajouter au panier";
 
-  // Actualise l'indication de disponibilité
+  /* Met à jour l'indication du stock */
   const indicationStock = fiche.querySelector(".stock");
 
   if (indicationStock) {
+
     indicationStock.textContent = rupture
-      ? "En rupture de stock"
-      : "En stock";
+      ? "Disponibilité : en rupture de stock"
+      : "Disponibilité : en stock";
 
     indicationStock.classList.toggle("stock-rupture", rupture);
   }
 
-  /* Gère l'ajout au panier depuis le formulaire */
-
-  // Laisse JavaScript afficher ses propres messages de validation
+  /* Gère l'envoi du formulaire d'achat */
   formulaire.noValidate = true;
 
   formulaire.addEventListener("submit", (event) => {
 
-    // Empêche le rechargement automatique de la page
+    // Empêche le rechargement de la page
     event.preventDefault();
 
-    // Vérifie également le stock lors de l'envoi
+    // Empêche l'achat d'un produit épuisé
     if (produit.stock === 0) {
-      message.textContent = "Ce produit est en rupture de stock.";
+      message.textContent =
+        "Ce produit est en rupture de stock.";
       return;
     }
 
-    // Convertit la quantité saisie en nombre
+    // Récupère la quantité sélectionnée
     const quantite = Number(champ.value);
 
-    /* Refuse une quantité incorrecte */
+    // Vérifie que la quantité est comprise entre 1 et 10
     if (
+      champ.value.trim() === "" ||
       !Number.isInteger(quantite) ||
       quantite < 1 ||
       quantite > 10
     ) {
+
       message.textContent = "Entre 1 et 10 exemplaires.";
-
-      // Replace le focus sur le champ de quantité
       champ.focus();
-
       return;
     }
 
-    /* Ajoute autant de produits que la quantité demandée */
+    /* Ajoute les exemplaires au panier */
     for (let i = 0; i < quantite; i++) {
       ajouter(produit.id);
     }
 
-    // Affiche un message de confirmation
+    // Confirme l'ajout du produit
     message.textContent =
       `${quantite} × ${produit.nom} ajouté${quantite > 1 ? "s" : ""} au panier.`;
 
-    // Met à jour le compteur dans l'en-tête
+    // Actualise l'indicateur du panier
     mettreAJourIcone();
-
   });
-
 };

@@ -1685,3 +1685,59 @@ main > h1 {
   content: none;
   display: none;
 }
+
+
+/* Mise en page du panier */
+.contenu-panier {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+/* Organisation des produits du panier */
+#lignes-panier {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Présentation d'une ligne du panier */
+.ligne-panier {
+  padding: 1.5rem;
+  border: 1px solid rgba(150, 160, 180, 0.35);
+  border-radius: 8px;
+}
+
+/* Nom du produit */
+.ligne-panier h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Champ de quantité */
+.champ-quantite {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 220px;
+  margin-bottom: 1rem;
+}
+
+/* Sous-total de chaque produit */
+.sous-total {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Bouton de suppression */
+.ligne-panier .supprimer {
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+/* Montant total du panier */
+.total-panier {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
