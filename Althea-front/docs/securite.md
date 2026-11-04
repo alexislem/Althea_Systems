@@ -82,3 +82,46 @@ La page Produit obtient 77/100 en performance.
 
 Toutes les pages obtiennent 100/100 en bonnes
 pratiques et en SEO.
+
+
+
+## Protection contre les failles XSS
+
+Une faille XSS (Cross-Site Scripting) apparaît lorsqu'une
+application interprète des données non fiables comme
+du code HTML ou JavaScript.
+
+### Test effectué
+
+Un produit contenant le nom suivant a été ajouté
+au catalogue :
+
+`Gants nitrile <img src="x" onerror="alert(1)">`
+
+Un test temporaire avec innerHTML a permis de
+vérifier le comportement face à un nom contenant
+du code HTML.
+
+La politique CSP du site interdit l'exécution
+des gestionnaires d'événements intégrés tels
+que onerror.
+
+### Correction et protection
+
+La propriété textContent est utilisée pour
+afficher les noms de produits.
+
+Elle traite les données comme du texte et
+empêche leur interprétation comme du HTML.
+
+Règles conservées dans le projet :
+
+- Ne pas utiliser innerHTML pour afficher des données
+  non fiables.
+- Utiliser textContent pour les noms et descriptions.
+- Conserver la politique CSP.
+- Garder le produit de test dans le catalogue.
+
+Résultat attendu : le nom complet est visible
+et aucun JavaScript provenant du nom ne s'exécute.
+

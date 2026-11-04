@@ -1477,3 +1477,86 @@ main > h1 {
     --couleur-sur-image: #FFFFFF;
   }
 }
+
+
+/* Organisation des filtres du catalogue */
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: var(--espace-grand);
+}
+
+/* Case à cocher et libellé alignés */
+.filtre label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+/* Case adaptée à une utilisation tactile */
+.filtre input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: var(--couleur-primaire);
+  cursor: pointer;
+}
+
+/* Nombre de produits affichés */
+#nb-produits {
+  margin: 0;
+  color: var(--couleur-texte-discret);
+}
+
+
+/* Organisation du menu de tri */
+.filtre-tri {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Menu déroulant du catalogue */
+.filtre-tri select {
+  min-height: 44px;
+  min-width: 170px;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+
+  border: 1px solid var(--couleur-texte-discret);
+  border-radius: var(--arrondi);
+
+  background-color: var(--couleur-surface);
+  color: var(--couleur-texte);
+
+  font: inherit;
+  cursor: pointer;
+}
+
+
+/* Point rouge masqué lorsque le panier est vide */
+.panier::after {
+  display: none;
+}
+
+/* Point rouge visible lorsque le panier contient des articles */
+.panier.a-des-articles::after {
+  display: block;
+}
+
+/* Bouton d'ajout au panier dans les cartes produits */
+.produit .btn {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 1rem;
+}
+
+/* Bouton désactivé pour les produits épuisés */
+.produit .btn:disabled {
+  cursor: not-allowed;
+}
