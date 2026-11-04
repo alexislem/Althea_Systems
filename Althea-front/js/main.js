@@ -7,6 +7,9 @@ import { mettreAJourIcone } from "./icone-panier.js";
 import { lancerTests } from "./tests.js";
 import { initialiserMenu } from "./menu.js";
 import { initialiserCarrousel } from "./carrousel.js";
+import { initialiserFiche } from "./fiche.js";
+import { chargerAvis } from "./avis.js";
+
 
 
 /* Initialise le menu sur toutes les pages */
@@ -14,6 +17,12 @@ initialiserMenu();
 
 /* Initialise le carrousel sur la page d'accueil */
 initialiserCarrousel();
+
+/* Initialise la fiche produit sur la page produit */
+initialiserFiche();
+
+/* Charge et affiche les avis du produit courant */
+chargerAvis();
 
 /* Récupération des éléments du catalogue */
 const liste = document.querySelector("#liste-produits");
