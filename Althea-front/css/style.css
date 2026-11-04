@@ -1560,3 +1560,128 @@ main > h1 {
 .produit .btn:disabled {
   cursor: not-allowed;
 }
+
+
+/* Affichage du menu burger sur téléphone */
+@media (max-width: 47.999rem) {
+
+  .entete .menu-bouton {
+    display: inline-flex;
+  }
+
+  /* Masque la navigation lorsque le menu est fermé */
+  .entete:has(.menu-bouton[aria-expanded="false"]) .menu {
+    display: none;
+  }
+
+}
+
+/* Navigation toujours visible sur tablette et ordinateur */
+@media (min-width: 48rem) {
+
+  .entete .menu-bouton {
+    display: none;
+  }
+
+  .entete .menu {
+    display: block;
+  }
+
+}
+
+
+/* Boutons de navigation du carrousel */
+.commandes-carrousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.commandes-carrousel button {
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+
+  border: 1px solid var(--couleur-primaire);
+  border-radius: var(--arrondi);
+
+  background-color: var(--couleur-primaire);
+  color: var(--couleur-bouton-texte);
+
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.commandes-carrousel button:hover {
+  background-color: var(--couleur-primaire-fonce);
+  color: var(--couleur-bouton-texte);
+}
+
+.commandes-carrousel button:focus-visible {
+  outline: 3px solid var(--couleur-primaire);
+  outline-offset: 3px;
+}
+
+
+/* Apparence des pastilles du carrousel */
+.carrousel .pastilles a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Pastille inactive : petit cercle vide */
+.carrousel .pastilles a::after {
+  content: "";
+  display: block;
+
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid #7dd3fc;
+  border-radius: 50%;
+  background: transparent;
+
+  transform: none;
+  transition: all 0.2s ease;
+}
+
+/* Pastille active : cercle plein et plus grand */
+.carrousel .pastilles a[aria-current="true"]::after {
+  width: 16px;
+  height: 16px;
+  background: #7dd3fc;
+}
+
+/* Focus visible pour la navigation au clavier */
+.carrousel .pastilles a:focus-visible {
+  outline: 2px solid #7dd3fc;
+  outline-offset: 2px;
+}
+
+/* Respect de la réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+  .carrousel .pastilles a::after {
+    transition: none;
+  }
+}
+
+/* Supprime les anciens ronds pour éviter les doublons */
+.carrousel .pastilles a::before {
+  content: none;
+  display: none;
+}
